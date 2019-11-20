@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+.temp-view {
+  background: #040F0F;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  color: #F1F2EB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.temp-view .link {
+  cursor: pointer;
+}
+
+.temp-view h1 {
+  font-family: "Playfair Display", serif;
+  -webkit-margin-after: .1em;
+          margin-block-end: .1em;
+}
+
+.temp-view p {
+  -webkit-margin-before: .5em;
+          margin-block-start: .5em;
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 38em;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+/*# sourceMappingURL=TempView.css.map */

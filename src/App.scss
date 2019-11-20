@@ -1,0 +1,10 @@
+@import './shared/colors/colors.scss';
+@import './shared/mixins/mixins.scss';
+
+.App {
+  text-align: center;
+  background: $colorOne;
+  height: 100vh;
+  width: 100vw;
+  @include flex-centered(column);
+}
