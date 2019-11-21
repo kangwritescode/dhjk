@@ -4,10 +4,10 @@ import './TempView.css';
 const TempView = () => {
     const resLink = 'https://drive.google.com/file/d/1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl/view?usp=sharing';
     const linkedIn = 'https://www.linkedin.com/in/davidhjkang/';
-    const barzLink = 'https://barz-beta.herokuapp.com/';
+    const barzLink = 'https://writebarz.com/';
 
     const openLink = (url) => {
-        window.open(url);
+        window.open(url); 
     };
 
     return (
