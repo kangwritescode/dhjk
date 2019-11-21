@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* <IntroName /> */}
+      <div className={`name`}></div>
       <TempView />
     </div>
   );

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 .temp-view {
-  background: #040F0F;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -22,21 +21,142 @@
 }
 
 .temp-view .link {
+  display: inline-block;
   cursor: pointer;
+  -webkit-transform: rotate3d(1, 0, 0, 180deg);
+          transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.temp-view #link-one {
+  -webkit-animation: twist-back 1s ease-in 1.5s forwards;
+          animation: twist-back 1s ease-in 1.5s forwards;
+}
+
+.temp-view #link-two {
+  -webkit-animation: twist-back 1s ease-in 1.6s forwards;
+          animation: twist-back 1s ease-in 1.6s forwards;
+}
+
+.temp-view #link-three {
+  -webkit-animation: twist-back 1.3s ease-in 1.7s forwards;
+          animation: twist-back 1.3s ease-in 1.7s forwards;
 }
 
 .temp-view h1 {
   font-family: "Playfair Display", serif;
-  -webkit-margin-after: .1em;
-          margin-block-end: .1em;
+  -webkit-margin-after: 0.1em;
+          margin-block-end: 0.1em;
+  -webkit-animation: pop-in 0.25s ease-in 0.5s forwards;
+          animation: pop-in 0.25s ease-in 0.5s forwards;
+  opacity: 0;
 }
 
-.temp-view p {
-  -webkit-margin-before: .5em;
-          margin-block-start: .5em;
+.temp-view .temp-view__description {
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
   font-family: "Source Sans Pro", sans-serif;
   max-width: 38em;
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.temp-view .temp-view__description .description__one {
+  opacity: 0;
+  -webkit-animation: fall-in-left 0.3s ease-in 1s forwards;
+          animation: fall-in-left 0.3s ease-in 1s forwards;
+}
+
+.temp-view .temp-view__description .description__two {
+  opacity: 0;
+  -webkit-animation: fall-in-left 0.3s ease-in 1.1s forwards;
+          animation: fall-in-left 0.3s ease-in 1.1s forwards;
+}
+
+.temp-view .temp-view__description .description__three {
+  opacity: 0;
+  -webkit-animation: fall-in-left 0.3s ease-in 1.2s forwards;
+          animation: fall-in-left 0.3s ease-in 1.2s forwards;
+}
+
+@-webkit-keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  99% {
+    -webkit-transform: scale(1.025);
+            transform: scale(1.025);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  99% {
+    -webkit-transform: scale(1.025);
+            transform: scale(1.025);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fall-in-left {
+  0% {
+    -webkit-transform: translate(-0.25em, -0.25em);
+            transform: translate(-0.25em, -0.25em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0em, 0em);
+            transform: translate(0em, 0em);
+    opacity: 1;
+  }
+}
+
+@keyframes fall-in-left {
+  0% {
+    -webkit-transform: translate(-0.25em, -0.25em);
+            transform: translate(-0.25em, -0.25em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0em, 0em);
+            transform: translate(0em, 0em);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes twist-back {
+  0% {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+            transform: rotate3d(1, 0, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+  }
+}
+
+@keyframes twist-back {
+  0% {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+            transform: rotate3d(1, 0, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+  }
 }
 /*# sourceMappingURL=TempView.css.map */
