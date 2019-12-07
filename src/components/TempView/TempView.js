@@ -4,7 +4,7 @@ import './TempView.css';
 const TempView = () => {
     const resLink = 'https://drive.google.com/file/d/1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl/view?usp=sharing';
     const linkedIn = 'https://www.linkedin.com/in/davidhjkang/';
-    const barzLink = 'https://writebarz.com/';
+    const barzLink = 'https://writebarz.com/recruit-david';
 
     const openLink = (url) => {
         window.open(url); 
