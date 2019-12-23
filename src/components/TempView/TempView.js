@@ -12,7 +12,7 @@ const TempView = () => {
 
     return (
         <div className="temp-view">
-            {/* <h1>Hi there, I'm David Kang.</h1>
+            <h1>Hi there, I'm David Kang.</h1>
             <p className="temp-view__description">
                 <span className='description__one'>
                     Welcome. You've reached the portfolio (or lack thereof) of this recent UC Berkeley graduate (2019)
@@ -33,7 +33,7 @@ const TempView = () => {
                         {' '}
                         BARZ{' '}
                     </b> .</span> 
-            </p> */}
+            </p>
         </div>
     );
 };

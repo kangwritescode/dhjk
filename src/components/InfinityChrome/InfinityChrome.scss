@@ -1,4 +1,5 @@
 @import "../../shared/mixins/mixins.scss";
+@import "../../shared/colors/colors.scss";
 
 $color: #8c6ff0;
 $colorRight: #5628ee;
@@ -9,13 +10,28 @@ $colorLeft: #23c4f8;
     height: 100vh;
     width: 100vw;
     @include flex-centered(column);
+    overflow: hidden;
+    background: rgb(17, 17, 17);
+    z-index: 11;
+    animation: move-down .3s ease-in-out 1.8s forwards;
+
+        @keyframes move-down {
+        0% {
+            transform: translateY(0%);
+        }
+        100% {
+            transform: translateY(100%);
+        }
+    }
 }
+
+
 
 .infinity {
     width: 120px;
     height: 60px;
     position: absolute;
-    animation: fade-in-then-out 1.7s ease-in forwards;
+    animation: fade-in-then-out 1.5s ease-in forwards;
 
     div,
     span {
@@ -79,7 +95,7 @@ $colorLeft: #23c4f8;
     width: 128px;
     height: 60px;
     position: absolute;
-    animation: fade-in-then-out 1.7s ease-in forwards;
+    animation: fade-in-then-out 1.5s ease-in forwards;
 
     div {
         position: absolute;

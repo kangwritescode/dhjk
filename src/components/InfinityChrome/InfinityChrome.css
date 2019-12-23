@@ -15,14 +15,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
+  background: #111111;
+  z-index: 11;
+  -webkit-animation: move-down .3s ease-in-out 1.8s forwards;
+          animation: move-down .3s ease-in-out 1.8s forwards;
+}
+
+@-webkit-keyframes move-down {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes move-down {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
 }
 
 .infinity {
   width: 120px;
   height: 60px;
   position: absolute;
-  -webkit-animation: fade-in-then-out 1.7s ease-in forwards;
-          animation: fade-in-then-out 1.7s ease-in forwards;
+  -webkit-animation: fade-in-then-out 1.5s ease-in forwards;
+          animation: fade-in-then-out 1.5s ease-in forwards;
 }
 
 .infinity div,
@@ -105,8 +132,8 @@
   width: 128px;
   height: 60px;
   position: absolute;
-  -webkit-animation: fade-in-then-out 1.7s ease-in forwards;
-          animation: fade-in-then-out 1.7s ease-in forwards;
+  -webkit-animation: fade-in-then-out 1.5s ease-in forwards;
+          animation: fade-in-then-out 1.5s ease-in forwards;
 }
 
 .infinityChrome div {

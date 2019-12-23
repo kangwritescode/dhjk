@@ -15,12 +15,12 @@ const InfinityChrome = props => {
   }, [])
   return (
     <div className='loader-wrapper'>
+      {/* <div className={`cover`}></div> */}
       <div class='infinityChrome'>
         <div></div>
         <div></div>
         <div></div>
       </div>
-
       <div class='infinity'>
         <div>
           <span></span>
@@ -32,11 +32,10 @@ const InfinityChrome = props => {
           <span></span>
         </div>
       </div>
-
       <svg
         xmlns='http://www.w3.org/2000/svg'
         version='1.1'
-        style={{style: 'none'}}
+        style={{ style: 'none' }}
       >
         <defs>
           <filter id='goo'>
