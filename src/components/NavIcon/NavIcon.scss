@@ -1,10 +1,13 @@
+@import "../../shared/colors/colors.scss";
+
 .nav-icon {
     position: absolute;
-    top: 2%;
+    bottom: 2%;
     right: 2%;
     z-index: 100;
     margin: 1em;
     width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -12,21 +15,26 @@
 .nav-icon__line-3,
 .nav-icon__line-2 {
     pointer-events: none;
-    background-color: #fff;
+    background-color: $colorTwo;
     border-radius: 3px;
     content: "";
     display: block;
-    height: 5px;
+    height: 2px;
     margin: 7px 0;
+    opacity: 1;
     transition: all 0.2s ease-in-out;
 }
 
 .line-one-toggled {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(9px) rotate(135deg);
 }
 .line-two-toggled {
     transform: scale(0);
 }
 .line-three-toggled {
-    transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
+}
+.pre {
+    transform: translateX(200%);
+    opacity: 0;
 }

@@ -15,14 +15,13 @@ const TempView = () => {
             <h1>Hi there, I'm David Kang.</h1>
             <p className="temp-view__description">
                 <span className='description__one'>
-                    Welcome. You've reached the portfolio (or lack thereof) of this recent UC Berkeley graduate (2019)
-					and web developer.
+                    I like to make things for the web.
 				</span>
                 <span className='description__two'>
                     {' '}
-                    Whelp, I wish I had more on here. Thankfully, this website is currently under construction.
+                    This website is currently under construction!
 				</span>
-                <span className='description__three' > In the meantime, take a copy of my <b className="link" id='link-one' onClick={() => openLink(resLink)}>
+                <span className='description__three' > In th meantime, take a copy of my <b className="link" id='link-one' onClick={() => openLink(resLink)}>
                     {' '}
                     resume
 				</b>, connect with me via <b className="link"  id='link-two' onClick={() => openLink(linkedIn)}>
