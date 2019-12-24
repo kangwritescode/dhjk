@@ -21,6 +21,7 @@
           transform: scale(0);
   -webkit-animation: pop-in .3s ease-in-out 2.2s forwards;
           animation: pop-in .3s ease-in-out 2.2s forwards;
+  z-index: 300;
 }
 
 @-webkit-keyframes pop-in {

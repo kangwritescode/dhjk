@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
 .temp-view {
   position: fixed;
   z-index: 10;
@@ -46,8 +46,12 @@
           animation: twist-back 1.3s ease-in 1.7s forwards;
 }
 
+.temp-view .hover-one :hover {
+  color: pink;
+}
+
 .temp-view h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Fjalla One", sans-serif;
   -webkit-margin-after: 0.1em;
           margin-block-end: 0.1em;
   -webkit-animation: pop-in 0.25s ease-in 0.5s forwards;
@@ -58,7 +62,7 @@
 .temp-view .temp-view__description {
   -webkit-margin-before: 0.5em;
           margin-block-start: 0.5em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   max-width: 38em;
   font-size: 1.1em;
   line-height: 1.7em;

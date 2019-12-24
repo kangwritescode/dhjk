@@ -17,7 +17,6 @@
         display: inline-block;
         cursor: pointer;
         transform: rotate3d(1, 0, 0, 180deg);
-        
     }
     #link-one {
         animation: twist-back 1s ease-in 1.5s forwards;
@@ -27,6 +26,11 @@
     }
     #link-three {
         animation: twist-back 1.3s ease-in 1.7s forwards;
+    }
+    .hover-one {
+        :hover {
+            color: pink;
+        }
     }
 
     h1 {
