@@ -24,7 +24,7 @@
           flex-direction: column;
 }
 
-.temp-view .link {
+.temp-view .clickable {
   display: inline-block;
   cursor: pointer;
   -webkit-transform: rotate3d(1, 0, 0, 180deg);

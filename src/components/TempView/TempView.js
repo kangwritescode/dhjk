@@ -21,14 +21,14 @@ const TempView = () => {
                     {' '}
                     This website is currently under construction!
 				</span>
-                <span className='description__three' > In th meantime, take a copy of my <b className="link" id='link-one' onClick={() => openLink(resLink)}>
+                <span className='description__three' > In th meantime, take a copy of my <b className="clickable" id='link-one' onClick={() => openLink(resLink)}>
                     {' '}
                     resume
-				</b>, connect with me via <b className="link"  id='link-two' onClick={() => openLink(linkedIn)}>
+				</b>, connect with me via <b className="clickable"  id='link-two' onClick={() => openLink(linkedIn)}>
                         {' '}
                         LinkedIn
 				</b>, and check out my latest project:{' '}
-                    <b className="link" id='link-three' onClick={() => openLink(barzLink)}>
+                    <b className="clickable" id='link-three' onClick={() => openLink(barzLink)}>
                         {' '}
                         BARZ{' '}
                     </b> .</span> 

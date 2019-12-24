@@ -12,7 +12,7 @@ function App () {
       {/* <IntroName /> */}
       <InfinityChrome />
       <Logos />
-      {/* <TempView /> */}
+      <TempView />
     </div>
   )
 }
