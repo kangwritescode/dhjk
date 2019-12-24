@@ -3,6 +3,7 @@ import './App.css'
 import TempView from './components/TempView/TempView'
 import InfinityChrome from './components/InfinityChrome/InfinityChrome'
 import NavIcon from './components/NavIcon/NavIcon'
+import Logos from './components/Logos/Logos'
 
 function App () {
   return (
@@ -10,7 +11,8 @@ function App () {
       <NavIcon />
       {/* <IntroName /> */}
       <InfinityChrome />
-      <TempView />
+      <Logos />
+      {/* <TempView /> */}
     </div>
   )
 }

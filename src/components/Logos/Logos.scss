@@ -1,0 +1,25 @@
+.container {
+    position: absolute;
+    bottom: 3.5%;
+    left: 0%;
+    display: flex;
+}
+
+.link {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+@keyframes pop-in-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

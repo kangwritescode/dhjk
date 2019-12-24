@@ -9,33 +9,35 @@ const NavIcon = props => {
   useEffect(() => {
     setTimeout(() => {
       setFirst(true)
-    }, 2100)
+    }, 2500)
     setTimeout(() => {
       setSecond(true)
-    }, 2150)
+    }, 2550)
     setTimeout(() => {
       setThird(true)
-    }, 2200)
+    }, 2600)
     return () => {}
   }, [])
 
   return (
-    <div className='nav-icon' onClick={() => setFocused(!focused)}>
-      <div
-        className={`nav-icon__line-1 ${focused ? 'line-one-toggled' : null} ${
-          first ? null : 'pre'
-        }`}
-      ></div>
-      <div
-        className={`nav-icon__line-2 ${focused ? 'line-two-toggled' : null} ${
-          second ? null : 'pre'
-        }`}
-      ></div>
-      <div
-        className={`nav-icon__line-3 ${focused ? 'line-three-toggled' : null} ${
-          third ? null : 'pre'
-        }`}
-      ></div>
+    <div className={`wrapper`}>
+      <div className='nav-icon' onClick={() => setFocused(!focused)}>
+        <div
+          className={`nav-icon__line-1 ${focused ? 'line-one-toggled' : null} ${
+            first ? null : 'pre'
+          }`}
+        ></div>
+        <div
+          className={`nav-icon__line-2 ${focused ? 'line-two-toggled' : null} ${
+            second ? null : 'pre'
+          }`}
+        ></div>
+        <div
+          className={`nav-icon__line-3 ${
+            focused ? 'line-three-toggled' : null
+          } ${third ? null : 'pre'}`}
+        ></div>
+      </div>
     </div>
   )
 }

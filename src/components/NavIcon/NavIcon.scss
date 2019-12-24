@@ -1,13 +1,41 @@
 @import "../../shared/colors/colors.scss";
 
-.nav-icon {
+.wrapper {
     position: absolute;
-    bottom: 2%;
-    right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.247);
+    border-radius: 50em;
+    height: 4.5em;
+    width: 4.5em;
+    bottom: 2.4%;
+    right: 4%;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    animation: pop-in .3s ease-in-out 2.2s forwards;
+
+    @keyframes pop-in {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        90% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+.nav-icon {
+    position: relative;
     z-index: 100;
-    margin: 1em;
-    width: 40px;
-    height: 40px;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -19,20 +47,20 @@
     border-radius: 3px;
     content: "";
     display: block;
-    height: 2px;
-    margin: 7px 0;
+    height: 3px;
+    margin: 7px;
     opacity: 1;
     transition: all 0.2s ease-in-out;
 }
 
 .line-one-toggled {
-    transform: translateY(9px) rotate(135deg);
+    transform: translateY(10px) rotate(135deg);
 }
 .line-two-toggled {
     transform: scale(0);
 }
 .line-three-toggled {
-    transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-10px) rotate(-135deg);
 }
 .pre {
     transform: translateX(200%);
