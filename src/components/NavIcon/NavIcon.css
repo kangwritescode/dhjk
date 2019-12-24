@@ -1,0 +1,39 @@
+.nav-icon {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 100;
+  margin: 1em;
+  width: 40px;
+  cursor: pointer;
+}
+
+.nav-icon__line-1,
+.nav-icon__line-3,
+.nav-icon__line-2 {
+  pointer-events: none;
+  background-color: #fff;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.line-one-toggled {
+  -webkit-transform: translateY(12px) rotate(135deg);
+          transform: translateY(12px) rotate(135deg);
+}
+
+.line-two-toggled {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.line-three-toggled {
+  -webkit-transform: translateY(-12px) rotate(-135deg);
+          transform: translateY(-12px) rotate(-135deg);
+}
+/*# sourceMappingURL=NavIcon.css.map */
