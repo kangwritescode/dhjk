@@ -9,13 +9,13 @@ const NavIcon = props => {
   useEffect(() => {
     setTimeout(() => {
       setFirst(true)
-    }, 2500)
+    }, 3550)
     setTimeout(() => {
       setSecond(true)
-    }, 2550)
+    }, 3600)
     setTimeout(() => {
       setThird(true)
-    }, 2600)
+    }, 3650)
     return () => {}
   }, [])
 

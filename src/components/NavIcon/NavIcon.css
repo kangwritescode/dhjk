@@ -19,8 +19,8 @@
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-animation: pop-in .3s ease-in-out 2.2s forwards;
-          animation: pop-in .3s ease-in-out 2.2s forwards;
+  -webkit-animation: pop-in 0.3s ease-in-out 3.3s forwards;
+          animation: pop-in 0.3s ease-in-out 3.3s forwards;
   z-index: 300;
 }
 

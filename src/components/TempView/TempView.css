@@ -54,8 +54,8 @@
   font-family: "Fjalla One", sans-serif;
   -webkit-margin-after: 0.1em;
           margin-block-end: 0.1em;
-  -webkit-animation: pop-in 0.25s ease-in 0.5s forwards;
-          animation: pop-in 0.25s ease-in 0.5s forwards;
+  -webkit-animation: pop-in 0.25s ease-in 2.2s forwards;
+          animation: pop-in 0.25s ease-in 2.2s forwards;
   opacity: 0;
 }
 
@@ -70,20 +70,20 @@
 
 .temp-view .temp-view__description .description__one {
   opacity: 0;
-  -webkit-animation: fall-in-left 0.3s ease-in 1s forwards;
-          animation: fall-in-left 0.3s ease-in 1s forwards;
+  -webkit-animation: fall-in-left 0.3s ease-in 2.7s forwards;
+          animation: fall-in-left 0.3s ease-in 2.7s forwards;
 }
 
 .temp-view .temp-view__description .description__two {
   opacity: 0;
-  -webkit-animation: fall-in-left 0.3s ease-in 1.1s forwards;
-          animation: fall-in-left 0.3s ease-in 1.1s forwards;
+  -webkit-animation: fall-in-left 0.3s ease-in 2.8s forwards;
+          animation: fall-in-left 0.3s ease-in 2.8s forwards;
 }
 
 .temp-view .temp-view__description .description__three {
   opacity: 0;
-  -webkit-animation: fall-in-left 0.3s ease-in 1.2s forwards;
-          animation: fall-in-left 0.3s ease-in 1.2s forwards;
+  -webkit-animation: fall-in-left 0.3s ease-in 2.9s forwards;
+          animation: fall-in-left 0.3s ease-in 2.9s forwards;
 }
 
 @-webkit-keyframes pop-in {

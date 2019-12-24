@@ -13,7 +13,7 @@ const TempView = () => {
 
   return (
     <div className='temp-view'>
-      <h1>Hi there, I'm David Kang.</h1>
+      <h1>Hello. I'm David.</h1>
       <p className='temp-view__description'>
         <span className='description__one'>
           I like to make things for the web.

@@ -7,10 +7,10 @@ import ig from '../../assets/instagram.png'
 
 const Logos = props => {
   const iconLinks = [
-    { url: fb, delay: '3s', href: 'https://www.facebook.com/david.kang.75' },
-    { url: octocat, delay: '3.05s', href: 'https://github.com/kangwritescode/' },
-    { url: linkedIn, delay: '3.1s', href: 'https://www.linkedin.com/in/davidhjkang/' },
-    { url: ig, delay: '3.15s', href: 'https://www.instagram.com/ajiashi/' }
+    { url: fb, delay: '3.9s', href: 'https://www.facebook.com/david.kang.75' },
+    { url: octocat, delay: '3.95s', href: 'https://github.com/kangwritescode/' },
+    { url: linkedIn, delay: '4s', href: 'https://www.linkedin.com/in/davidhjkang/' },
+    { url: ig, delay: '4.05s', href: 'https://www.instagram.com/ajiashi/' }
   ]
 
   return (
