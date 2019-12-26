@@ -67,3 +67,15 @@
     transform: translateX(200%);
     opacity: 0;
 }
+
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+        top: 3%;
+        right: 3%;
+        background: rgba(0, 0, 0, 0);
+    }
+    .nav-icon {
+        width: 60px;
+    }
+}
