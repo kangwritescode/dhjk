@@ -32,18 +32,18 @@
 }
 
 .temp-view #link-one {
-  -webkit-animation: twist-back 1s ease-in 1.5s forwards;
-          animation: twist-back 1s ease-in 1.5s forwards;
+  -webkit-animation: twist-back 1s ease-in 3.0s forwards;
+          animation: twist-back 1s ease-in 3.0s forwards;
 }
 
 .temp-view #link-two {
-  -webkit-animation: twist-back 1s ease-in 1.6s forwards;
-          animation: twist-back 1s ease-in 1.6s forwards;
+  -webkit-animation: twist-back 1s ease-in 3.1s forwards;
+          animation: twist-back 1s ease-in 3.1s forwards;
 }
 
 .temp-view #link-three {
-  -webkit-animation: twist-back 1.3s ease-in 1.7s forwards;
-          animation: twist-back 1.3s ease-in 1.7s forwards;
+  -webkit-animation: twist-back 1.3s ease-in 3.2s forwards;
+          animation: twist-back 1.3s ease-in 3.2s forwards;
 }
 
 .temp-view .hover-one :hover {
