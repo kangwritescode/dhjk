@@ -1,8 +1,0 @@
-@import '../../shared/mixins/mixins.scss';
-
-.intro-name {
-    position: fixed;
-    color: white;
-    font-size: 40vw;
-    @include flex-centered(column);
-}

@@ -2,29 +2,24 @@
 @import "./shared/mixins/mixins.scss";
 
 .App {
-    text-align: center;
-    background: $colorOne;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    translate: perspective(500px);
+
     @include flex-centered(column);
 }
 
-@keyframes move-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
+// @keyframes move-left {
+//     0% {
+//         transform: translateX(100%);
+//     }
+//     100% {
+//         transform: translateX(0%);
+//     }
+// }
 
-@keyframes move-left-out {
-    0% {
-        transform: translateX(0) rotate3d(0, 0, 0, 0deg);
-    }
-    100% {
-        transform: translateX(-100%); // rotate3d(0, -1, 0, 90deg);
-    }
-}
+// @keyframes move-left-out {
+//     0% {
+//         transform: translateX(0) rotate3d(0, 0, 0, 0deg);
+//     }
+//     100% {
+//         transform: translateX(-100%); // rotate3d(0, -1, 0, 90deg);
+//     }
+// }
