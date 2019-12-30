@@ -3,21 +3,21 @@ import './NavIcon.css'
 
 const NavIcon = props => {
   const [focused, setFocused] = useState(false)
-  const [first, setFirst] = useState(false)
-  const [second, setSecond] = useState(false)
-  const [third, setThird] = useState(false)
-  useEffect(() => {
-    setTimeout(() => {
-      setFirst(true)
-    }, 3550)
-    setTimeout(() => {
-      setSecond(true)
-    }, 3600)
-    setTimeout(() => {
-      setThird(true)
-    }, 3650)
-    return () => {}
-  }, [])
+  const [first, setFirst] = useState(true)
+  const [second, setSecond] = useState(true)
+  const [third, setThird] = useState(true)
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setFirst(true)
+  //   }, 3550)
+  //   setTimeout(() => {
+  //     setSecond(true)
+  //   }, 3600)
+  //   setTimeout(() => {
+  //     setThird(true)
+  //   }, 3650)
+  //   return () => {}
+  // }, [])
 
   return (
     <div className={`wrapper`}>

@@ -1,7 +1,7 @@
 import React from 'react'
-import './TempView.css'
+import './About.css'
 
-const TempView = () => {
+const TempView = props => {
   const resLink =
     'https://drive.google.com/file/d/1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl/view?usp=sharing'
   const linkedIn = 'https://www.linkedin.com/in/davidhjkang/'
@@ -12,7 +12,10 @@ const TempView = () => {
   }
 
   return (
-    <div className='temp-view'>
+    <div
+      className='temp-view'
+      style={props.style}
+    >
       <h1>Hello. I'm David.</h1>
       <p className='temp-view__description'>
         <span className='description__one'>

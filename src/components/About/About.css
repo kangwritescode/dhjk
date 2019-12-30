@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
 .temp-view {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid white;
   position: fixed;
   z-index: 10;
   height: 100vh;
   width: 100vw;
   color: #DCDCDD;
   padding: 3.5em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,23 +29,6 @@
 .temp-view .clickable {
   display: inline-block;
   cursor: pointer;
-  -webkit-transform: rotate3d(1, 0, 0, 180deg);
-          transform: rotate3d(1, 0, 0, 180deg);
-}
-
-.temp-view #link-one {
-  -webkit-animation: twist-back 1s ease-in 3.0s forwards;
-          animation: twist-back 1s ease-in 3.0s forwards;
-}
-
-.temp-view #link-two {
-  -webkit-animation: twist-back 1s ease-in 3.1s forwards;
-          animation: twist-back 1s ease-in 3.1s forwards;
-}
-
-.temp-view #link-three {
-  -webkit-animation: twist-back 1.3s ease-in 3.2s forwards;
-          animation: twist-back 1.3s ease-in 3.2s forwards;
 }
 
 .temp-view .hover-one :hover {
@@ -54,9 +39,7 @@
   font-family: "Fjalla One", sans-serif;
   -webkit-margin-after: 0.1em;
           margin-block-end: 0.1em;
-  -webkit-animation: pop-in 0.25s ease-in 2.2s forwards;
-          animation: pop-in 0.25s ease-in 2.2s forwards;
-  opacity: 0;
+  opacity: 1;
 }
 
 .temp-view .temp-view__description {
@@ -69,21 +52,15 @@
 }
 
 .temp-view .temp-view__description .description__one {
-  opacity: 0;
-  -webkit-animation: fall-in-left 0.3s ease-in 2.7s forwards;
-          animation: fall-in-left 0.3s ease-in 2.7s forwards;
+  opacity: 1;
 }
 
 .temp-view .temp-view__description .description__two {
-  opacity: 0;
-  -webkit-animation: fall-in-left 0.3s ease-in 2.8s forwards;
-          animation: fall-in-left 0.3s ease-in 2.8s forwards;
+  opacity: 1;
 }
 
 .temp-view .temp-view__description .description__three {
-  opacity: 0;
-  -webkit-animation: fall-in-left 0.3s ease-in 2.9s forwards;
-          animation: fall-in-left 0.3s ease-in 2.9s forwards;
+  opacity: 1;
 }
 
 @-webkit-keyframes pop-in {
@@ -167,4 +144,26 @@
             transform: rotate3d(1, 0, 0, 0deg);
   }
 }
-/*# sourceMappingURL=TempView.css.map */
+
+@-webkit-keyframes move-left {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=About.css.map */

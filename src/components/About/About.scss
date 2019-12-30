@@ -4,6 +4,8 @@
 
 .temp-view {
     // background-color: $colorOne;
+    box-sizing: border-box;
+    border: 1px solid white;
     position: fixed;
     z-index: 10;
     height: 100vh;
@@ -16,16 +18,16 @@
     .clickable {
         display: inline-block;
         cursor: pointer;
-        transform: rotate3d(1, 0, 0, 180deg);
+        // transform: rotate3d(1, 0, 0, 180deg);
     }
     #link-one {
-        animation: twist-back 1s ease-in 3.0s forwards;
+        // animation: twist-back 1s ease-in 3.0s forwards;
     }
     #link-two {
-        animation: twist-back 1s ease-in 3.1s forwards;
+        // animation: twist-back 1s ease-in 3.1s forwards;
     }
     #link-three {
-        animation: twist-back 1.3s ease-in 3.2s forwards;
+        // animation: twist-back 1.3s ease-in 3.2s forwards;
     }
     .hover-one {
         :hover {
@@ -36,8 +38,8 @@
     h1 {
         font-family: $primaryFont;
         margin-block-end: 0.1em;
-        animation: pop-in 0.25s ease-in 2.2s forwards;
-        opacity: 0;
+        // animation: pop-in 0.25s ease-in 2.2s forwards;
+        opacity: 1;
     }
     .temp-view__description {
         margin-block-start: 0.5em;
@@ -47,19 +49,20 @@
         line-height: 1.7em;
 
         .description__one {
-            opacity: 0;
-            animation: fall-in-left 0.3s ease-in 2.7s forwards;
+            opacity: 1;
+            // animation: fall-in-left 0.3s ease-in 2.7s forwards;
         }
         .description__two {
-            opacity: 0;
-            animation: fall-in-left 0.3s ease-in 2.8s forwards;
+            opacity: 1;
+            // animation: fall-in-left 0.3s ease-in 2.8s forwards;
         }
         .description__three {
-            opacity: 0;
-            animation: fall-in-left 0.3s ease-in 2.9s forwards;
+            opacity: 1;
+            // animation: fall-in-left 0.3s ease-in 2.9s forwards;
         }
     }
 }
+
 
 @keyframes pop-in {
     0% {
@@ -92,5 +95,14 @@
     }
     100% {
         transform: rotate3d(1, 0, 0, 0deg);
+    }
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }

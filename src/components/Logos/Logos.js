@@ -34,9 +34,9 @@ const Logos = props => {
             alt=''
             src={link.url}
             onClick={() => openLink(link.href)}
-            style={{
-              animation: `pop-in-right .15s ease-in-out ${link.delay} forwards`
-            }}
+            // style={{
+            //   animation: `pop-in-right .15s ease-in-out ${link.delay} forwards`
+            // }}
           ></img>
         )
       })}

@@ -19,7 +19,7 @@
   height: 55px;
   width: 55px;
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
 }
 
 @-webkit-keyframes pop-in-right {
