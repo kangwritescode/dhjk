@@ -1,0 +1,105 @@
+@import "../../shared/mixins/mixins.scss";
+
+.cloud {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    @include flex-centered(column);
+    justify-content: center;
+
+    .parts-container {
+        position: relative;
+        // left: 30%;
+        height: 115px;
+        @include flex-centered(column);
+
+        .cloud-part {
+            position: absolute;
+            width: 20vw;
+            height: 12vh;
+            border-radius: 50%;
+            background: black;
+        }
+        .one {
+            transform: translateX(-90%);
+        }
+        .two {
+            transform: translateX(-25%);
+        }
+        .three {
+            transform: translateX(25%);
+        }
+        .four {
+            transform: translateX(90%);
+        }
+        .five {
+            transform: translate(-50%, -25%);
+        }
+        .six {
+            transform: translate(50%, -25%);
+        }
+        .seven {
+            transform: translate(0%, -40%);
+        }
+        .eight {
+            transform: translate(-50%, 25%);
+        }
+        .nine {
+            transform: translate(50%, 25%);
+        }
+        .ten {
+            transform: translate(0%, 35%);
+        }
+
+        @media screen and (min-width: 700px) {
+            .cloud-part {
+                width: 140px;
+                height: 12vh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .cloud {
+        // left: 100px;
+    }
+}
+
+.tail {
+    position: absolute;
+    z-index: 999;
+
+    bottom: 3%;
+    right: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tail-one {
+        height: 2.5vh;
+        width: 2.5vh;
+        border-radius: 20em;
+        background: black;
+    }
+    .tail-two {
+        position: relative;
+        top: .7vh;
+        height: 1.5vh;
+        width: 1.5vh;
+        right: 1vh;
+        border-radius: 20em;
+        background: black;
+    }
+}
+
+// .tail-two {
+//     position: relative;
+//     z-index: 999;
+//     height: 2vh;
+//     width: 2vh;
+//     border-radius: 20em;
+//     background: pink;
+//     // transform: translateX(400%);
+// }

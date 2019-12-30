@@ -1,0 +1,56 @@
+@import "../../shared/mixins/mixins.scss";
+@import "../../shared/fonts/fonts.scss";
+@import "../../shared/colors/colors.scss";
+
+.landing {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(43, 43, 43);
+    color: $colorTwo;
+    overflow: hidden;
+    @include flex-centered(column);
+}
+
+.landing__head {
+    position: absolute;
+    bottom: 0px;
+    height: 70%;
+    transform: translateX(5%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+#landing-header {
+    position: relative;
+    z-index: 1;
+    font-size: 15vw;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+#landing-subtext {
+    position: relative;
+    z-index: 1;
+    font-size: 4vw;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+@media screen and (min-width: 700px) {
+    #landing-header {
+        font-size: 6.5em;
+    }
+    #landing-subtext {
+        font-size: 1.7em;
+    }
+}
+
+.thoughts-container {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    top: 0px;
+    height: 30%;
+    @include flex-centered(column);
+}

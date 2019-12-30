@@ -5,12 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.247);
+    background: rgba(87, 87, 87, 0.247);
     border-radius: 50em;
     height: 4.5em;
     width: 4.5em;
-    bottom: 2.4%;
-    right: 4%;
+    bottom: 2.5%;
+    right: 5%;
     overflow: hidden;
     opacity: 1;
     transform: scale(1);
@@ -43,6 +43,7 @@
 .nav-icon__line-1,
 .nav-icon__line-3,
 .nav-icon__line-2 {
+    
     pointer-events: none;
     background-color: $colorTwo;
     border-radius: 3px;
@@ -69,7 +70,7 @@
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
     .wrapper {
         top: 3%;
         right: 3%;

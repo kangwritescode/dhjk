@@ -1,8 +1,10 @@
 @import "./shared/colors/colors.scss";
 @import "./shared/mixins/mixins.scss";
+@import "./shared/fonts/fonts.scss";
 
 .App {
-
+    color: $colorTwo;
+    font-family: $primaryFont;
     @include flex-centered(column);
 }
 

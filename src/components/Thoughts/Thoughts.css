@@ -1,0 +1,137 @@
+.cloud {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: center;
+}
+
+.cloud .parts-container {
+  position: relative;
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cloud .parts-container .cloud-part {
+  position: absolute;
+  width: 20vw;
+  height: 12vh;
+  border-radius: 50%;
+  background: black;
+}
+
+.cloud .parts-container .one {
+  -webkit-transform: translateX(-90%);
+          transform: translateX(-90%);
+}
+
+.cloud .parts-container .two {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
+.cloud .parts-container .three {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+}
+
+.cloud .parts-container .four {
+  -webkit-transform: translateX(90%);
+          transform: translateX(90%);
+}
+
+.cloud .parts-container .five {
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+}
+
+.cloud .parts-container .six {
+  -webkit-transform: translate(50%, -25%);
+          transform: translate(50%, -25%);
+}
+
+.cloud .parts-container .seven {
+  -webkit-transform: translate(0%, -40%);
+          transform: translate(0%, -40%);
+}
+
+.cloud .parts-container .eight {
+  -webkit-transform: translate(-50%, 25%);
+          transform: translate(-50%, 25%);
+}
+
+.cloud .parts-container .nine {
+  -webkit-transform: translate(50%, 25%);
+          transform: translate(50%, 25%);
+}
+
+.cloud .parts-container .ten {
+  -webkit-transform: translate(0%, 35%);
+          transform: translate(0%, 35%);
+}
+
+@media screen and (min-width: 700px) {
+  .cloud .parts-container .cloud-part {
+    width: 140px;
+    height: 12vh;
+  }
+}
+
+.tail {
+  position: absolute;
+  z-index: 999;
+  bottom: 3%;
+  right: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tail .tail-one {
+  height: 2.5vh;
+  width: 2.5vh;
+  border-radius: 20em;
+  background: black;
+}
+
+.tail .tail-two {
+  position: relative;
+  top: .7vh;
+  height: 1.5vh;
+  width: 1.5vh;
+  right: 1vh;
+  border-radius: 20em;
+  background: black;
+}
+/*# sourceMappingURL=Thoughts.css.map */

@@ -1,31 +1,32 @@
 import React, { useState, useEffect } from 'react'
+import ReactDOM from 'react-dom'
 import './Logos.css'
 import fb from '../../assets/fb.png'
-import octocat from '../../assets/octocat.png'
-import linkedIn from '../../assets/linkedin.png'
-import ig from '../../assets/instagram.png'
+import octocat from '../../assets/github.svg'
+import linkedIn from '../../assets/ln.png'
+import ig from '../../assets/ig.png'
 
 const Logos = props => {
   const iconLinks = [
     { url: fb, delay: '3.9s', href: 'https://www.facebook.com/david.kang.75' },
     {
-      url: octocat,
-      delay: '3.95s',
-      href: 'https://github.com/kangwritescode/'
-    },
-    {
       url: linkedIn,
       delay: '4s',
       href: 'https://www.linkedin.com/in/davidhjkang/'
     },
-    { url: ig, delay: '4.05s', href: 'https://www.instagram.com/ajiashi/' }
+    { url: ig, delay: '4.05s', href: 'https://www.instagram.com/ajiashi/' },
+    {
+      url: octocat,
+      delay: '3.95s',
+      href: 'https://github.com/kangwritescode/'
+    }
   ]
 
   const openLink = url => {
     window.open(url)
   }
 
-  return (
+  const content = (
     <div className='container'>
       {iconLinks.map(link => {
         return (
@@ -42,6 +43,8 @@ const Logos = props => {
       })}
     </div>
   )
+
+  return content;
 }
 
 export default Logos

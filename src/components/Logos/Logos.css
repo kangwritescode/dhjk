@@ -16,8 +16,8 @@
 
 .link {
   position: relative;
-  height: 55px;
-  width: 55px;
+  height: 60px;
+  width: 60px;
   cursor: pointer;
   opacity: 1;
 }
@@ -48,7 +48,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

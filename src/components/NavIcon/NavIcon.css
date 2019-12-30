@@ -9,12 +9,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(0, 0, 0, 0.247);
+  background: rgba(87, 87, 87, 0.247);
   border-radius: 50em;
   height: 4.5em;
   width: 4.5em;
-  bottom: 2.4%;
-  right: 4%;
+  bottom: 2.5%;
+  right: 5%;
   overflow: hidden;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -101,7 +101,7 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .wrapper {
     top: 3%;
     right: 3%;
