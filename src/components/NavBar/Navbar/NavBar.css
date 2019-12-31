@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
-.landing {
-  position: relative;
+.navBar {
+  position: absolute;
   height: 100vh;
   width: 100vw;
+  z-index: 300;
   background: #272727;
-  color: #DCDCDD;
-  overflow: hidden;
+  color: rgba(255, 255, 255, 0.493);
+  -webkit-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,52 +26,14 @@
           flex-direction: column;
 }
 
-.landing__head {
-  position: absolute;
-  bottom: 0px;
-  height: 70%;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 0;
+.navBar .navBar__section-container {
+  height: 80%;
+  width: 80%;
+  max-width: 700px;
 }
 
-#landing-header {
-  position: relative;
-  z-index: 1;
-  font-size: 15vw;
-  -webkit-margin-after: 0px;
-          margin-block-end: 0px;
-  -webkit-margin-before: 0px;
-          margin-block-start: 0px;
-}
-
-#landing-subtext {
-  position: relative;
-  z-index: 1;
-  font-size: 4vw;
-  -webkit-margin-after: 0px;
-          margin-block-end: 0px;
-  -webkit-margin-before: 0px;
-          margin-block-start: 0px;
-}
-
-@media screen and (min-width: 700px) {
-  #landing-header {
-    font-size: 6.5em;
-  }
-  #landing-subtext {
-    font-size: 1.7em;
-  }
-}
-
-.thoughts-container {
-  position: absolute;
-  z-index: 1;
-  width: 100vw;
-  top: 0px;
-  height: 30%;
+.navBar .navBar__section-container .navBar__section {
+  height: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,5 +47,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #252525;
+  font-size: 2em;
+  cursor: pointer;
 }
-/*# sourceMappingURL=Landing.css.map */
+
+.navBar .navBar__section-container .navBar__section:hover {
+  background: #232323;
+  color: #b6b6b6;
+}
+
+.navBar-focused {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+/*# sourceMappingURL=NavBar.css.map */

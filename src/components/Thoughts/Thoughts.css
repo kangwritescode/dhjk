@@ -34,11 +34,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: cloud-bob 3s linear infinite;
+          animation: cloud-bob 3s linear infinite;
 }
 
 .cloud .parts-container .cloud-part {
   position: absolute;
-  width: 20vw;
+  width: 115px;
   height: 12vh;
   border-radius: 50%;
   background: black;
@@ -96,7 +98,7 @@
 
 @media screen and (min-width: 700px) {
   .cloud .parts-container .cloud-part {
-    width: 140px;
+    width: 115px;
     height: 12vh;
   }
 }
@@ -123,15 +125,109 @@
   width: 2.5vh;
   border-radius: 20em;
   background: black;
+  -webkit-animation: tail-bob 3s linear 0.7s infinite;
+          animation: tail-bob 3s linear 0.7s infinite;
 }
 
 .tail .tail-two {
   position: relative;
-  top: .7vh;
+  top: 0.7vh;
   height: 1.5vh;
   width: 1.5vh;
   right: 1vh;
   border-radius: 20em;
   background: black;
+  -webkit-animation: tail-bob 3s linear 0.3s infinite;
+          animation: tail-bob 3s linear 0.3s infinite;
+}
+
+#construction {
+  position: absolute;
+  z-index: 10000;
+  text-align: center;
+  letter-spacing: 8px;
+  top: 10%;
+}
+
+@media screen and (min-width: 1000px) {
+  .tail {
+    right: 35%;
+  }
+}
+
+@-webkit-keyframes cloud-bob {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  30% {
+    -webkit-transform: translate(0%, -3%);
+            transform: translate(0%, -3%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 3%);
+            transform: translate(0%, 3%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes cloud-bob {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  30% {
+    -webkit-transform: translate(0%, -3%);
+            transform: translate(0%, -3%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 3%);
+            transform: translate(0%, 3%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@-webkit-keyframes tail-bob {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  30% {
+    -webkit-transform: translate(5%, -10%);
+            transform: translate(5%, -10%);
+  }
+  70% {
+    -webkit-transform: translate(-5%, 10%);
+            transform: translate(-5%, 10%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes tail-bob {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  30% {
+    -webkit-transform: translate(5%, -10%);
+            transform: translate(5%, -10%);
+  }
+  70% {
+    -webkit-transform: translate(-5%, 10%);
+            transform: translate(-5%, 10%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
 }
 /*# sourceMappingURL=Thoughts.css.map */

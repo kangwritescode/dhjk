@@ -6,16 +6,17 @@
     width: 50%;
     @include flex-centered(column);
     justify-content: center;
-
+    
     .parts-container {
         position: relative;
         // left: 30%;
         height: 115px;
         @include flex-centered(column);
+        animation: cloud-bob 3s linear infinite;
 
         .cloud-part {
             position: absolute;
-            width: 20vw;
+            width: 115px;
             height: 12vh;
             border-radius: 50%;
             background: black;
@@ -53,16 +54,10 @@
 
         @media screen and (min-width: 700px) {
             .cloud-part {
-                width: 140px;
+                width: 115px;
                 height: 12vh;
             }
         }
-    }
-}
-
-@media screen and (min-width: 700px) {
-    .cloud {
-        // left: 100px;
     }
 }
 
@@ -77,29 +72,68 @@
     flex-direction: column;
     align-items: center;
 
+    
+
     .tail-one {
         height: 2.5vh;
         width: 2.5vh;
         border-radius: 20em;
         background: black;
+        animation: tail-bob 3s linear 0.7s infinite;
     }
     .tail-two {
         position: relative;
-        top: .7vh;
+        top: 0.7vh;
         height: 1.5vh;
         width: 1.5vh;
         right: 1vh;
         border-radius: 20em;
         background: black;
+        animation: tail-bob 3s linear 0.3s infinite;
     }
 }
 
-// .tail-two {
-//     position: relative;
-//     z-index: 999;
-//     height: 2vh;
-//     width: 2vh;
-//     border-radius: 20em;
-//     background: pink;
-//     // transform: translateX(400%);
-// }
+#construction {
+    position: absolute;
+    z-index: 10000;
+    text-align: center;
+    letter-spacing: 8px;
+    top: 10%;
+
+}
+
+@media screen and (min-width: 1000px) {
+    .tail {
+        right: 35%;
+    }
+}
+
+@keyframes cloud-bob {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    30% {
+        transform: translate(0%, -3%);
+    }
+    70% {
+        transform: translate(0%, 3%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes tail-bob {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    30% {
+        transform: translate(5%, -10%);
+    }
+    70% {
+        transform: translate(-5%, 10%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}

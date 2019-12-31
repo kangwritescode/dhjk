@@ -3,6 +3,7 @@ import './Landing.css'
 import head from '../../assets/head.png'
 import Logos from '../Logos/Logos'
 import Thoughts from '../Thoughts/Thoughts'
+import NavBar from '../NavBar/Navbar/NavBar'
 
 const Landing = props => {
   return (
@@ -16,8 +17,9 @@ const Landing = props => {
         <h6 id='landing-subtext'>Web Developer | Problem Solver | Artist</h6>
       </div>
       <Logos />
+      <NavBar/>
     </React.Fragment>
   )
 }
 
-export default Landing
+export default Landing;

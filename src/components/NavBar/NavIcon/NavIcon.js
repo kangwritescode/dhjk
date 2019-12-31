@@ -1,23 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import './NavIcon.css'
 
-const NavIcon = props => {
-  const [focused, setFocused] = useState(false)
+const NavIcon = ({focused, setFocused}) => {
+
   const [first, setFirst] = useState(true)
   const [second, setSecond] = useState(true)
   const [third, setThird] = useState(true)
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setFirst(true)
-  //   }, 3550)
-  //   setTimeout(() => {
-  //     setSecond(true)
-  //   }, 3600)
-  //   setTimeout(() => {
-  //     setThird(true)
-  //   }, 3650)
-  //   return () => {}
-  // }, [])
 
   return (
     <div className={`wrapper`}>
