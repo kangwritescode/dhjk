@@ -1,0 +1,83 @@
+@import "../../shared/fonts/fonts.scss";
+@import "../../shared/colors/colors.scss";
+
+.navButton {
+    position: absolute;
+    z-index: 5;
+    width: 100px;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+
+    .navButton__text {
+        position: relative;
+        z-index: -1;
+        display: inline-block;
+        opacity: 0;
+        font-family: $secondaryFont;
+        color: $colorTwo;
+        letter-spacing: 5px;
+        transition: all .2s ease-in;
+    }
+
+    &:hover {
+        .navButton__text {
+            opacity: 1;
+            transform: translateX(-90%);
+        }
+    }
+}
+
+.arrow {
+    cursor: pointer;
+    height: 300px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: transform 0.1s;
+    width: 80px;
+    background: $colorOne;
+
+    &:hover {
+        .arrow-top {
+            transform: rotate(60deg);
+        }
+        .arrow-bottom {
+            transform: rotate(-60deg);
+        }
+    }
+
+    $transition-time: 0.15s;
+
+    &-top,
+    &-bottom {
+        background-color: #666;
+        height: 2px;
+        left: -5px;
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        transition: transform 0.1s;
+
+        &:after {
+            background-color: #fff;
+            content: "";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transition: all $transition-time;
+        }
+    }
+
+    &-top {
+        transform: rotate(45deg);
+        transform-origin: bottom right;
+    }
+
+    &-bottom {
+        transform: rotate(-45deg);
+        transform-origin: top right;
+    }
+}

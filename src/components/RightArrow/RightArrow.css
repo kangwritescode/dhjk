@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+.navButton {
+  position: absolute;
+  z-index: 5;
+  width: 100px;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 200;
+}
+
+.navButton .navButton__text {
+  position: relative;
+  z-index: -1;
+  display: inline-block;
+  opacity: 0;
+  font-family: "Roboto Slab", serif;
+  color: #DCDCDD;
+  letter-spacing: 5px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.navButton:hover .navButton__text {
+  opacity: 1;
+  -webkit-transform: translateX(-90%);
+          transform: translateX(-90%);
+}
+
+.arrow {
+  cursor: pointer;
+  height: 300px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  width: 80px;
+  background: #272727;
+}
+
+.arrow:hover .arrow-top {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.arrow:hover .arrow-bottom {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.arrow-top, .arrow-bottom {
+  background-color: #666;
+  height: 2px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.arrow-top:after, .arrow-bottom:after {
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.arrow-top {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.arrow-bottom {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+/*# sourceMappingURL=RightArrow.css.map */

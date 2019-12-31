@@ -4,10 +4,12 @@ import head from '../../assets/head.png'
 import Logos from '../Logos/Logos'
 import Thoughts from '../Thoughts/Thoughts'
 import NavBar from '../NavBar/Navbar/NavBar'
+import RightArrow from '../RightArrow/RightArrow'
 
 const Landing = props => {
   return (
     <React.Fragment>
+      <RightArrow url='?' text='portfolio' />
       <div className='landing'>
         <div className={`thoughts-container`}>
           <Thoughts />
@@ -17,9 +19,9 @@ const Landing = props => {
         <h6 id='landing-subtext'>Web Developer | Problem Solver | Artist</h6>
       </div>
       <Logos />
-      <NavBar/>
+      <NavBar />
     </React.Fragment>
   )
 }
 
-export default Landing;
+export default Landing
