@@ -16,7 +16,7 @@
 
         .cloud-part {
             position: absolute;
-            width: 115px;
+            width: 100px;
             height: 12vh;
             border-radius: 50%;
             background: black;
@@ -54,7 +54,7 @@
 
         @media screen and (min-width: 700px) {
             .cloud-part {
-                width: 115px;
+                width: 120px;
                 height: 12vh;
             }
         }
