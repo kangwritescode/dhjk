@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
 .App {
+  position: relative;
+  overflow: hidden;
   color: #DCDCDD;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Titillium Web", sans-serif;
+  font-style: 'black';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

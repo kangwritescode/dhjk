@@ -27,6 +27,8 @@
     font-size: 15vw;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    line-height: 1.3em;
+    letter-spacing: 1px;
 }
 
 #landing-subtext {
@@ -35,6 +37,8 @@
     font-size: 4vw;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    font-family: $secondaryFont;
+
 }
 
 @media screen and (min-width: 700px) {

@@ -4,6 +4,8 @@ import './components/Landing/Landing'
 import Landing from './components/Landing/Landing'
 import NavIcon from './components/NavBar/NavIcon/NavIcon'
 import Logos from './components/Logos/Logos'
+import Portfolio from './components/Portfolio/Portfolio'
+import NavBar from './components/NavBar/Navbar/NavBar'
 
 function App () {
   useEffect(() => {
@@ -12,7 +14,9 @@ function App () {
 
   return (
     <div className='App'>
-      <Landing />
+      {/* <Landing /> */}
+      <Portfolio />
+      <NavBar />
     </div>
   )
 }

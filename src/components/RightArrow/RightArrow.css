@@ -13,14 +13,15 @@
 
 .navButton .navButton__text {
   position: relative;
-  z-index: -1;
   display: inline-block;
   opacity: 0;
   font-family: "Roboto Slab", serif;
   color: #DCDCDD;
   letter-spacing: 5px;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  -webkit-transform: translateX(-55%);
+          transform: translateX(-55%);
 }
 
 .navButton:hover .navButton__text {
@@ -42,7 +43,6 @@
   transition: transform 0.1s;
   transition: transform 0.1s, -webkit-transform 0.1s;
   width: 80px;
-  background: #272727;
 }
 
 .arrow:hover .arrow-top {

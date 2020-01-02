@@ -3,8 +3,11 @@
 @import "./shared/fonts/fonts.scss";
 
 .App {
+    position: relative;
+    overflow: hidden;
     color: $colorTwo;
     font-family: $primaryFont;
+    font-style: 'black';
     @include flex-centered(column);
 }
 

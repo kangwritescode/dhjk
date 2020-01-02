@@ -5,6 +5,7 @@ import Logos from '../Logos/Logos'
 import Thoughts from '../Thoughts/Thoughts'
 import NavBar from '../NavBar/Navbar/NavBar'
 import RightArrow from '../RightArrow/RightArrow'
+import { AwesomeButton } from 'react-awesome-button'
 
 const Landing = props => {
   return (
@@ -19,7 +20,6 @@ const Landing = props => {
         <h6 id='landing-subtext'>Web Developer | Problem Solver | Artist</h6>
       </div>
       <Logos />
-      <NavBar />
     </React.Fragment>
   )
 }

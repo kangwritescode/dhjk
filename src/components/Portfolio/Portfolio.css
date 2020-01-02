@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
+.portfolio {
+  position: relative;
+  background: #272727;
+  height: 100vh;
+  width: 100vw;
+}
+
+.portfolio header {
+  padding: 1.5em 15% 2em 15%;
+  font-size: 4em;
+  line-height: .65em;
+}
+
+.portfolio header span {
+  font-size: .4em;
+  font-family: "Roboto Slab", serif;
+  color: #a5a5a5;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #6e6e6e;
+}
+
+.section .section__info {
+  width: 30%;
+  margin-right: 10%;
+  height: 15em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 1px solid white;
+}
+
+.section .section__photo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+/*# sourceMappingURL=Portfolio.css.map */

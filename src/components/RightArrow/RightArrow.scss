@@ -12,13 +12,13 @@
 
     .navButton__text {
         position: relative;
-        z-index: -1;
         display: inline-block;
         opacity: 0;
         font-family: $secondaryFont;
         color: $colorTwo;
         letter-spacing: 5px;
-        transition: all .2s ease-in;
+        transition: all .1s ease-in;
+        transform: translateX(-55%);
     }
 
     &:hover {
@@ -38,7 +38,7 @@
     transform: translateX(-50%) translateY(-50%);
     transition: transform 0.1s;
     width: 80px;
-    background: $colorOne;
+    // background: $colorOne;
 
     &:hover {
         .arrow-top {
