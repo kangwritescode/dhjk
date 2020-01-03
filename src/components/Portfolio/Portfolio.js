@@ -17,12 +17,14 @@ const Portfolio = props => {
             Also, you can do this and that and wow cool beans.
           </p>
           <div className={`section__tags`}>
-            <span>HTML</span>
-            <span>CSS</span>
+            <span className='section__tag'>HTML</span>
+            <span className='section__tag'>CSS</span>
           </div>
           <div className={`section__buttons`}>
-            <button>Live Demo</button>
-            <button>View Source</button>
+            <button className={`live-demo`}>
+              Live Demo <i class='fas fa-external-link-alt'></i>
+            </button>
+            <button className={`view-source`}>View Source</button>
           </div>
         </div>
         <div className={`slider`}>

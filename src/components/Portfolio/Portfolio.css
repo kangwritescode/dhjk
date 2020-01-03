@@ -35,8 +35,8 @@
 
 .section .section__info {
   padding: 1em 0em;
-  width: 30%;
-  margin-right: 10%;
+  width: 25%;
+  position: relative;
   height: 15em;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -63,6 +63,29 @@
 
 .section .section__info .section__description {
   font-family: "Roboto Slab", serif;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.section .section__info .section__tags {
+  margin: 1em 0em;
+}
+
+.section .section__info .section__tags .section__tag {
+  border: 1px solid #5628EE;
+  border-radius: .3em;
+  padding: 3px 12px;
+  font-size: .8em;
+}
+
+.section .section__info .section__buttons .live-demo {
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+  border: none;
+  background: #EDB82F;
+  padding: 6px 12px;
+  border-radius: .3em;
+  font-size: .9em;
 }
 
 .section .slider {
@@ -70,8 +93,8 @@
   height: 20em;
   width: 30em;
   top: 50%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, calc(-50% - 10px));
+          transform: translate(50%, calc(-50% - 10px));
 }
 
 .section .slider .slider__macTabs {
