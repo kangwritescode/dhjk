@@ -11,18 +11,27 @@ const Portfolio = props => {
       </header>
       <section className='section'>
         <div className={`section__info`}>
-          <h3>BARZ</h3>
-          <p>
+          <h3 className='section__title'>BARZ</h3>
+          <p className='section__description'>
             barz is an app where you can rap and stuff and it's pretty dope.
             Also, you can do this and that and wow cool beans.
           </p>
-          <div className={`section__tags`}><span>HTML</span><span>CSS</span></div>
+          <div className={`section__tags`}>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
           <div className={`section__buttons`}>
-              <button>Live Demo</button>
-              <button>View Source</button>
+            <button>Live Demo</button>
+            <button>View Source</button>
           </div>
         </div>
-        <img className='section__photo' alt='' src='https://picsum.photos/600/400'></img>
+        <div className={`slider`}>
+          <div className={`slider__macTabs`}></div>
+          <div className={`slider__photos`}>
+            <div className={`blue`}></div>
+            <div className={`red`}></div>
+          </div>
+        </div>
       </section>
     </div>
   )

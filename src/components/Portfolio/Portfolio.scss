@@ -1,18 +1,21 @@
-@import '../../shared/colors/colors.scss';
-@import '../../shared/fonts/fonts.scss';
+@import "../../shared/colors/colors.scss";
+@import "../../shared/fonts/fonts.scss";
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
 
 .portfolio {
     position: relative;
     background: $colorOne;
     height: 100vh;
     width: 100vw;
+    overflow: auto;
 
     header {
-        padding: 1.5em 15% 2em 15%;
+        padding: 1.5em 15% 1.6em 15%;
         font-size: 4em;
-        line-height: .65em;
+        line-height: 0.65em;
         span {
-            font-size: .4em;
+            font-size: 0.4em;
             font-family: $secondaryFont;
             color: rgb(165, 165, 165);
         }
@@ -23,18 +26,57 @@
     display: flex;
     position: relative;
     justify-content: center;
-    background: rgb(110, 110, 110);
+    background: rgb(24, 24, 24);
 
     .section__info {
+        padding: 1em 0em;
         width: 30%;
         margin-right: 10%;
         height: 15em;
         transform: translateX(-50%);
-        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .section__title {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 2em;
+            margin-block-end: 0px;
+            margin-block-start: 0px;
+        }
+        .section__description {
+            font-family: $secondaryFont;
+        }
     }
-    .section__photo {
+    .slider {
         position: absolute;
+        height: 20em;
+        width: 30em;
         top: 50%;
         transform: translate(50%, -50%);
+
+        .slider__macTabs {
+            width: 100%;
+            height: 10px;
+            background: white;
+        }
+        .slider__photos {
+            width: 100%;
+            height: calc(100% - 10px);
+            display: flex;
+            .blue {
+                position: absolute;
+                background: rgb(15, 168, 206);
+                height: 100%;
+                width: 100%;
+            }
+            .red {
+                transform: translateX(100%);
+                position: absolute;
+                background: rgb(226, 83, 83);
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 }
