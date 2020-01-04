@@ -14,8 +14,8 @@ function App () {
 
   return (
     <div className='App'>
-      {/* <Landing /> */}
-      <Portfolio />
+      <Landing />
+      {/* <Portfolio /> */}
       <NavBar />
     </div>
   )
