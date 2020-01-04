@@ -1,0 +1,100 @@
+.container h1 {
+  font-size: 40px;
+  line-height: 40px;
+  color: #cfcfcf;
+}
+
+.container h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.support {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.support svg {
+  margin-top: -3px;
+}
+
+.container {
+  display: block;
+  padding: 40px 0 20px;
+}
+
+.container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.container h1 {
+  margin-left: 8px;
+}
+
+.container h1 span {
+  display: inline-block;
+}
+
+.container h1 span:first-child {
+  margin-right: 10px;
+  color: #61dafb;
+}
+
+@media all and (max-width: 1125px) {
+  .container h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .container h1 {
+    font-size: 28px;
+  }
+}
+
+@media all and (max-width: 535px) {
+  .container h1 {
+    font-size: 26px;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .container h1 {
+    font-size: 46px;
+  }
+  .container h1 span:nth-child(2) {
+    display: none;
+  }
+}
+
+.container h2 {
+  margin-bottom: 4px;
+}
+
+.container h2 strong {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.container h2 span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=header.css.map */

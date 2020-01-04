@@ -1,0 +1,109 @@
+.container > span, .container > span:before {
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.container {
+  --size: 44px;
+  --ellipse: calc(var(--size) / 2);
+  --circle: calc(var(--ellipse) / 10);
+  --speed: 2;
+  --background: #61dafb;
+  --angle: 66deg;
+  display: block;
+  height: var(--size);
+  position: relative;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: var(--size);
+  z-index: 1000;
+}
+
+.container:before {
+  content: ' ';
+  background-color: var(--background);
+  border-radius: calc(var(--size) / 12);
+  display: block;
+  height: calc(var(--size) / 6);
+  left: calc(50% - (var(--size) / 12));
+  position: absolute;
+  top: calc(50% - (var(--size) / 12));
+  width: calc(var(--size) / 6);
+  z-index: 1;
+}
+
+.container > span {
+  width: calc(var(--ellipse) * 2);
+  height: calc(var(--ellipse) * 2);
+  border: 2.75px var(--background) solid;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container > span:before {
+  content: ' ';
+  width: calc(var(--circle) * 2);
+  height: calc(var(--circle) * 2);
+  -webkit-animation: path linear infinite;
+          animation: path linear infinite;
+  background: var(--background);
+  display: block;
+}
+
+.container > span:nth-child(1) {
+  -webkit-transform: rotateZ(60deg) rotateY(var(--angle));
+          transform: rotateZ(60deg) rotateY(var(--angle));
+}
+
+.container > span:nth-child(1):before {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.container > span:nth-child(2) {
+  -webkit-transform: rotateZ(120deg) rotateY(var(--angle));
+          transform: rotateZ(120deg) rotateY(var(--angle));
+}
+
+.container > span:nth-child(2):before {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.container > span:nth-child(3) {
+  -webkit-transform: rotateZ(180deg) rotateY(var(--angle));
+          transform: rotateZ(180deg) rotateY(var(--angle));
+}
+
+.container > span:nth-child(3):before {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes path {
+  from {
+    -webkit-transform: rotateZ(0) translateX(22px) rotateZ(0) rotateY(var(--angle));
+            transform: rotateZ(0) translateX(22px) rotateZ(0) rotateY(var(--angle));
+  }
+  to {
+    -webkit-transform: rotateZ(360deg) translateX(22px) rotateZ(-360deg) rotateY(var(--angle));
+            transform: rotateZ(360deg) translateX(22px) rotateZ(-360deg) rotateY(var(--angle));
+  }
+}
+
+@keyframes path {
+  from {
+    -webkit-transform: rotateZ(0) translateX(22px) rotateZ(0) rotateY(var(--angle));
+            transform: rotateZ(0) translateX(22px) rotateZ(0) rotateY(var(--angle));
+  }
+  to {
+    -webkit-transform: rotateZ(360deg) translateX(22px) rotateZ(-360deg) rotateY(var(--angle));
+            transform: rotateZ(360deg) translateX(22px) rotateZ(-360deg) rotateY(var(--angle));
+  }
+}
+/*# sourceMappingURL=react-logo.css.map */

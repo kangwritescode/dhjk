@@ -1,0 +1,49 @@
+.container {
+  display: block;
+  margin-top: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.container img {
+  max-width: 260px;
+  width: 80%;
+  margin-bottom: 8px;
+}
+
+.container small {
+  display: block;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.follow {
+  position: relative;
+  margin-top: 20px;
+}
+
+.follow h5 {
+  margin-bottom: 16px;
+}
+
+.follow hr {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 1px;
+  width: 50%;
+  max-width: 120px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.follow a,
+.follow button {
+  margin: 0 5px;
+  --button-medium-width: 130px;
+}
+
+.follow a:nth-child(4) svg,
+.follow button:nth-child(4) svg {
+  margin-top: -3px;
+}
+/*# sourceMappingURL=footer.css.map */

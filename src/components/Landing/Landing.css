@@ -37,32 +37,36 @@
 #landing-header {
   position: relative;
   z-index: 1;
-  font-size: 15vw;
+  font-size: 7vw;
   -webkit-margin-after: 0px;
           margin-block-end: 0px;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
-  line-height: 1.3em;
+  line-height: 1.5em;
   letter-spacing: 1px;
 }
 
 #landing-subtext {
   position: relative;
   z-index: 1;
-  font-size: 4vw;
+  line-height: 1.8em;
+  font-size: 1em;
   -webkit-margin-after: 0px;
           margin-block-end: 0px;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
+  width: 80%;
+  text-align: center;
   font-family: "Roboto Slab", serif;
+  color: #afafaf;
 }
 
 @media screen and (min-width: 700px) {
   #landing-header {
-    font-size: 6.5em;
+    font-size: 3em;
   }
   #landing-subtext {
-    font-size: 1.7em;
+    font-size: 1.3em;
   }
 }
 
