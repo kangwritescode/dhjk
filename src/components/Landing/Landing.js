@@ -21,7 +21,7 @@ const Landing = props => {
         <h6 id='landing-subtext'>
           I'm a recent{' '}
           <a
-          className='underline--magical'
+          className='underline--magical--bears'
             target='_blank'
             href='https://drive.google.com/open?id=1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl'
           >

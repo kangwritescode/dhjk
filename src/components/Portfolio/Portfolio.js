@@ -30,7 +30,11 @@ const Portfolio = props => {
           </div>
         </div>
         <div className={`slider`}>
-          <div className={`slider__macTabs`}></div>
+          <div className={`slider__macTabs`}>
+            <div className={`slider__button close`}></div>
+            <div className={`slider__button minimize`}></div>
+            <div className={`slider__button maximize`}></div>
+          </div>
           <div className={`slider__photos`}>
             <div className={`blue`}></div>
           </div>

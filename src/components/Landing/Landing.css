@@ -42,8 +42,7 @@
           margin-block-end: 0px;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
-  line-height: 1.5em;
-  letter-spacing: 1px;
+  line-height: 1.7em;
 }
 
 #landing-subtext {
@@ -58,7 +57,8 @@
   width: 80%;
   text-align: center;
   font-family: "Roboto Slab", serif;
-  color: #afafaf;
+  color: #c2c2c2;
+  font-weight: lighter;
 }
 
 #landing-subtext a {
@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 700px) {
   #landing-header {
-    font-size: 3em;
+    font-size: 3.2em;
   }
   #landing-subtext {
     font-size: 1.3em;
@@ -103,23 +103,8 @@
           flex-direction: column;
 }
 
-.underline--magical--one {
-  background-image: linear-gradient(120deg, rgba(255, 217, 0, 0.726) 0%, rgba(173, 216, 230, 0) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 100%;
-  -webkit-transition: background-size 0.25s ease-in;
-  transition: background-size 0.25s ease-in;
-  cursor: pointer;
-}
-
-.underline--magical--one:hover {
-  background-image: linear-gradient(120deg, rgba(255, 217, 0, 0.548) 0%, rgba(173, 216, 230, 0.507) 100%);
-  background-size: 100% 88%;
-}
-
 .underline--magical {
-  background-image: linear-gradient(120deg, rgba(173, 216, 230, 0.658) 0%, rgba(255, 217, 0, 0) 100%);
+  background-image: linear-gradient(120deg, #5628EE 0%, rgba(173, 216, 230, 0) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 100%;
@@ -129,7 +114,22 @@
 }
 
 .underline--magical:hover {
-  background-image: linear-gradient(120deg, rgba(255, 217, 0, 0.548) 0%, rgba(173, 216, 230, 0.507) 100%);
+  background-image: linear-gradient(120deg, #5628EE 0%, #DCDCDD 100%);
+  background-size: 100% 88%;
+}
+
+.underline--magical--bears {
+  background-image: linear-gradient(120deg, rgba(173, 216, 230, 0.658) 0%, rgba(255, 217, 0, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  -webkit-transition: background-size 0.25s ease-in;
+  transition: background-size 0.25s ease-in;
+  cursor: pointer;
+}
+
+.underline--magical--bears:hover {
+  background-image: linear-gradient(120deg, rgba(133, 203, 226, 0.945) 0%, rgba(255, 217, 0, 0.788) 100%);
   background-size: 100% 88%;
 }
 /*# sourceMappingURL=Landing.css.map */
