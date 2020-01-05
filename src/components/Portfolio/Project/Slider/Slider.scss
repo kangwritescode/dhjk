@@ -4,8 +4,8 @@
     height: 22em;
     width: 32em;
     // top: 50%;
-    transform: translate(0px, -10px);
-
+    overflow: hidden;
+    // transform: translate(0px, -10px);
 
     &__macTabs {
         width: 100%;
@@ -39,13 +39,12 @@
         width: 100%;
         object-fit: cover;
     }
-    .slider__photos {
+    &__photos {
         position: relative;
         width: 100%;
         height: calc(100% - 10px);
         display: flex;
 
-        
         .blue {
             position: absolute;
             background: rgb(15, 168, 206);

@@ -3,8 +3,7 @@
   left: 50%;
   height: 22em;
   width: 32em;
-  -webkit-transform: translate(0px, -10px);
-          transform: translate(0px, -10px);
+  overflow: hidden;
 }
 
 .slider__macTabs {
@@ -50,7 +49,7 @@
      object-fit: cover;
 }
 
-.slider .slider__photos {
+.slider__photos {
   position: relative;
   width: 100%;
   height: calc(100% - 10px);
@@ -59,14 +58,14 @@
   display: flex;
 }
 
-.slider .slider__photos .blue {
+.slider__photos .blue {
   position: absolute;
   background: #0fa8ce;
   height: 100%;
   width: 100%;
 }
 
-.slider .slider__photos .red {
+.slider__photos .red {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   position: absolute;

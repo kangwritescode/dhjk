@@ -2,8 +2,23 @@
 import React, { useState, useEffect } from 'react'
 import './Project.css'
 import Slider from './Slider/Slider'
+import ProjectButton from './ProjectButton/ProjectButton'
 
 const Project = ({ tags, title, description, link, source, photos }) => {
+  const projectButtons = [
+    {
+      href: link,
+      className: 'live-demo',
+      text: 'Live Demo',
+      fontAwesome: 'fas fa-external-link-alt'
+    },
+    {
+      href: source,
+      className: 'view-source',
+      text: 'View Source',
+      fontAwesome: 'fab fa-github'
+    }
+  ]
   return (
     <section className='section'>
       <div className={`section__banner`}>
@@ -16,16 +31,14 @@ const Project = ({ tags, title, description, link, source, photos }) => {
             ))}
           </div>
           <div className={`section__buttons`}>
-            <a href={link} target='_blank'>
-              <button className={`live-demo`}>
-                Live Demo <i class='fas fa-external-link-alt'></i>
-              </button>
-            </a>
-            <a target='_blank' href={source}>
-              <button className={`view-source`}>
-                View Source <i class='fab fa-github' aria-hidden='true'></i>
-              </button>
-            </a>
+            {projectButtons.map(({ href, className, text, fontAwesome }) => (
+              <ProjectButton
+                href={href}
+                className={className}
+                text={text}
+                fontAwesome={fontAwesome}
+              />
+            ))}
           </div>
         </div>
       </div>
