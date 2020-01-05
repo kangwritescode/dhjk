@@ -4,6 +4,8 @@
   height: 22em;
   width: 32em;
   overflow: hidden;
+  -webkit-transform: translate(0px, -5px);
+          transform: translate(0px, -5px);
 }
 
 .slider__macTabs {
@@ -56,6 +58,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .slider__photos .blue {
@@ -72,5 +76,41 @@
   background: #e25353;
   height: 100%;
   width: 100%;
+}
+
+.slider__left-panel {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.589)), to(transparent));
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 0.589), transparent);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.slider__left-panel:hover {
+  opacity: 1;
+}
+
+.slider__right-panel {
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  width: 200px;
+  height: 100%;
+  width: 50%;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+  opacity: 0;
+  cursor: pointer;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.589)), to(transparent));
+  background: linear-gradient(0.75turn, rgba(0, 0, 0, 0.589), transparent);
+}
+
+.slider__right-panel:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=Slider.css.map */

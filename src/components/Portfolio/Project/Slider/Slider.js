@@ -11,6 +11,8 @@ const Slider = ({ photos }) => {
         <div className={`slider__button maximize`}></div>
       </div>
       <div className={`slider__photos`}>
+        <div className={`slider__left-panel`}></div>
+        <div className={`slider__right-panel`}></div>
         {photos.map(photo => (
           <img className={'slider__img'} alt='' src={photo}></img>
         ))}

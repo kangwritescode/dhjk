@@ -21,22 +21,19 @@ const Landing = props => {
         <h6 id='landing-subtext'>
           I'm a recent{' '}
           <a
-          className='underline--magical--bears'
+            className='underline--magical--bears'
             target='_blank'
             href='https://drive.google.com/open?id=1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl'
           >
             UC Berkeley graduate
           </a>{' '}
           and Web Developer. <br />
-          Articles, labs, and more can be found in the <a className='underline--magical'>
-            code laboratory.
-          </a>{' '}
-          <br />
-          You can find internet things I've made on the <a className='underline--magical'>
-            portfolio page.
-          </a>{' '}
-          <br />
-          Best reached any time at <a className='underline--magical'>davidhjkang@berkeley.edu.</a>
+          Articles, labs, and more can be found in the{' '}
+          <a className='underline--magical'>code laboratory.</a> <br />
+          You can find internet things I've made on the{' '}
+          <a className='underline--magical'>portfolio page.</a> <br />
+          Best reached any time at{' '}
+          <a className='underline--magical'>davidhjkang@berkeley.edu.</a>
         </h6>
       </div>
       <Logos />

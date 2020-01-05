@@ -5,7 +5,7 @@
     width: 32em;
     // top: 50%;
     overflow: hidden;
-    // transform: translate(0px, -10px);
+    transform: translate(0px, -5px);
 
     &__macTabs {
         width: 100%;
@@ -44,6 +44,7 @@
         width: 100%;
         height: calc(100% - 10px);
         display: flex;
+        transition: all 0.3s ease-in-out;
 
         .blue {
             position: absolute;
@@ -57,6 +58,34 @@
             background: rgb(226, 83, 83);
             height: 100%;
             width: 100%;
+        }
+    }
+    &__left-panel {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 50%;
+        transition: 0.1s all ease-in;
+        background: linear-gradient(0.25turn, rgba(0, 0, 0, 0.589), transparent);
+        opacity: 0;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__right-panel {
+        z-index: 1;
+        position: absolute;
+        right: 0px;
+        width: 200px;
+        height: 100%;
+        width: 50%;
+        transition: 0.1s all ease-in;
+        opacity: 0;
+        cursor: pointer;
+        background: linear-gradient(0.75turn, rgba(0, 0, 0, 0.589), transparent);
+        &:hover {
+            opacity: 1;
         }
     }
 }
