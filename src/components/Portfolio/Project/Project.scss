@@ -1,0 +1,141 @@
+@import "../../../shared/colors/colors.scss";
+@import "../../../shared/fonts/fonts.scss";
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+
+.section {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__banner {
+        position: absolute;
+        background: rgb(24, 24, 24);
+        padding: 2.2em 15%;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .section__info {
+        // border: 1px solid white;
+        position: relative;
+        width: 22em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .section__title {
+            font-family: "Permanent Marker", cursive;
+            font-size: 2em;
+            margin-block-end: 0.3em;
+            margin-block-start: 0px;
+        }
+        .section__description {
+            font-size: 0.9em;
+            font-family: $secondaryFont;
+            margin-block-start: 0px;
+            margin-block-end: 1.3em;
+        }
+        .section__tags {
+            .section__tag {
+                display: inline-block;
+                font-family: $secondaryFont;
+                border: 1px solid $colorFour;
+                border-radius: 0.3em;
+                padding: 4px 10px;
+                font-size: 0.8em;
+                margin-right: 11px;
+                margin-bottom: 1em;
+            }
+        }
+        .section__buttons {
+            margin: 8px 0px;
+            .live-demo {
+                font-family: $secondaryFont;
+                font-weight: bolder;
+                border: none;
+                background: $colorSix;
+                padding: 6px 12px;
+                border-radius: 0.3em;
+                font-size: 0.9em;
+                margin-right: 1em;
+                cursor: pointer;
+            }
+            .view-source {
+                font-family: $secondaryFont;
+                font-weight: bolder;
+                border: none;
+                background: rgb(0, 0, 0);
+                padding: 6px 12px;
+                border-radius: 0.3em;
+                color: $colorSix;
+                font-size: 0.9em;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.slider {
+    position: relative;
+    left: 50%;
+    height: 22em;
+    width: 32em;
+    // top: 50%;
+    transform: translate(0px, -10px);
+
+    &__macTabs {
+        width: 100%;
+        height: 20px;
+        background: white;
+        display: flex;
+        align-items: center;
+        .close {
+            background: rgb(235, 102, 102);
+        }
+        .minimize {
+            background: rgb(255, 217, 0);
+        }
+        .maximize {
+            background: rgb(24, 224, 124);
+        }
+    }
+    &__button {
+        height: 10px;
+        width: 10px;
+        border-radius: 10em;
+        margin-left: 5px;
+
+        &:first-child {
+            margin-left: 10px;
+        }
+    }
+    &__img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .slider__photos {
+        position: relative;
+        width: 100%;
+        height: calc(100% - 10px);
+        display: flex;
+
+        
+        .blue {
+            position: absolute;
+            background: rgb(15, 168, 206);
+            height: 100%;
+            width: 100%;
+        }
+        .red {
+            transform: translateX(100%);
+            position: absolute;
+            background: rgb(226, 83, 83);
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
