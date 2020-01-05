@@ -1,4 +1,4 @@
-@import "../../shared/colors/colors.scss";
+@import "../../shared/../../shared/colors/colors.scss";
 
 .wrapper {
     position: absolute;
@@ -49,8 +49,9 @@
     border-radius: 3px;
     content: "";
     display: block;
-    height: 3px;
-    margin: 7px;
+    height: 2px;
+    background: rgb(114, 114, 114);
+    margin: 8px;
     opacity: 1;
     transition: all 0.2s ease-in-out;
 }
