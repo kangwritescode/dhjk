@@ -14,12 +14,17 @@ const Portfolio = props => {
           <div className={`section__info`}>
             <h3 className='section__title'>BARZ</h3>
             <p className='section__description'>
-              barz is an app where you can rap and stuff and it's pretty dope.
-              Also, you can do this and that and wow cool beans.
+              BARZ is a gamified social network where rap fans can write, post, and vote on rap lyrics.
             </p>
             <div className={`section__tags`}>
-              <span className='section__tag'>HTML</span>
-              <span className='section__tag'>CSS</span>
+              <span className='section__tag'>HTML5</span>
+              <span className='section__tag'>CSS3</span>
+              <span className='section__tag'>Javascript</span>
+              <span className='section__tag'>Es6</span>
+              <span className='section__tag'>ReactJS</span>
+              <span className='section__tag'>Redux</span>
+              <span className='section__tag'>Firebase</span>
+              <span className='section__tag'>Sass</span>
             </div>
             <div className={`section__buttons`}>
               <button className={`live-demo`}>
@@ -40,25 +45,6 @@ const Portfolio = props => {
           </div>
         </div>
       </section>
-      {/* <section className='section'>
-        <div className={`section__info`}>
-          <h3 className='section__title'>BARZ</h3>
-          <p className='section__description'>
-            barz is an app where you can rap and stuff and it's pretty dope.
-            Also, you can do this and that and wow cool beans.
-          </p>
-          <div className={`section__tags`}>
-            <span className='section__tag'>HTML</span>
-            <span className='section__tag'>CSS</span>
-          </div>
-          <div className={`section__buttons`}>
-            <button className={`live-demo`}>
-              Live Demo <i class='fas fa-external-link-alt'></i>
-            </button>
-            <button className={`view-source`}>View Source</button>
-          </div>
-        </div>
-      </section> */}
     </div>
   )
 }

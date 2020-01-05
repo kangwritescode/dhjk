@@ -10,7 +10,7 @@
     overflow: auto;
 
     header {
-        padding: 1.5em 15% 1.4em 15%;
+        padding: 1.5em 15% 1.3em 15%;
         font-size: 4em;
         line-height: 0.65em;
         span {
@@ -28,10 +28,9 @@
 
     &__banner {
         position: absolute;
-        background: rgb(56, 56, 56);
-        padding: 0px 15%;
+        background: rgb(24, 24, 24);
+        padding: 2.2em 15%;
         width: 100vw;
-        height: 18em;
         display: flex;
         align-items: center;
     }
@@ -39,7 +38,7 @@
     .section__info {
         // border: 1px solid white;
         position: relative;
-        width: 24em;
+        width: 22em;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -48,25 +47,29 @@
         .section__title {
             font-family: "Permanent Marker", cursive;
             font-size: 2em;
-            margin-block-end: .5em;
+            margin-block-end: 0.3em;
             margin-block-start: 0px;
         }
         .section__description {
+            font-size: 0.9em;
             font-family: $secondaryFont;
             margin-block-start: 0px;
-            margin-block-end: 1em;
+            margin-block-end: 1.3em;
         }
         .section__tags {
             .section__tag {
+                display: inline-block;
+                font-family: $secondaryFont;
                 border: 1px solid $colorFour;
                 border-radius: 0.3em;
-                padding: 3px 12px;
+                padding: 4px 10px;
                 font-size: 0.8em;
-                margin-right: 1em;
+                margin-right: 11px;
+                margin-bottom: 1em;
             }
-            margin-bottom: 1em;
         }
         .section__buttons {
+            margin: 8px 0px;
             .live-demo {
                 font-family: $secondaryFont;
                 font-weight: bolder;
@@ -94,7 +97,7 @@
 .slider {
     position: relative;
     left: 50%;
-    height: 20em;
+    height: 22em;
     width: 30em;
     // top: 50%;
     transform: translate(0px, -10px);

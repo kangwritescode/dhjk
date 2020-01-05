@@ -11,7 +11,7 @@
 }
 
 .portfolio header {
-  padding: 1.5em 15% 1.4em 15%;
+  padding: 1.5em 15% 1.3em 15%;
   font-size: 4em;
   line-height: 0.65em;
 }
@@ -34,10 +34,9 @@
 
 .section__banner {
   position: absolute;
-  background: #383838;
-  padding: 0px 15%;
+  background: #181818;
+  padding: 2.2em 15%;
   width: 100vw;
-  height: 18em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +47,7 @@
 
 .section .section__info {
   position: relative;
-  width: 24em;
+  width: 22em;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,30 +64,34 @@
 .section .section__info .section__title {
   font-family: "Permanent Marker", cursive;
   font-size: 2em;
-  -webkit-margin-after: .5em;
-          margin-block-end: .5em;
+  -webkit-margin-after: 0.3em;
+          margin-block-end: 0.3em;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
 }
 
 .section .section__info .section__description {
+  font-size: 0.9em;
   font-family: "Roboto Slab", serif;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-}
-
-.section .section__info .section__tags {
-  margin-bottom: 1em;
+  -webkit-margin-after: 1.3em;
+          margin-block-end: 1.3em;
 }
 
 .section .section__info .section__tags .section__tag {
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
   border: 1px solid #5628EE;
   border-radius: 0.3em;
-  padding: 3px 12px;
+  padding: 4px 10px;
   font-size: 0.8em;
-  margin-right: 1em;
+  margin-right: 11px;
+  margin-bottom: 1em;
+}
+
+.section .section__info .section__buttons {
+  margin: 8px 0px;
 }
 
 .section .section__info .section__buttons .live-demo {
@@ -116,7 +119,7 @@
 .slider {
   position: relative;
   left: 50%;
-  height: 20em;
+  height: 22em;
   width: 30em;
   -webkit-transform: translate(0px, -10px);
           transform: translate(0px, -10px);
