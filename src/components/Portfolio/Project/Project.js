@@ -1,8 +1,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState, useEffect } from 'react'
 import './Project.css'
+import Slider from './Slider/Slider'
 
-const Project = ({ tags, title, description, link, source }) => {
+const Project = ({ tags, title, description, link, source, photos }) => {
   return (
     <section className='section'>
       <div className={`section__banner`}>
@@ -28,21 +29,7 @@ const Project = ({ tags, title, description, link, source }) => {
           </div>
         </div>
       </div>
-      <div className={`slider`}>
-        <div className={`slider__macTabs`}>
-          <div className={`slider__button close`}></div>
-          <div className={`slider__button minimize`}></div>
-          <div className={`slider__button maximize`}></div>
-        </div>
-        <div className={`slider__photos`}>
-          <img
-            className={'slider__img'}
-            alt=''
-            src='https://i.imgur.com/Qv8FqEb.png'
-          ></img>
-          {/* <div className={`blue`}></div> */}
-        </div>
-      </div>
+      <Slider photos={photos} />
     </section>
   )
 }

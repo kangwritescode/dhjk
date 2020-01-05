@@ -19,7 +19,8 @@ const Portfolio = props => {
         'BARZ is a gamified social network where rap fans can write, post, and vote on rap lyrics.',
       title: 'BARZ',
       link: 'https://writebarz.com/recruit-david',
-      source: 'https://github.com/kangwritescode/barz'
+      source: 'https://github.com/kangwritescode/barz',
+      photos: ['https://i.imgur.com/t8bW41x.png']
     }
   ]
 
@@ -31,13 +32,7 @@ const Portfolio = props => {
         <span className='sub-header'>a collection of my internet things.</span>
       </header>
       {projects.map(project => (
-        <Project
-          tags={project.tags}
-          title={project.title}
-          description={project.description}
-          link={project.link}
-          source={project.source}
-        />
+        <Project {...project} />
       ))}
     </div>
   )
