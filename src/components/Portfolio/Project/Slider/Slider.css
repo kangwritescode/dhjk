@@ -1,9 +1,8 @@
 .slider {
   position: relative;
   left: 50%;
-  height: 22em;
-  width: 32em;
-  overflow: hidden;
+  height: 350px;
+  width: 500px;
   -webkit-transform: translate(0px, -5px);
           transform: translate(0px, -5px);
 }
@@ -52,7 +51,7 @@
 }
 
 .slider__photos {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: calc(100% - 10px);
   display: -webkit-box;

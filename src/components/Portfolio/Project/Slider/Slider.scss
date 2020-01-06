@@ -1,10 +1,10 @@
 .slider {
     position: relative;
     left: 50%;
-    height: 22em;
-    width: 32em;
+    height: 350px;
+    width: 500px;
     // top: 50%;
-    overflow: hidden;
+    // overflow: hidden;
     transform: translate(0px, -5px);
 
     &__macTabs {
@@ -40,7 +40,7 @@
         object-fit: cover;
     }
     &__photos {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: calc(100% - 10px);
         display: flex;

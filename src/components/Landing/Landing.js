@@ -11,7 +11,7 @@ import { AwesomeButton } from 'react-awesome-button'
 const Landing = props => {
   return (
     <React.Fragment>
-      <RightArrow url='?' text='portfolio' />
+      {/* <RightArrow url='portfolio' text='portfolio' /> */}
       <div className='landing'>
         <div className={`thoughts-container`}>
           <Thoughts />

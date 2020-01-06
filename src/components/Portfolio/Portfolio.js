@@ -22,9 +22,9 @@ const Portfolio = props => {
       source: 'https://github.com/kangwritescode/barz',
       photos: [
         'https://i.imgur.com/t8bW41x.png',
-        'https://i.imgur.com/u0UFoAa.png',
-        'https://i.imgur.com/RLuFQNU.png',
-        'https://i.imgur.com/Qv8FqEb.png'
+        // 'https://i.imgur.com/u0UFoAa.png',
+        // 'https://i.imgur.com/RLuFQNU.png',
+        // 'https://i.imgur.com/Qv8FqEb.png'
       ]
     }
   ]
