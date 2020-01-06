@@ -5,13 +5,14 @@ import head from '../../assets/head.png'
 import Logos from '../Logos/Logos'
 import Thoughts from '../Thoughts/Thoughts'
 import NavBar from '../NavBar/Navbar/NavBar'
-import RightArrow from '../RightArrow/RightArrow'
+import Arrow from '../Arrow/Arrow'
 import { AwesomeButton } from 'react-awesome-button'
 
 const Landing = props => {
   return (
     <React.Fragment>
-      {/* <RightArrow url='portfolio' text='portfolio' /> */}
+      <Arrow url='portfolio' text='portfolio' direction='right'/>
+      <Arrow url='portfolio' text='portfolio' direction='left'/>
       <div className='landing'>
         <div className={`thoughts-container`}>
           <Thoughts />
@@ -36,7 +37,7 @@ const Landing = props => {
           <a className='underline--magical'>davidhjkang@berkeley.edu.</a>
         </h6>
       </div>
-      <Logos />
+      {/* <Logos /> */}
     </React.Fragment>
   )
 }

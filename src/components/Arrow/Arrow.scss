@@ -2,13 +2,24 @@
 @import "../../shared/colors/colors.scss";
 
 .navButton {
+    // border: 1px solid white;
     position: absolute;
     z-index: 5;
     width: 100px;
-    right: 0px;
+
     top: 50%;
     transform: translateY(-50%);
     z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-right {
+        right: 0px;
+    }
+    &-left {
+        left: 0px;
+    }
 
     .navButton__text {
         position: relative;
@@ -16,15 +27,24 @@
         opacity: 0;
         font-family: $secondaryFont;
         color: $colorTwo;
-        letter-spacing: 5px;
-        transition: all .1s ease-in;
-        transform: translateX(-55%);
+        letter-spacing: 1px;
+        transition: all 0.1s ease-in;
+        &--right {
+            transform: translateX(-55%);
+        }
+        &--left {
+            transform: translateX(55%);
+        }
     }
 
     &:hover {
-        .navButton__text {
+        .navButton__text--right {
             opacity: 1;
             transform: translateX(-90%);
+        }
+        .navButton__text--left {
+            opacity: 1;
+            transform: translateX(90%);
         }
     }
 }
@@ -38,14 +58,22 @@
     transform: translateX(-50%) translateY(-50%);
     transition: transform 0.1s;
     width: 80px;
+    // border: 1px solid white;
     // background: $colorOne;
 
     &:hover {
-        .arrow-top {
+        .arrow-top--right {
             transform: rotate(60deg);
         }
-        .arrow-bottom {
+        .arrow-bottom--right {
             transform: rotate(-60deg);
+        }
+
+        .arrow-top--left {
+            transform: rotate(60deg) translateY(-2px);
+        }
+        .arrow-bottom--left {
+            transform: rotate(-60deg) translateY(2px);;
         }
     }
 
@@ -55,7 +83,6 @@
     &-bottom {
         background-color: #666;
         height: 2px;
-        left: -5px;
         position: absolute;
         top: 50%;
         width: 50%;
@@ -71,13 +98,35 @@
         }
     }
 
-    &-top {
+    &-top--right {
         transform: rotate(45deg);
         transform-origin: bottom right;
     }
 
-    &-bottom {
+    &-bottom--right {
         transform: rotate(-45deg);
         transform-origin: top right;
     }
+
+    &-top--left {
+        transform: rotate(45deg) translateY(-1px);
+        transform-origin: bottom left;
+    }
+    &-bottom--left {
+        transform: rotate(-45deg) translateY(1px);;
+        transform-origin: top left;
+    }
+
+    &-top--right,
+    &-bottom--right {
+        left: 5px;
+    }
+    &-top--left,
+    &-bottom--left {
+        right: 5px;
+    }
+}
+
+a {
+    text-decoration: none;
 }
