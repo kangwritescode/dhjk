@@ -32,8 +32,8 @@
   position: relative;
   display: inline-block;
   opacity: 0;
-  font-family: "Roboto Slab", serif;
-  color: #DCDCDD;
+  font-family: "Titillium Web", sans-serif;
+  color: #a8a8a8;
   letter-spacing: 1px;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
@@ -59,6 +59,12 @@
   opacity: 1;
   -webkit-transform: translateX(90%);
           transform: translateX(90%);
+}
+
+@media screen and (max-width: 950px) {
+  .navButton .navButton__text {
+    display: none;
+  }
 }
 
 .arrow {
@@ -152,6 +158,12 @@
 
 .arrow-top--left, .arrow-bottom--left {
   right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .navButton {
+    display: none;
+  }
 }
 
 a {

@@ -25,8 +25,8 @@
         position: relative;
         display: inline-block;
         opacity: 0;
-        font-family: $secondaryFont;
-        color: $colorTwo;
+        font-family: $primaryFont;
+        color: rgb(168, 168, 168);
         letter-spacing: 1px;
         transition: all 0.1s ease-in;
         &--right {
@@ -45,6 +45,12 @@
         .navButton__text--left {
             opacity: 1;
             transform: translateX(90%);
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .navButton__text {
+            display: none;
         }
     }
 }
@@ -73,7 +79,7 @@
             transform: rotate(60deg) translateY(-2px);
         }
         .arrow-bottom--left {
-            transform: rotate(-60deg) translateY(2px);;
+            transform: rotate(-60deg) translateY(2px);
         }
     }
 
@@ -113,7 +119,7 @@
         transform-origin: bottom left;
     }
     &-bottom--left {
-        transform: rotate(-45deg) translateY(1px);;
+        transform: rotate(-45deg) translateY(1px);
         transform-origin: top left;
     }
 
@@ -124,6 +130,12 @@
     &-top--left,
     &-bottom--left {
         right: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navButton {
+        display: none;
     }
 }
 

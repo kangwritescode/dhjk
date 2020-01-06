@@ -12,7 +12,7 @@ const Landing = props => {
   return (
     <React.Fragment>
       <Arrow url='portfolio' text='portfolio' direction='right'/>
-      <Arrow url='portfolio' text='portfolio' direction='left'/>
+      {/* <Arrow url='portfolio' text='portfolio' direction='left'/> */}
       <div className='landing'>
         <div className={`thoughts-container`}>
           <Thoughts />
@@ -37,7 +37,7 @@ const Landing = props => {
           <a className='underline--magical'>davidhjkang@berkeley.edu.</a>
         </h6>
       </div>
-      {/* <Logos /> */}
+      <Logos />
     </React.Fragment>
   )
 }
