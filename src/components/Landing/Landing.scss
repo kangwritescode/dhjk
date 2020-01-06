@@ -28,6 +28,7 @@
     margin-block-end: 0px;
     margin-block-start: 0px;
     line-height: 1.7em;
+
     // letter-spacing: 1px;
 }
 
@@ -43,26 +44,17 @@
     font-family: $secondaryFont;
     color: rgb(194, 194, 194);
     font-weight: lighter;
+    border: 1px solid white;
 
     a {
         color: inherit;
         text-decoration: none;
         // -webkit-text-stroke-width: 1px;
         letter-spacing: 1px;
-        transition: all .2s ease-in;
+        transition: all 0.2s ease-in;
         &:hover {
             color: black;
         }
-    }
-}
-
-
-@media screen and (min-width: 600px) {
-    #landing-header {
-        font-size: 3.2em;
-    }
-    #landing-subtext {
-        font-size: 1.3em;
     }
 }
 
@@ -82,23 +74,24 @@
     background-position: 0 100%;
     transition: background-size 0.25s ease-in;
     cursor: pointer;
+
     &:hover {
         background-image: linear-gradient(120deg, $colorFour 0%, $colorTwo 100%);
-      background-size: 100% 88%;
+        background-size: 100% 88%;
     }
-  }
-
-  .underline--magical--bears {
-    background-image: linear-gradient(120deg, rgba(173, 216, 230, 0.658) 0%, rgba(255, 217, 0, 0) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 100%;
-    transition: background-size 0.25s ease-in;
-    cursor: pointer;
-    &:hover {
+    &--bears {
+        background-image: linear-gradient(120deg, rgba(173, 216, 230, 0.658) 0%, rgba(255, 217, 0, 0) 100%);
+    }
+    &--bears:hover {
         background-image: linear-gradient(120deg, rgba(133, 203, 226, 0.945) 0%, rgba(255, 217, 0, 0.788) 100%);
-      background-size: 100% 88%;
     }
-  }
-  
-  
+}
+
+@media screen and (min-width: 600px) {
+    #landing-header {
+        font-size: 3.2em;
+    }
+    #landing-subtext {
+        font-size: 1.3em;
+    }
+}

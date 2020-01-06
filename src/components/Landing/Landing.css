@@ -59,27 +59,19 @@
   font-family: "Roboto Slab", serif;
   color: #c2c2c2;
   font-weight: lighter;
+  border: 1px solid white;
 }
 
 #landing-subtext a {
   color: inherit;
   text-decoration: none;
   letter-spacing: 1px;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 #landing-subtext a:hover {
   color: black;
-}
-
-@media screen and (min-width: 600px) {
-  #landing-header {
-    font-size: 3.2em;
-  }
-  #landing-subtext {
-    font-size: 1.3em;
-  }
 }
 
 .thoughts-container {
@@ -120,16 +112,18 @@
 
 .underline--magical--bears {
   background-image: linear-gradient(120deg, rgba(173, 216, 230, 0.658) 0%, rgba(255, 217, 0, 0) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 100%;
-  -webkit-transition: background-size 0.25s ease-in;
-  transition: background-size 0.25s ease-in;
-  cursor: pointer;
 }
 
 .underline--magical--bears:hover {
   background-image: linear-gradient(120deg, rgba(133, 203, 226, 0.945) 0%, rgba(255, 217, 0, 0.788) 100%);
-  background-size: 100% 88%;
+}
+
+@media screen and (min-width: 600px) {
+  #landing-header {
+    font-size: 3.2em;
+  }
+  #landing-subtext {
+    font-size: 1.3em;
+  }
 }
 /*# sourceMappingURL=Landing.css.map */

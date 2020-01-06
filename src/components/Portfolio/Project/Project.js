@@ -27,12 +27,13 @@ const Project = ({ tags, title, description, link, source, photos }) => {
           <p className='section__description'>{description}</p>
           <div className={`section__tags`}>
             {tags.map(tag => (
-              <span className='section__tag'>{tag}</span>
+              <span key={tag} className='section__tag'>{tag}</span>
             ))}
           </div>
           <div className={`section__buttons`}>
             {projectButtons.map(({ href, className, text, fontAwesome }) => (
               <ProjectButton
+                key={href}
                 href={href}
                 className={className}
                 text={text}

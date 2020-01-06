@@ -3,6 +3,7 @@
   left: 50%;
   height: 350px;
   width: 500px;
+  overflow: hidden;
   -webkit-transform: translate(0px, -5px);
           transform: translate(0px, -5px);
 }

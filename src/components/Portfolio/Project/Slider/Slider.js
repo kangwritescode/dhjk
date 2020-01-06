@@ -3,7 +3,35 @@ import './Slider.css'
 
 const Slider = ({ photos }) => {
   const [sliderXPos, setSliderXPos] = useState(0)
-  // photos.push(photos[photos.length - 1])
+  const [photosToMap, setPhotosToMap] = useState([])
+  const [photosCount, setPhotosCount] = useState(0)
+  const PHOTO_WIDTH = 500
+  useEffect(() => {
+    setPhotosToMap(photos)
+    setPhotosCount(photos.length)
+    return () => {}
+  }, [photos])
+
+  function slide (direction) {
+    console.log(sliderXPos)
+    let newPos
+    if (direction === 'left') {
+      if (sliderXPos === 0) {
+        newPos = (photosCount - 1) * PHOTO_WIDTH * -1
+      } else {
+        newPos = sliderXPos + 500
+      }
+    }
+    if (direction === 'right') {
+      if (sliderXPos === (photosCount - 1) * PHOTO_WIDTH * -1) {
+        newPos = 0
+      } else {
+        newPos = sliderXPos - 500
+      }
+    }
+    setSliderXPos(newPos)
+  }
+
   return (
     <div className={`slider`}>
       <div className={`slider__macTabs`}>
@@ -11,14 +39,17 @@ const Slider = ({ photos }) => {
         <div className={`slider__button minimize`}></div>
         <div className={`slider__button maximize`}></div>
       </div>
-      <div className={`slider__photos`} style={{ left: -sliderXPos }}>
-        <div
-          className={`slider__left-panel`}
-          onClick={() => setSliderXPos(100)}
-        ></div>
-        <div className={`slider__right-panel`}></div>
-        {photos.map(photo => (
-          <img className={'slider__img'} alt='' src={photo}></img>
+      <div className={`slider__left-panel`} onClick={() => slide('left')}></div>
+      <div
+        className={`slider__right-panel`}
+        onClick={() => slide('right')}
+      ></div>
+      <div
+        className={`slider__photos`}
+        style={{ transition: 'none', left: sliderXPos }}
+      >
+        {photosToMap.map(photo => (
+          <img key={photo} className={'slider__img'} alt='' src={photo}></img>
         ))}
       </div>
     </div>

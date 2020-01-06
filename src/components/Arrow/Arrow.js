@@ -7,9 +7,9 @@ const Arrow = ({ text, url, direction }) => {
       <span className={`navButton__text navButton__text--${direction}`}>
         {text}
       </span>
-      <div class={`arrow`}>
-        <div class={`arrow-top arrow-top--${direction}`}></div>
-        <div class={`arrow-top arrow-bottom--${direction}`}></div>
+      <div className={`arrow`}>
+        <div className={`arrow-top arrow-top--${direction}`}></div>
+        <div className={`arrow-top arrow-bottom--${direction}`}></div>
       </div>
     </a>
   )

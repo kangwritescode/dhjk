@@ -10,7 +10,7 @@ const NavBar = props => {
       <div className={`navBar ${focused ? 'navBar-focused' : null}`}>
         <div className={`navBar__section-container`}>
           {items.map(section => (
-            <div className={`navBar__section`}>{section}</div>
+            <div key={section} className={`navBar__section`}>{section}</div>
           ))}
         </div>
       </div>
