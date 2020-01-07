@@ -14,6 +14,67 @@
           flex-direction: column;
 }
 
+.container__button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__button:hover {
+  cursor: pointer;
+}
+
+.container__button--facebook {
+  background: #3b5998;
+}
+
+.container__button--linkedIn {
+  background: #0072b1;
+}
+
+.container__button--github {
+  background: #24292e;
+}
+
+.container__button--instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container__button .icon {
+  position: relative;
+}
+
+.container__button #facebook {
+  color: white;
+  font-size: 2.5em;
+}
+
+.container__button #linkedIn {
+  color: white;
+  font-size: 2.5em;
+}
+
+.container__button #github {
+  color: white;
+  font-size: 2.5em;
+}
+
+.container__button #instagram {
+  color: white;
+  font-size: 2.5em;
+}
+
 .link {
   position: relative;
   height: 65px;

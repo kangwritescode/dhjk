@@ -28,7 +28,7 @@ const Logos = props => {
 
   const content = (
     <div className='container'>
-      {iconLinks.map(link => {
+      {/* {iconLinks.map(link => {
         return (
           <img
             className='link'
@@ -40,11 +40,23 @@ const Logos = props => {
             // }}
           ></img>
         )
-      })}
+      })} */}
+      <button className='container__button container__button--facebook'>
+        <i class='fab fa-facebook-f icon' id='facebook'></i>
+      </button>
+      <button className='container__button container__button--linkedIn'>
+        <i class='fab fa-linkedin-in icon' id='linkedIn'></i>
+      </button>
+      <button className='container__button container__button--github'>
+        <i class='fab fa-github icon' id='github'></i>
+      </button>
+      <button className='container__button container__button--instagram'>
+        <i class='fab fa-instagram icon' id='instagram'></i>
+      </button>
     </div>
   )
 
-  return content;
+  return content
 }
 
 export default Logos
