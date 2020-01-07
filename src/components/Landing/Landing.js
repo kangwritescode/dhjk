@@ -9,7 +9,28 @@ import Arrow from '../Arrow/Arrow'
 import Typing from 'react-typing-animation'
 import { AwesomeButton } from 'react-awesome-button'
 
-const Landing = props => {
+const Landing = ({}) => {
+  const [expandedOne, setExpandedOne] = useState(null)
+  const [expandedTwo, setExpandedTwo] = useState(null)
+  const [expandedThree, setExpandedThree] = useState(null)
+  const [expandedFour, setexpandedFour] = useState(null)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setExpandedOne('underline--magical--expanded')
+    }, 2150)
+    setTimeout(() => {
+      setExpandedTwo('underline--magical--expanded')
+    }, 2450)
+    setTimeout(() => {
+      setExpandedThree('underline--magical--expanded')
+    }, 2750)
+    setTimeout(() => {
+      setexpandedFour('underline--magical--expanded')
+    }, 3050)
+    return () => {}
+  }, [])
+
   return (
     <React.Fragment>
       <Arrow url='portfolio' text='portfolio' direction='right' />
@@ -19,26 +40,64 @@ const Landing = props => {
           <Thoughts />
         </div>
         <img className='landing__head' src={head} alt='hi' />
-        <h1 id='landing-header'>
-          <span>Hi there, I'm David Kang.</span>
-        </h1>
-
+        <h1 id='landing-header'>Hi there, I'm David Kang</h1>
         <div id='landing-subtext'>
-          I'm a recent{' '}
-          <a
-            className=' underline--magical underline--magical--bears'
-            target='_blank'
-            href='https://drive.google.com/open?id=1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl'
+          <span
+            className={`subtext-line`}
+            id='subtext-line-one'
+            style={{ animation: 'fadeInDown .2s ease-in 1.2s forwards' }}
           >
-            UC Berkeley graduate
-          </a>{' '}
-          and Web Developer. <br />
-          Articles, labs, and more can be found in the{' '}
-          <a className='underline--magical'>code laboratory.</a> <br />
-          You can find internet things I've made on the{' '}
-          <a className='underline--magical'>portfolio page.</a> <br />
-          Best reached any time at{' '}
-          <a className='underline--magical'>davidhjkang@berkeley.edu.</a>
+            I'm a recent{' '}
+            <a
+              className={`underline--magical underline--magical--bears underline--magical--compressed ${expandedOne}`}
+              target='_blank'
+              href='https://drive.google.com/open?id=1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl'
+            >
+              UC Berkeley graduate
+            </a>{' '}
+            and Web Developer.
+          </span>
+          <br />
+          <span
+            className='subtext-line'
+            id='subtext-line-two'
+            style={{ animation: 'fadeInDown .2s  ease-in 1.4s forwards' }}
+          >
+            Articles, labs, and more can be found in the{' '}
+            <a
+              className={`underline--magical underline--magical--compressed ${expandedTwo}`}
+            >
+              code laboratory.
+            </a>
+          </span>
+          <span
+            className='subtext-line'
+            id='subtext-line-three'
+            style={{ animation: 'fadeInDown .2s ease-in 1.6s forwards' }}
+          >
+            {' '}
+            You can find internet things I've made on the{' '}
+            <a
+              className={`underline--magical underline--magical--compressed ${expandedThree}`}
+              href='portfolio'
+            >
+              portfolio page.
+            </a>
+          </span>
+          <br />
+          <span
+            className='subtext-line'
+            id='subtext-line-four'
+            style={{ animation: 'fadeInDown .2s ease-in 1.8s forwards' }}
+          >
+            {' '}
+            Best reached any time at{' '}
+            <a
+              className={`underline--magical underline--magical--compressed ${expandedFour}`}
+            >
+              davidhjkang@berkeley.edu.
+            </a>
+          </span>
         </div>
       </div>
       <Logos />
