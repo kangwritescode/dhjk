@@ -1,29 +1,44 @@
 import React, { useState, useEffect } from 'react'
 import './NavIcon.css'
 
-const NavIcon = ({focused, setFocused}) => {
+const NavIcon = ({ focused, setFocused }) => {
+  const [inLineOne, setInLineOne] = useState('')
+  const [inLineTwo, setInLineTwo] = useState('')
+  const [inLineThree, setInLineThree] = useState('')
 
-  const [first, setFirst] = useState(true)
-  const [second, setSecond] = useState(true)
-  const [third, setThird] = useState(true)
+  useEffect(() => {
+    setInClasses()
+    return () => {}
+  }, [])
+  function setInClasses () {
+    setTimeout(() => {
+      setInLineOne('post')
+    }, 1700)
+    setTimeout(() => {
+      setInLineTwo('post')
+    }, 1750)
+    setTimeout(() => {
+      setInLineThree('post')
+    }, 1800)
+  }
 
   return (
     <div className={`wrapper`}>
       <div className='nav-icon' onClick={() => setFocused(!focused)}>
         <div
-          className={`nav-icon__line-1 ${focused ? 'line-one-toggled' : null} ${
-            first ? null : 'pre'
-          }`}
+          className={`nav-icon__line-1 ${
+            focused ? 'line-one-toggled' : null
+          } pre ${inLineOne}`}
         ></div>
         <div
-          className={`nav-icon__line-2 ${focused ? 'line-two-toggled' : null} ${
-            second ? null : 'pre'
-          }`}
+          className={`nav-icon__line-2 ${
+            focused ? 'line-two-toggled' : null
+          } pre ${inLineTwo}`}
         ></div>
         <div
           className={`nav-icon__line-3 ${
             focused ? 'line-three-toggled' : null
-          } ${third ? null : 'pre'}`}
+          } pre ${inLineThree}`}
         ></div>
       </div>
     </div>

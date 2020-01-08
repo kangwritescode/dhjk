@@ -43,7 +43,6 @@
 .nav-icon__line-1,
 .nav-icon__line-3,
 .nav-icon__line-2 {
-    
     pointer-events: none;
     background-color: $colorTwo;
     border-radius: 3px;
@@ -53,23 +52,26 @@
     background: rgb(136, 136, 136);
     margin: 8px;
     opacity: 1;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.pre {
+    transform: translateX(200%);
+    opacity: 0;
+}
+.post {
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 .line-one-toggled {
     transform: translateY(10px) rotate(135deg);
 }
 .line-two-toggled {
-    transform: scale(0);
+    opacity: 0;
 }
 .line-three-toggled {
     transform: translateY(-10px) rotate(-135deg);
 }
-.pre {
-    transform: translateX(200%);
-    opacity: 1;
-}
-
 
 @media screen and (min-width: 700px) {
     .wrapper {

@@ -3,7 +3,12 @@ import './Arrow.css'
 
 const Arrow = ({ text, url, direction }) => {
   return (
-    <a href={url} className={`navButton navButton-${direction}`}>
+    <a
+      href={url}
+      className={`navButton navButton-${direction} ${
+        direction === 'right' ? 'rightNavPopIn' : 'leftNavPopIn'
+      }`}
+    >
       <span className={`navButton__text navButton__text--${direction}`}>
         {text}
       </span>

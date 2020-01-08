@@ -20,7 +20,7 @@ const Thoughts = props => {
   return (
     <div className={`cloud`}>
       <div className={`parts-container`}>
-        <p id='construction'>Under Construction!</p>
+        <p id='construction'>page under construction!</p>
         {parts.map(part => (
           <div className={`cloud-part ${part}`}></div>
         ))}

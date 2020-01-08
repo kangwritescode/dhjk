@@ -8,26 +8,30 @@
     flex-direction: column;
 
     &__button {
-        
         height: 60px;
-        width: 60px;
+        width: 100px;
         border: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transform: translateX(-40%);
+
         &:hover {
             cursor: pointer;
+            transform: translateX(-20%);
         }
         &--facebook {
             background: #3b5998;
+            transform: translateX(-100%);
         }
         &--linkedIn {
             background: #0072b1;
+            transform: translateX(-100%);
         }
         &--github {
             background: #24292e;
+            transform: translateX(-100%);
         }
         &--instagram {
             background: radial-gradient(
@@ -38,11 +42,12 @@
                 #d6249f 60%,
                 #285aeb 90%
             );
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+            transform: translateX(-100%);
         }
-        
+
         .icon {
             position: relative;
+            left: 20px;
         }
 
         #facebook {
@@ -71,6 +76,9 @@
     cursor: pointer;
     opacity: 1;
 }
+.popped-in {
+    transform: translateX(-40%);
+}
 
 @keyframes pop-in-right {
     0% {
@@ -88,9 +96,18 @@
         flex-direction: row;
         bottom: 3.5%;
         transform: translateY(0%);
-    }
-    .link {
-        height: 50px;
-        width: 50px;
+
+        &__button {
+            transition: none;
+            width: 60px;
+            transform: translateX(0%);
+            &:hover {
+                transform: translateX(0%);
+            }
+        }
+        .icon {
+            transition: none;
+            left: 0px;
+        }
     }
 }

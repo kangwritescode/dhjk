@@ -7,50 +7,54 @@ import linkedIn from '../../assets/ln.png'
 import ig from '../../assets/ig.png'
 
 const Logos = props => {
-  const iconLinks = [
-    { url: fb, delay: '3.9s', href: 'https://www.facebook.com/david.kang.75' },
-    {
-      url: linkedIn,
-      delay: '4s',
-      href: 'https://www.linkedin.com/in/davidhjkang/'
-    },
-    { url: ig, delay: '4.05s', href: 'https://www.instagram.com/ajiashi/' },
-    {
-      url: octocat,
-      delay: '3.95s',
-      href: 'https://github.com/kangwritescode/'
-    }
-  ]
+  const [fbPopInClass, setFbPopInClass] = useState('')
+  const [linkedInPopInClass, setLinkedInPopInClass] = useState('')
+  const [githubPopInClass, setgithubPopInClass] = useState('')
+  const [igPopInClass, setIgPopInClass] = useState('')
 
   const openLink = url => {
     window.open(url)
   }
+  useEffect(() => {
+    addPopInRightClasses()
+    return () => {}
+  }, [])
+
+  function addPopInRightClasses () {
+    setTimeout(() => {
+      setFbPopInClass('popped-in')
+    }, 1700)
+    setTimeout(() => {
+      setLinkedInPopInClass('popped-in')
+    }, 1790)
+    setTimeout(() => {
+      setgithubPopInClass('popped-in')
+    }, 1880)
+    setTimeout(() => {
+      setIgPopInClass('popped-in')
+    }, 1970)
+  }
 
   const content = (
     <div className='container'>
-      {/* {iconLinks.map(link => {
-        return (
-          <img
-            className='link'
-            alt=''
-            src={link.url}
-            onClick={() => openLink(link.href)}
-            // style={{
-            //   animation: `pop-in-right .15s ease-in-out ${link.delay} forwards`
-            // }}
-          ></img>
-        )
-      })} */}
-      <button className='container__button container__button--facebook'>
+      <button
+        className={`container__button container__button--facebook ${fbPopInClass}`}
+      >
         <i class='fab fa-facebook-f icon' id='facebook'></i>
       </button>
-      <button className='container__button container__button--linkedIn'>
+      <button
+        className={`container__button container__button--linkedIn ${linkedInPopInClass}`}
+      >
         <i class='fab fa-linkedin-in icon' id='linkedIn'></i>
       </button>
-      <button className='container__button container__button--github'>
+      <button
+        className={`container__button container__button--github ${githubPopInClass}`}
+      >
         <i class='fab fa-github icon' id='github'></i>
       </button>
-      <button className='container__button container__button--instagram'>
+      <button
+        className={`container__button container__button--instagram ${igPopInClass}`}
+      >
         <i class='fab fa-instagram icon' id='instagram'></i>
       </button>
     </div>

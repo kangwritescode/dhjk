@@ -16,7 +16,7 @@
 
 .container__button {
   height: 60px;
-  width: 60px;
+  width: 100px;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,32 +27,45 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
 }
 
 .container__button:hover {
   cursor: pointer;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
 }
 
 .container__button--facebook {
   background: #3b5998;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .container__button--linkedIn {
   background: #0072b1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .container__button--github {
   background: #24292e;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .container__button--instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .container__button .icon {
   position: relative;
+  left: 20px;
 }
 
 .container__button #facebook {
@@ -81,6 +94,11 @@
   width: 65px;
   cursor: pointer;
   opacity: 1;
+}
+
+.popped-in {
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
 }
 
 @-webkit-keyframes pop-in-right {
@@ -119,9 +137,21 @@
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
-  .link {
-    height: 50px;
-    width: 50px;
+  .container__button {
+    -webkit-transition: none;
+    transition: none;
+    width: 60px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .container__button:hover {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .container .icon {
+    -webkit-transition: none;
+    transition: none;
+    left: 0px;
   }
 }
 /*# sourceMappingURL=Logos.css.map */
