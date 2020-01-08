@@ -144,17 +144,17 @@ a {
 }
 
 .rightNavPopIn {
-    animation: rightNavPopIn 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+    animation: rightNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 .leftnavPopIn {
-    animation: leftNavPopIn 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+    animation: leftNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
 @keyframes rightNavPopIn {
     0% {
         transform: translateX(100%);
     }
-    90% {
+    80% {
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
         visibility: visible;
@@ -168,7 +168,7 @@ a {
     0% {
         transform: translateX(-100%);
     }
-    90% {
+    80% {
         -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
         visibility: visible;

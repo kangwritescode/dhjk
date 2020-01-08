@@ -171,13 +171,13 @@ a {
 }
 
 .rightNavPopIn {
-  -webkit-animation: rightNavPopIn 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
-          animation: rightNavPopIn 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  -webkit-animation: rightNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+          animation: rightNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
 .leftnavPopIn {
-  -webkit-animation: leftNavPopIn 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
-          animation: leftNavPopIn 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  -webkit-animation: leftNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+          animation: leftNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
 @-webkit-keyframes rightNavPopIn {
@@ -185,7 +185,7 @@ a {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  90% {
+  80% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible;
@@ -201,7 +201,7 @@ a {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  90% {
+  80% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible;
@@ -217,7 +217,7 @@ a {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
-  90% {
+  80% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
@@ -233,7 +233,7 @@ a {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
-  90% {
+  80% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     visibility: visible;

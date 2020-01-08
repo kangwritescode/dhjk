@@ -23,16 +23,16 @@ const Logos = props => {
   function addPopInRightClasses () {
     setTimeout(() => {
       setFbPopInClass('popped-in')
-    }, 1700)
+    }, 1800)
     setTimeout(() => {
       setLinkedInPopInClass('popped-in')
-    }, 1790)
+    }, 1890)
     setTimeout(() => {
       setgithubPopInClass('popped-in')
-    }, 1880)
+    }, 1980)
     setTimeout(() => {
       setIgPopInClass('popped-in')
-    }, 1970)
+    }, 2070)
   }
 
   const content = (
