@@ -9,12 +9,12 @@ const Arrow = ({ text, url, direction }) => {
         direction === 'right' ? 'rightNavPopIn' : 'leftNavPopIn'
       }`}
     >
-      <span className={`navButton__text navButton__text--${direction}`}>
-        {text}
-      </span>
       <div className={`arrow`}>
         <div className={`arrow-top arrow-top--${direction}`}></div>
         <div className={`arrow-top arrow-bottom--${direction}`}></div>
+        <span className={`navButton__text navButton__text--${direction}`}>
+          {text}
+        </span>
       </div>
     </a>
   )

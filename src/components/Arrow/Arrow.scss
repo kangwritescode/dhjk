@@ -1,5 +1,6 @@
 @import "../../shared/fonts/fonts.scss";
 @import "../../shared/colors/colors.scss";
+@import "../../shared/mixins/mixins.scss";
 
 .navButton {
     // border: 1px solid white;
@@ -25,6 +26,7 @@
         position: relative;
         display: inline-block;
         opacity: 0;
+        pointer-events: none;
         font-family: $primaryFont;
         color: rgb(168, 168, 168);
         letter-spacing: 1px;
@@ -34,17 +36,6 @@
         }
         &--left {
             transform: translateX(55%);
-        }
-    }
-
-    &:hover {
-        .navButton__text--right {
-            opacity: 1;
-            transform: translateX(-90%);
-        }
-        .navButton__text--left {
-            opacity: 1;
-            transform: translateX(90%);
         }
     }
 
@@ -64,8 +55,8 @@
     transform: translateX(-50%) translateY(-50%);
     transition: transform 0.1s;
     width: 80px;
-    // border: 1px solid white;
-    // background: $colorOne;
+
+    @include flex-centered(row);
 
     &:hover {
         .arrow-top--right {
@@ -74,12 +65,19 @@
         .arrow-bottom--right {
             transform: rotate(-60deg);
         }
-
         .arrow-top--left {
             transform: rotate(60deg) translateY(-2px);
         }
         .arrow-bottom--left {
             transform: rotate(-60deg) translateY(2px);
+        }
+        .navButton__text--right {
+            opacity: 1;
+            transform: translateX(-90%);
+        }
+        .navButton__text--left {
+            opacity: 1;
+            transform: translateX(90%);
         }
     }
 

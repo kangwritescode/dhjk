@@ -32,6 +32,7 @@
   position: relative;
   display: inline-block;
   opacity: 0;
+  pointer-events: none;
   font-family: "Titillium Web", sans-serif;
   color: #a8a8a8;
   letter-spacing: 1px;
@@ -47,18 +48,6 @@
 .navButton .navButton__text--left {
   -webkit-transform: translateX(55%);
           transform: translateX(55%);
-}
-
-.navButton:hover .navButton__text--right {
-  opacity: 1;
-  -webkit-transform: translateX(-90%);
-          transform: translateX(-90%);
-}
-
-.navButton:hover .navButton__text--left {
-  opacity: 1;
-  -webkit-transform: translateX(90%);
-          transform: translateX(90%);
 }
 
 @media screen and (max-width: 950px) {
@@ -80,6 +69,19 @@
   transition: transform 0.1s;
   transition: transform 0.1s, -webkit-transform 0.1s;
   width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .arrow:hover .arrow-top--right {
@@ -100,6 +102,18 @@
 .arrow:hover .arrow-bottom--left {
   -webkit-transform: rotate(-60deg) translateY(2px);
           transform: rotate(-60deg) translateY(2px);
+}
+
+.arrow:hover .navButton__text--right {
+  opacity: 1;
+  -webkit-transform: translateX(-90%);
+          transform: translateX(-90%);
+}
+
+.arrow:hover .navButton__text--left {
+  opacity: 1;
+  -webkit-transform: translateX(90%);
+          transform: translateX(90%);
 }
 
 .arrow-top, .arrow-bottom {
