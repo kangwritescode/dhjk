@@ -24,14 +24,20 @@
 }
 
 .landing__head {
-  position: absolute;
-  bottom: 0px;
-  height: 70%;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 0;
+}
+
+.landing__head--wrapper {
+  position: absolute;
+  bottom: 0px;
+  height: 70%;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 #landing-header {
@@ -131,24 +137,6 @@
   opacity: 0;
   -webkit-animation: fadeInUp 0.7s ease-in 3s forwards;
           animation: fadeInUp 0.7s ease-in 3s forwards;
-}
-
-@-webkit-keyframes expand {
-  from {
-    background-size: 0% 0.2em;
-  }
-  to {
-    background-size: 100% 0.2em;
-  }
-}
-
-@keyframes expand {
-  from {
-    background-size: 0% 0.2em;
-  }
-  to {
-    background-size: 100% 0.2em;
-  }
 }
 
 .letter {
@@ -280,6 +268,13 @@
   }
   #landing-subtext {
     font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .landing__head--wrapper {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
   }
 }
 /*# sourceMappingURL=Landing.css.map */

@@ -10,15 +10,20 @@
     color: $colorTwo;
     overflow: hidden;
     @include flex-centered(column);
-}
 
-.landing__head {
-    position: absolute;
-    bottom: 0px;
-    height: 70%;
-    transform: translateX(5%);
-    object-fit: cover;
-    z-index: 0;
+    &__head {
+        height: 100%;
+        transition: all 0.3s ease-in;
+        object-fit: cover;
+        z-index: 0;
+
+        &--wrapper {
+            position: absolute;
+            bottom: 0px;
+            height: 70%;
+            transition: all .3s ease-in;
+        }
+    }
 }
 
 #landing-header {
@@ -99,15 +104,6 @@
     animation: fadeInUp 0.7s ease-in 3s forwards;
 }
 
-@keyframes expand {
-    from {
-        background-size: 0% 0.2em;
-    }
-    to {
-        background-size: 100% 0.2em;
-    }
-}
-
 .letter {
     opacity: 1;
 }
@@ -177,5 +173,15 @@
     }
     #landing-subtext {
         font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .landing {
+        &__head {
+            &--wrapper {
+                transform: translateX(10%);
+            }
+        }
     }
 }

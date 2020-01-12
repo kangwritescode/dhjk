@@ -116,14 +116,19 @@ const Landing = ({}) => {
         <div className={`thoughts-container`}>
           <Thoughts />
         </div>
-        <img className='landing__head fadeInUp' src={head} alt='hi' />
+        <div className={`landing__head--wrapper`}>
+          <img className='landing__head fadeInUp' src={head} alt='hi' />
+        </div>
         <h1 id='landing-header'>Hi there, I'm David Kang</h1>
         <div id='landing-subtext'>
           {LINES_DATA.map(({ className, id, content, style }) => {
             return (
-              <span className={className} id={id} style={style}>
-                {content}
-              </span>
+              <React.Fragment>
+                <span className={className} id={id} style={style}>
+                  {content}
+                </span>
+                <br />
+              </React.Fragment>
             )
           })}
         </div>

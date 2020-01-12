@@ -70,22 +70,22 @@
 
 .container__button #facebook {
   color: white;
-  font-size: 2.5em;
+  font-size: 2.6em;
 }
 
 .container__button #linkedIn {
   color: white;
-  font-size: 2.5em;
+  font-size: 2.6em;
 }
 
 .container__button #github {
   color: white;
-  font-size: 2.5em;
+  font-size: 2.6em;
 }
 
 .container__button #instagram {
   color: white;
-  font-size: 2.5em;
+  font-size: 2.6em;
 }
 
 .link {
@@ -138,8 +138,6 @@
             transform: translateY(0%);
   }
   .container__button {
-    -webkit-transition: none;
-    transition: none;
     width: 60px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -149,9 +147,49 @@
             transform: translateX(0%);
   }
   .container .icon {
-    -webkit-transition: none;
-    transition: none;
     left: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    bottom: 3.5%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .container__button {
+    width: 50px;
+    height: 50px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .container__button:hover {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .container .icon {
+    left: 0px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .container #facebook {
+    font-size: 1.6em;
+  }
+  .container #linkedIn {
+    font-size: 1.6em;
+  }
+  .container #github {
+    font-size: 1.6em;
+  }
+  .container #instagram {
+    font-size: 1.6em;
   }
 }
 /*# sourceMappingURL=Logos.css.map */

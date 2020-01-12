@@ -52,19 +52,19 @@
 
         #facebook {
             color: white;
-            font-size: 2.5em;
+            font-size: 2.6em;
         }
         #linkedIn {
             color: white;
-            font-size: 2.5em;
+            font-size: 2.6em;
         }
         #github {
             color: white;
-            font-size: 2.5em;
+            font-size: 2.6em;
         }
         #instagram {
             color: white;
-            font-size: 2.5em;
+            font-size: 2.6em;
         }
     }
 }
@@ -98,7 +98,6 @@
         transform: translateY(0%);
 
         &__button {
-            transition: none;
             width: 60px;
             transform: translateX(0%);
             &:hover {
@@ -106,8 +105,41 @@
             }
         }
         .icon {
-            transition: none;
             left: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        bottom: 3.5%;
+        transform: translateY(0%);
+
+        &__button {
+            width: 50px;
+            height: 50px;
+            transform: translateX(0%);
+            &:hover {
+                transform: translateX(0%);
+            }
+        }
+        .icon {
+            left: 0px;
+            transition: all .3s ease;
+        }
+        #facebook {
+            font-size: 1.6em;
+        }
+        #linkedIn {
+            font-size: 1.6em;
+        }
+        #github {
+            font-size: 1.6em;
+        }
+        #instagram {
+            font-size: 1.6em;
         }
     }
 }
