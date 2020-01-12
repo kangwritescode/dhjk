@@ -16,11 +16,13 @@
         transition: all 0.3s ease-in;
         object-fit: cover;
         z-index: 0;
+        
 
-        &--wrapper {
+        &-wrapper {
             position: absolute;
             bottom: 0px;
             height: 70%;
+            display: none; // temporary
             transition: all .3s ease-in;
         }
     }

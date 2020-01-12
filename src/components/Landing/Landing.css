@@ -32,10 +32,11 @@
   z-index: 0;
 }
 
-.landing__head--wrapper {
+.landing__head-wrapper {
   position: absolute;
   bottom: 0px;
   height: 70%;
+  display: none;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }

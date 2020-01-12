@@ -116,7 +116,7 @@ const Landing = ({}) => {
         <div className={`thoughts-container`}>
           <Thoughts />
         </div>
-        <div className={`landing__head--wrapper`}>
+        <div className={`landing__head-wrapper`}>
           <img className='landing__head fadeInUp' src={head} alt='hi' />
         </div>
         <h1 id='landing-header'>Hi there, I'm David Kang</h1>
