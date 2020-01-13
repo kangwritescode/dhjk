@@ -8,7 +8,7 @@ const Slider = ({ photos }) => {
 
   const [focused, setFocused] = useState(false)
 
-  const PHOTO_WIDTH = 500
+  const PHOTO_WIDTH = 100
   useEffect(() => {
     setPhotosToMap(photos)
     setPhotosCount(photos.length)
@@ -22,24 +22,38 @@ const Slider = ({ photos }) => {
       if (sliderXPos === 0) {
         newPos = (photosCount - 1) * PHOTO_WIDTH * -1
       } else {
-        newPos = sliderXPos + 500
+        newPos = sliderXPos + 100
       }
     }
     if (direction === 'right') {
       if (sliderXPos === (photosCount - 1) * PHOTO_WIDTH * -1) {
         newPos = 0
       } else {
-        newPos = sliderXPos - 500
+        newPos = sliderXPos - 100
       }
     }
     setSliderXPos(newPos)
   }
 
+  function focusSlider (bool) {
+    if (bool) {
+      const arrows = [...document.getElementsByClassName('navButton')]
+      arrows.forEach(arrow => {
+        arrow.classList.add('navButton--invisible')
+      })
+      return setFocused(true)
+    }
+    const arrows = [...document.getElementsByClassName('navButton')]
+    arrows.forEach(arrow => {
+      arrow.classList.remove('navButton--invisible')
+    })
+    return setFocused(false)
+  }
   return (
     <React.Fragment>
       <div
         className={`slider ${focused && 'slider--active'}`}
-        onClick={() => (focused ? null : setFocused(true))}
+        onClick={() => (focused ? null : focusSlider(true))}
       >
         <div className={`slider__macTabs`}>
           <div className={`slider__button close`}></div>
@@ -60,7 +74,10 @@ const Slider = ({ photos }) => {
         )}
         <div
           className={`slider__photos`}
-          style={{ transition: 'none', left: sliderXPos }}
+          style={{
+            transition: 'none',
+            transform: `translateX(${sliderXPos}%)`
+          }}
         >
           {photosToMap.map(photo => (
             <img key={photo} className={'slider__img'} alt='' src={photo}></img>
@@ -69,7 +86,7 @@ const Slider = ({ photos }) => {
       </div>
       <div
         className={`slider-backdrop ${focused && 'slider-backdrop--active'}`}
-        onClick={() => setFocused(false)}
+        onClick={() => focusSlider(false)}
       ></div>
     </React.Fragment>
   )

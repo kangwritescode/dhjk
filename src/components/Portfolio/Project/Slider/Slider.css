@@ -15,8 +15,8 @@
 }
 
 .slider--active {
-  -webkit-transform: translate(-50%, -5px);
-          transform: translate(-50%, -5px);
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
   z-index: 1;
   height: 560px;
   width: 800px;
@@ -137,6 +137,8 @@
   background: rgba(0, 0, 0, 0.596);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .slider-backdrop--active {

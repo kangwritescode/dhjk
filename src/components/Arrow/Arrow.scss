@@ -5,7 +5,7 @@
 .navButton {
     // border: 1px solid white;
     position: absolute;
-    z-index: 5;
+    z-index: 0;
     width: 100px;
 
     top: 50%;
@@ -14,12 +14,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s ease;
 
     &-right {
         right: 0px;
     }
     &-left {
         left: 0px;
+    }
+
+    &--invisible {
+        opacity: 0;
+        pointer-events: none;
     }
 
     .navButton__text {
@@ -134,7 +140,8 @@
 
 @media screen and (max-width: 700px) {
     .navButton {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
 }
 

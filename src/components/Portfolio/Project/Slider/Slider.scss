@@ -3,17 +3,17 @@
     left: 50%;
     height: 350px;
     width: 500px;
-    // top: 50%;
     overflow: hidden;
     transform: translate(0px, -5px);
     transition: all .3s ease;
+    
 
     &:hover {
         cursor: pointer;
     }
 
     &--active {
-        transform: translate(-50%, -5px);
+        transform: translate(-50%, -10%);
         z-index: 1;
         height: 560px;
         width: 800px;
@@ -111,6 +111,7 @@
     background: rgba(0, 0, 0, 0.596);
     opacity: 0;
     visibility: hidden;
+    transition: all .3s ease; 
 
     &--active {
         opacity: 1;
