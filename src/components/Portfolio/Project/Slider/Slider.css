@@ -6,6 +6,20 @@
   overflow: hidden;
   -webkit-transform: translate(0px, -5px);
           transform: translate(0px, -5px);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.slider:hover {
+  cursor: pointer;
+}
+
+.slider--active {
+  -webkit-transform: translate(-50%, -5px);
+          transform: translate(-50%, -5px);
+  z-index: 1;
+  height: 560px;
+  width: 800px;
 }
 
 .slider__macTabs {
@@ -112,5 +126,22 @@
 
 .slider__right-panel:hover {
   opacity: 1;
+}
+
+.slider-backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.596);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider-backdrop--active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visiblePainted;
 }
 /*# sourceMappingURL=Slider.css.map */

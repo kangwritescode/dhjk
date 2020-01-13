@@ -15,14 +15,16 @@
         height: 100%;
         transition: all 0.3s ease-in;
         object-fit: cover;
-        z-index: 0;
+        z-index: 5;
         
 
         &-wrapper {
+            // border: 1px solid white;
             position: absolute;
             bottom: 0px;
             height: 70%;
-            display: none; // temporary
+            opacity: .4;
+            // display: none; // temporary
             transition: all .3s ease-in;
         }
     }
@@ -37,7 +39,6 @@
     line-height: 1.7em;
     animation: zoomInDown 1.5s ease-in-out;
 
-    // letter-spacing: 1px;
 }
 
 #landing-subtext {

@@ -7,8 +7,6 @@ import Logos from '../Logos/Logos'
 import Thoughts from '../Thoughts/Thoughts'
 import NavBar from '../NavBar/Navbar/NavBar'
 import Arrow from '../Arrow/Arrow'
-import Typing from 'react-typing-animation'
-import { AwesomeButton } from 'react-awesome-button'
 
 const Landing = ({}) => {
   const [expandedOne, setExpandedOne] = useState(null)
@@ -116,9 +114,9 @@ const Landing = ({}) => {
         <div className={`thoughts-container`}>
           <Thoughts />
         </div>
-        <div className={`landing__head-wrapper`}>
+        {/* <div className={`landing__head-wrapper`}>
           <img className='landing__head fadeInUp' src={head} alt='hi' />
-        </div>
+        </div> */}
         <h1 id='landing-header'>Hi there, I'm David Kang</h1>
         <div id='landing-subtext'>
           {LINES_DATA.map(({ className, id, content, style }) => {

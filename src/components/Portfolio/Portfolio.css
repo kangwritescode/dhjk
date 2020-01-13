@@ -22,4 +22,19 @@
   font-family: "Roboto Slab", serif;
   color: #a5a5a5;
 }
+
+.portfolio__backdrop {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.598);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.portfolio__backdrop--active {
+  pointer-events: painted;
+  opacity: 1;
+}
 /*# sourceMappingURL=Portfolio.css.map */

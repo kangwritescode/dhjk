@@ -30,7 +30,7 @@
         font-family: $primaryFont;
         color: rgb(168, 168, 168);
         letter-spacing: 1px;
-        transition: all 0.1s ease-in;
+        transition: all 0.2s ease;
         &--right {
             transform: translateX(-55%);
         }
@@ -55,6 +55,7 @@
     transform: translateX(-50%) translateY(-50%);
     transition: transform 0.1s;
     width: 80px;
+    z-index: 1;
 
     @include flex-centered(row);
 

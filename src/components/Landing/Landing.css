@@ -29,14 +29,14 @@
   transition: all 0.3s ease-in;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 0;
+  z-index: 5;
 }
 
 .landing__head-wrapper {
   position: absolute;
   bottom: 0px;
   height: 70%;
-  display: none;
+  opacity: .4;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }

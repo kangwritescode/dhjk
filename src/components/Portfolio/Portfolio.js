@@ -6,9 +6,11 @@ import { projects } from './PortfolioData/PortfolioData'
 
 const Portfolio = props => {
 
+
   return (
     <div className={`portfolio`}>
       <Arrow url='/' direction='left' text=' home' />
+      <div className={`portfolio__backdrop`}></div>
       <header>
         web dev portfolio
         <br />
