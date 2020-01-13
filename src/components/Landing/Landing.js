@@ -9,11 +9,6 @@ import NavBar from '../NavBar/Navbar/NavBar'
 import Arrow from '../Arrow/Arrow'
 
 const Landing = ({}) => {
-  const [expandedOne, setExpandedOne] = useState(null)
-  const [expandedTwo, setExpandedTwo] = useState(null)
-  const [expandedThree, setExpandedThree] = useState(null)
-  const [expandedFour, setexpandedFour] = useState(null)
-
   const LINES_DATA = [
     {
       id: 'subtext-line-one',
@@ -24,7 +19,8 @@ const Landing = ({}) => {
           {' '}
           I'm a recent{' '}
           <a
-            className={`underline--magical underline--magical--bears underline--magical--compressed ${expandedOne}`}
+            className={`underline--magical underline--magical--bears underline--magical--compressed`}
+            id='underline-one'
             target='_blank'
             href='https://drive.google.com/open?id=1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl'
           >
@@ -44,7 +40,8 @@ const Landing = ({}) => {
           Articles, labs, and more can be found in the{' '}
           <a
             href='/'
-            className={`underline--magical underline--magical--compressed ${expandedTwo}`}
+            className={`underline--magical underline--magical--compressed`}
+            id='underline-two'
           >
             code laboratory.
           </a>
@@ -60,7 +57,8 @@ const Landing = ({}) => {
           {' '}
           You can find internet things I've made on the{' '}
           <a
-            className={`underline--magical underline--magical--compressed ${expandedThree}`}
+            className={`underline--magical underline--magical--compressed`}
+            id='underline-three'
             href='portfolio'
           >
             portfolio page.
@@ -77,7 +75,8 @@ const Landing = ({}) => {
           {' '}
           Best reached any time at{' '}
           <a
-            className={`underline--magical underline--magical--compressed ${expandedFour}`}
+            className={`underline--magical underline--magical--compressed `}
+            id='underline-four'
             href='mailto:davidhjkang@berkeley.edu'
           >
             davidhjkang@berkeley.edu.
@@ -103,16 +102,24 @@ const Landing = ({}) => {
   }
   function setMagicalUnderlineTimeouts () {
     setTimeout(() => {
-      setExpandedOne('underline--magical--expanded')
+      document
+        .querySelector('#underline-one')
+        .classList.add('underline--magical--expanded')
     }, 2150)
     setTimeout(() => {
-      setExpandedTwo('underline--magical--expanded')
+      document
+        .querySelector('#underline-two')
+        .classList.add('underline--magical--expanded')
     }, 2450)
     setTimeout(() => {
-      setExpandedThree('underline--magical--expanded')
+      document
+        .querySelector('#underline-three')
+        .classList.add('underline--magical--expanded')
     }, 2750)
     setTimeout(() => {
-      setexpandedFour('underline--magical--expanded')
+      document
+        .querySelector('#underline-four')
+        .classList.add('underline--magical--expanded')
     }, 3050)
   }
 
