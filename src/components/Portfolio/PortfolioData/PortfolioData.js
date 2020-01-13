@@ -11,7 +11,8 @@ export const projects = [
       'Sass'
     ],
     description:
-      'BARZ is a gamified social network where rap fans can write, post, and vote on rap lyrics.',
+      `BARZ is a gamified social network where rap fans can write, post, and vote on rap lyrics. 
+       I designed and programmed the project in its entirety.`,
     title: 'BARZ',
     link: 'https://writebarz.com/recruit-david',
     source: 'https://github.com/kangwritescode/barz',

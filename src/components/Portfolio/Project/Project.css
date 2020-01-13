@@ -10,7 +10,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-bottom: 10em;
+  margin-top: 1.4em;
 }
 
 .section__banner {
@@ -44,7 +44,7 @@
 
 .section .section__info .section__title {
   font-family: "Permanent Marker", cursive;
-  font-size: 2em;
+  font-size: 2.3em;
   -webkit-margin-after: 0.3em;
           margin-block-end: 0.3em;
   -webkit-margin-before: 0px;

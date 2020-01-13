@@ -1,19 +1,18 @@
 .slider {
     position: relative;
     left: 50%;
-    height: 350px;
-    width: 500px;
+    height: 400px;
+    width: 550px;
     overflow: hidden;
-    transform: translate(0px, -5px);
     transition: all .3s ease;
-    
+
 
     &:hover {
         cursor: pointer;
     }
 
     &--active {
-        transform: translate(-50%, -10%);
+        transform: translate(-50%, -20%);
         z-index: 1;
         height: 560px;
         width: 800px;

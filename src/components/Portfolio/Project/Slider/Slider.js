@@ -36,17 +36,25 @@ const Slider = ({ photos }) => {
   }
 
   function focusSlider (bool) {
+    // selectors
+    const arrows = [...document.getElementsByClassName('navButton')]
+    const dots = document.querySelector('.portfolio__status-dots')
+    const navIcon = document.querySelector('.nav-icon')
+    console.log(navIcon)
+
     if (bool) {
-      const arrows = [...document.getElementsByClassName('navButton')]
       arrows.forEach(arrow => {
         arrow.classList.add('navButton--invisible')
       })
+      dots.classList.add('portfolio__status-dots--hidden')
+      navIcon.classList.add('nav-icon--hidden')
       return setFocused(true)
     }
-    const arrows = [...document.getElementsByClassName('navButton')]
     arrows.forEach(arrow => {
       arrow.classList.remove('navButton--invisible')
     })
+    dots.classList.remove('portfolio__status-dots--hidden')
+    navIcon.classList.remove('nav-icon--hidden')
     return setFocused(false)
   }
   return (

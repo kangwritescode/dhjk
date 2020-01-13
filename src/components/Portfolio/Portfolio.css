@@ -12,8 +12,8 @@
 }
 
 .portfolio header {
-  padding: 1.5em 15% 1.3em 15%;
-  font-size: 4em;
+  padding: 1.3em 13% 1.3em 14%;
+  font-size: 4.5em;
   line-height: 0.65em;
 }
 
@@ -36,5 +36,68 @@
 .portfolio__backdrop--active {
   pointer-events: painted;
   opacity: 1;
+}
+
+.portfolio__status-dots {
+  position: absolute;
+  width: 100vw;
+  bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.portfolio__status-dots--hidden {
+  opacity: 0;
+}
+
+.portfolio__status-dot {
+  height: 1em;
+  width: 1em;
+  margin: 0.4em;
+  border-radius: 5em;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.portfolio__status-dot:first-child {
+  background: rgba(255, 255, 255, 0.527);
+  height: 1.7em;
+  width: 1.7em;
+}
+
+@media screen and (max-height: 880px) {
+  .portfolio .portfolio__status-dots {
+    opacity: 0;
+  }
+}
+
+.portfolio__buttons-wrapper {
+  position: relative;
+  top: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=Portfolio.css.map */

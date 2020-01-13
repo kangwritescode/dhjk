@@ -23,7 +23,7 @@ const NavIcon = ({ focused, setFocused }) => {
   }
 
   return (
-    <div className={`wrapper`}>
+    <div className={`nav-icon__wrapper`}>
       <div className='nav-icon' onClick={() => setFocused(!focused)}>
         <div
           className={`nav-icon__line-1 ${

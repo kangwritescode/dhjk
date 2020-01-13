@@ -1,11 +1,9 @@
 .slider {
   position: relative;
   left: 50%;
-  height: 350px;
-  width: 500px;
+  height: 400px;
+  width: 550px;
   overflow: hidden;
-  -webkit-transform: translate(0px, -5px);
-          transform: translate(0px, -5px);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -15,8 +13,8 @@
 }
 
 .slider--active {
-  -webkit-transform: translate(-50%, -10%);
-          transform: translate(-50%, -10%);
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
   z-index: 1;
   height: 560px;
   width: 800px;
