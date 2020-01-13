@@ -89,9 +89,18 @@ const Landing = ({}) => {
 
   useEffect(() => {
     setMagicalUnderlineTimeouts()
+    setHTMLCodeTimeout()
     return () => {}
   }, [])
-
+  function setHTMLCodeTimeout () {
+    const htmEl = document.querySelector('.landing__html')
+    setTimeout(() => {
+      htmEl.classList.add('landing__html--active')
+    }, 3150)
+    setTimeout(() => {
+      htmEl.classList.add('bob')
+    }, 3950)
+  }
   function setMagicalUnderlineTimeouts () {
     setTimeout(() => {
       setExpandedOne('underline--magical--expanded')
@@ -111,12 +120,12 @@ const Landing = ({}) => {
     <React.Fragment>
       <Arrow url='portfolio' text='portfolio' direction='right' />
       <div className='landing'>
+        <div className={`landing__html`}>
+          <i className='fa fa-code'></i>
+        </div>
         <div className={`thoughts-container`}>
           <Thoughts />
         </div>
-        {/* <div className={`landing__head-wrapper`}>
-          <img className='landing__head fadeInUp' src={head} alt='hi' />
-        </div> */}
         <h1 id='landing-header'>Hi there, I'm David Kang</h1>
         <div id='landing-subtext'>
           {LINES_DATA.map(({ className, id, content, style }) => {

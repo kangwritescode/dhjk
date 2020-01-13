@@ -115,6 +115,28 @@
     opacity: 0;
 }
 
+.landing__html {
+    position: absolute;
+    background: transparent;
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(100%);
+    transition: all .8s ease;
+    @include flex-centered(row);
+    &--active {
+        transform: translateY(0%);
+    }
+
+}
+.bob {
+    animation: bob 3s linear infinite;
+}
+.fa-code {
+    font-size: 40em;
+    color: rgba(0, 0, 0, 0.084);
+}
+
+
 @keyframes typed {
     0% {
         opacity: 0;
@@ -169,6 +191,22 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+@keyframes bob {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    30% {
+        transform: translate(0%, .5%);
+    }
+    70% {
+        transform: translate(0%, -.5%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
 
 @media screen and (min-width: 600px) {
     #landing-header {
