@@ -3,13 +3,14 @@
 @import "../../../shared/fonts/fonts.scss";
 
 .navBar {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
+    top: 0px;
     z-index: 300;
     background: $colorOne;
     color: rgba(255, 255, 255, 0.493);
-    transition: all .35s ease-out;
+    transition: transform .5s ease;
     transform: translateY(-100%);
     @include flex-centered(column);
 

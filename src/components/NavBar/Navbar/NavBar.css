@@ -2,14 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
 .navBar {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
+  top: 0px;
   z-index: 300;
   background: #272727;
   color: rgba(255, 255, 255, 0.493);
-  -webkit-transition: all .35s ease-out;
-  transition: all .35s ease-out;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   display: -webkit-box;

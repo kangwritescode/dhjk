@@ -204,7 +204,7 @@
 }
 
 .slider__photos-indicator {
-  position: relative;
+  position: absolute;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;

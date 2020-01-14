@@ -15,7 +15,6 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
   }, [photos])
 
   function slide (direction) {
-    console.log(sliderXPos)
     let newPos
     let newFocusIndex = focusIndex
     if (direction === 'left') {

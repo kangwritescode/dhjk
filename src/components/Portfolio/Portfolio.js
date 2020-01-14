@@ -5,18 +5,8 @@ import Arrow from '../Arrow/Arrow'
 import { projects } from './PortfolioData/PortfolioData'
 
 const Portfolio = props => {
-  const [focusIndex, setFocusIndex] = useState(0);
-  const [focusedProject, setFocusedProject] = useState(null)
-
-  useEffect(() => {
-    function generateProject(projectData) {
-      return (
-        <Project key={projectData.title} {...projectData} />
-      )
-    }
-    setFocusedProject(generateProject(projects[focusIndex]))
-  }, [focusIndex])
   
+
   return (
     <div className={`portfolio`}>
       <Arrow url='/' direction='left' text=' home' />
@@ -26,7 +16,9 @@ const Portfolio = props => {
         <br />
         <span className='sub-header'>a collection of my internet things.</span>
       </header>
-      {focusedProject}
+      {projects.map(projectData => (
+        <Project key={projectData.title} {...projectData} />
+      ))}
     </div>
   )
 }

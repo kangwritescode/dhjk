@@ -11,7 +11,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-top: 1.4em;
+  margin-top: 4em;
   padding: 2em 0% 2em 14%;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -79,6 +79,7 @@
           margin-block-start: 0px;
   -webkit-margin-after: 1.3em;
           margin-block-end: 1.3em;
+  line-height: 1.6em;
 }
 
 .section .section__info .section__tags .section__tag {

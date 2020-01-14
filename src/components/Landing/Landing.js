@@ -8,7 +8,7 @@ import Thoughts from '../Thoughts/Thoughts'
 import NavBar from '../NavBar/Navbar/NavBar'
 import Arrow from '../Arrow/Arrow'
 
-const Landing = ({}) => {
+const Landing = props => {
   const LINES_DATA = [
     {
       id: 'subtext-line-one',
