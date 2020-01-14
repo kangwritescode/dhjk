@@ -7,6 +7,25 @@ import ProjectButton from './ProjectButton/ProjectButton'
 const Project = ({ tags, title, description, link, source, photos }) => {
   const [sliderFocused, setSliderFocused] = useState(false)
 
+  useEffect(() => {
+    const sliderClasses = ['slider__right-panel', 'slider__left-panel', 'fas']
+    function checkSliderClasses (e) {
+      if (sliderFocused) {
+        let found
+        e.target.classList.forEach(className => {
+          if (sliderClasses.includes(className)) {
+            found = true
+          }
+        })
+        return found ? null : setSliderFocused(false)
+      }
+    }
+    document.addEventListener('click', checkSliderClasses)
+    return () => {
+      document.removeEventListener('click', checkSliderClasses)
+    }
+  }, [sliderFocused])
+
   const projectButtons = [
     {
       href: link,
@@ -22,10 +41,7 @@ const Project = ({ tags, title, description, link, source, photos }) => {
     }
   ]
   return (
-    <section
-      className={`section ${sliderFocused && 'section--active'}`}
-      onClick={sliderFocused && (() => setSliderFocused(false))}
-    >
+    <section className={`section ${sliderFocused && 'section--active'}`}>
       <Slider
         photos={photos}
         sliderFocused={sliderFocused}

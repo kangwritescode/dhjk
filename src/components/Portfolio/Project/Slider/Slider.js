@@ -46,7 +46,7 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
     >
       <div
         className={`slider ${sliderFocused && 'slider--active'}`}
-        onClick={() => setSliderFocused(true)}
+        onClick={!sliderFocused ? () => setSliderFocused(true) : null}
       >
         <div
           className={`slider__macTabs ${sliderFocused &&
@@ -80,7 +80,7 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
                 slide('left')
               }}
             >
-              <i class='fas fa-angle-left'></i>
+              <i className='fas fa-angle-left'></i>
             </div>
             <div
               className={`slider__right-panel`}
@@ -89,7 +89,7 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
                 slide('right')
               }}
             >
-              <i class='fas fa-angle-right'></i>
+              <i className='fas fa-angle-right'></i>
             </div>
           </React.Fragment>
         )}
@@ -109,9 +109,10 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
         className={`slider__photos-indicator ${sliderFocused &&
           'slider__photos-indicator--active'}`}
       >
-        {photosToMap.map((_, index) => {
+        {photosToMap.map((url, index) => {
           return (
             <div
+              key={url}
               className={`slider__dot ${focusIndex === index &&
                 'slider__dot--focused'}`}
             ></div>

@@ -9,6 +9,7 @@
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
+  padding-bottom: 10em;
 }
 
 .portfolio header {

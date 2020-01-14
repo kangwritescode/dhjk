@@ -41,25 +41,25 @@ const Logos = props => {
         className={`container__button container__button--facebook ${fbPopInClass}`}
         onClick={() => openLink('https://www.facebook.com/david.kang.75')}
       >
-        <i class='fab fa-facebook-f icon' id='facebook'></i>
+        <i className='fab fa-facebook-f icon' id='facebook'></i>
       </button>
       <button
         className={`container__button container__button--linkedIn ${linkedInPopInClass}`}
         onClick={() => openLink('https://www.linkedin.com/in/davidhjkang/')}
       >
-        <i class='fab fa-linkedin-in icon' id='linkedIn'></i>
+        <i className='fab fa-linkedin-in icon' id='linkedIn'></i>
       </button>
       <button
         className={`container__button container__button--github ${githubPopInClass}`}
         onClick={() => openLink('https://github.com/kangwritescode/')}
       >
-        <i class='fab fa-github icon' id='github'></i>
+        <i className='fab fa-github icon' id='github'></i>
       </button>
       <button
         className={`container__button container__button--instagram ${igPopInClass}`}
         onClick={() => openLink('https://www.instagram.com/ajiashi/')}
       >
-        <i class='fab fa-instagram icon' id='instagram'></i>
+        <i className='fab fa-instagram icon' id='instagram'></i>
       </button>
     </div>
   )
