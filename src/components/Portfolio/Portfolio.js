@@ -3,7 +3,6 @@ import './Portfolio.css'
 import Project from './Project/Project'
 import Arrow from '../Arrow/Arrow'
 import { projects } from './PortfolioData/PortfolioData'
-import DrawBorderButton from '../UI/DrawBorderButton'
 
 const Portfolio = props => {
   const [focusIndex, setFocusIndex] = useState(0);

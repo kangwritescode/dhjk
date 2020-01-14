@@ -8,15 +8,9 @@ const Project = ({ tags, title, description, link, source, photos }) => {
   const [sliderFocused, setSliderFocused] = useState(false)
 
   useEffect(() => {
-    const sliderClasses = ['slider__right-panel', 'slider__left-panel', 'fas']
     function checkSliderClasses (e) {
       if (sliderFocused) {
-        let found
-        e.target.classList.forEach(className => {
-          if (sliderClasses.includes(className)) {
-            found = true
-          }
-        })
+        let found = [...e.target.classList].includes(title) ? true : false
         return found ? null : setSliderFocused(false)
       }
     }
@@ -24,7 +18,7 @@ const Project = ({ tags, title, description, link, source, photos }) => {
     return () => {
       document.removeEventListener('click', checkSliderClasses)
     }
-  }, [sliderFocused])
+  }, [sliderFocused, title])
 
   const projectButtons = [
     {

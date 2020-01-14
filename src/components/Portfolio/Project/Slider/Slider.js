@@ -74,22 +74,22 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
         {sliderFocused && (
           <React.Fragment>
             <div
-              className={`slider__left-panel`}
+              className={`slider__left-panel ${title}`}
               onClick={e => {
                 e.stopPropagation()
                 slide('left')
               }}
             >
-              <i className='fas fa-angle-left'></i>
+              <i className={`fas fa-angle-left ${title}`}></i>
             </div>
             <div
-              className={`slider__right-panel`}
+              className={`slider__right-panel ${title}`}
               onClick={e => {
                 e.stopPropagation()
                 slide('right')
               }}
             >
-              <i className='fas fa-angle-right'></i>
+              <i className={`fas fa-angle-right ${title}`}></i>
             </div>
           </React.Fragment>
         )}
