@@ -1,3 +1,5 @@
+
+
 export const projects = [
   {
     tags: [
@@ -15,13 +17,17 @@ export const projects = [
       `BARZ is a gamified social network where rap fans can write, post, and vote on rap lyrics. 
        I designed and programmed the project in its entirety using a ReactJS front-end and Firebase back-end.`,
     title: 'BARZ',
+    titleFont: 'Permanent Marker, cursive',
     link: 'https://writebarz.com/recruit-david',
     source: 'https://github.com/kangwritescode/barz',
     photos: [
-      'https://i.imgur.com/t8bW41x.png',
       'https://i.imgur.com/u0UFoAa.png',
+      'https://i.imgur.com/Qv8FqEb.png',
       'https://i.imgur.com/RLuFQNU.png',
-      'https://i.imgur.com/Qv8FqEb.png'
+      'https://i.imgur.com/t8bW41x.png',
+      
+
+
     ]
   },
   {
@@ -38,7 +44,8 @@ export const projects = [
       screening for a front-end engineer position. It fetches restaurant data at a 
       given ZIP Code using the Zomato API and presents the data in a table and two graphs.`,
     title: 'GrubFax',
-    link: 'https://github.com/kangwritescode/grubfax',
+    titleFont: 'Space Mono, monospace',
+    link: 'https://grubfax-2d3db.web.app/',
     source: 'https://github.com/kangwritescode/grubfax',
     photos: [
       'https://i.imgur.com/3jY4TOv.png',

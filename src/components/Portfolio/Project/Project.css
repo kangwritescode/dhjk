@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 .section {
   background: rgba(0, 0, 0, 0.233);
@@ -65,7 +66,7 @@
 
 .section .section__info .section__title {
   font-family: "Permanent Marker", cursive;
-  font-size: 2.3em;
+  font-size: 2.4em;
   -webkit-margin-after: 0.3em;
           margin-block-end: 0.3em;
   -webkit-margin-before: 0px;

@@ -4,7 +4,15 @@ import './Project.css'
 import Slider from './Slider/Slider'
 import ProjectButton from './ProjectButton/ProjectButton'
 
-const Project = ({ tags, title, description, link, source, photos }) => {
+const Project = ({
+  tags,
+  title,
+  description,
+  link,
+  source,
+  photos,
+  titleFont
+}) => {
   const [sliderFocused, setSliderFocused] = useState(false)
 
   useEffect(() => {
@@ -45,7 +53,9 @@ const Project = ({ tags, title, description, link, source, photos }) => {
       <div
         className={`section__info ${sliderFocused && 'section__info--hidden'}`}
       >
-        <h3 className='section__title'>{title}</h3>
+        <h3 className='section__title' style={{ fontFamily: titleFont }}>
+          {title}
+        </h3>
         <p className='section__description'>{description}</p>
         <div className={`section__tags`}>
           {tags.map(tag => (
