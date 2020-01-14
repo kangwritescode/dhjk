@@ -31,6 +31,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 7vw;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+
+.section .section__info--hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .section .section__info .section__title {

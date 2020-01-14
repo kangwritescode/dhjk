@@ -10,8 +10,7 @@
     position: relative;
     margin-top: 1.4em;
     padding: 2em 0% 2em 14%;
-    
-    
+
 
     .section__info {
         position: relative;
@@ -23,6 +22,12 @@
         flex-direction: column;
         justify-content: center;
         margin-left: 7vw;
+        transition: opacity 0.1s ease;
+
+        &--hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
 
         .section__title {
             font-family: "Permanent Marker", cursive;
@@ -75,4 +80,3 @@
         }
     }
 }
-

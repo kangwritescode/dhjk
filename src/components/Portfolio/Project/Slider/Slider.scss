@@ -1,3 +1,5 @@
+@import "../../../../shared/mixins/mixins.scss";
+
 .slider {
     position: relative;
     height: 26vw;
@@ -5,12 +7,21 @@
     min-height: 280px;
     min-width: 400px;
     overflow: hidden;
+    transition: all 0.3s ease;
 
+    &--active {
+        height: 500px;
+        width: 800px;
+        min-width: 800px;
+    }
 
     &:hover {
         cursor: pointer;
     }
 
+    &__photo-indicator {
+        display: inline-block;
+    }
 
     &__macTabs {
         width: 100%;
@@ -18,6 +29,10 @@
         background: white;
         display: flex;
         align-items: center;
+        transition: all 0.3s ease;
+        &--expanded {
+            height: 28px;
+        }
         .close {
             background: rgb(235, 102, 102);
         }
@@ -26,13 +41,32 @@
         }
         .maximize {
             background: rgb(24, 224, 124);
+            @include flex-centered(row);
         }
     }
+    &__title {
+        margin: auto;
+        transform: translateX(-60%);
+        color: rgba(0, 0, 0, 0.687);
+        letter-spacing: 0.1em;
+        opacity: 0;
+        transition: all 0.3s ease;
+        &--visible {
+            opacity: 1;
+        }
+    }
+
     &__button {
         height: 10px;
         width: 10px;
         border-radius: 10em;
         margin-left: 5px;
+        transition: all 0.3s ease;
+
+        &--expanded {
+            height: 12px;
+            width: 12px;
+        }
 
         &:first-child {
             margin-left: 10px;
@@ -92,5 +126,32 @@
         &:hover {
             opacity: 1;
         }
+    }
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+.slider__photos-indicator {
+    position: absolute;
+    opacity: 0;
+    margin-left: 2em;
+    &--active {
+        transition: all 0.3s ease;
+        position: relative;
+        opacity: 1;
+    }
+}
+.slider__dot {
+    height: 0.8em;
+    width: 0.8em;
+    background: rgba(255, 255, 255, 0.151);
+    border-radius: 20em;
+    margin: 1em 0em;
+    &--focused {
+        height: 1em;
+        width: 1em;
+        background: rgba(255, 255, 255, 0.418);
     }
 }

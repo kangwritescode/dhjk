@@ -5,10 +5,22 @@
   min-height: 280px;
   min-width: 400px;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slider--active {
+  height: 500px;
+  width: 800px;
+  min-width: 800px;
 }
 
 .slider:hover {
   cursor: pointer;
+}
+
+.slider__photo-indicator {
+  display: inline-block;
 }
 
 .slider__macTabs {
@@ -21,6 +33,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slider__macTabs--expanded {
+  height: 28px;
 }
 
 .slider__macTabs .close {
@@ -33,6 +51,34 @@
 
 .slider__macTabs .maximize {
   background: #18e07c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.slider__title {
+  margin: auto;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  color: rgba(0, 0, 0, 0.687);
+  letter-spacing: 0.1em;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slider__title--visible {
+  opacity: 1;
 }
 
 .slider__button {
@@ -40,6 +86,13 @@
   width: 10px;
   border-radius: 10em;
   margin-left: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slider__button--expanded {
+  height: 12px;
+  width: 12px;
 }
 
 .slider__button:first-child {
@@ -115,5 +168,41 @@
 
 .slider__right-panel:hover {
   opacity: 1;
+}
+
+.slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__photos-indicator {
+  position: absolute;
+  opacity: 0;
+  margin-left: 2em;
+}
+
+.slider__photos-indicator--active {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  opacity: 1;
+}
+
+.slider__dot {
+  height: 0.8em;
+  width: 0.8em;
+  background: rgba(255, 255, 255, 0.151);
+  border-radius: 20em;
+  margin: 1em 0em;
+}
+
+.slider__dot--focused {
+  height: 1em;
+  width: 1em;
+  background: rgba(255, 255, 255, 0.418);
 }
 /*# sourceMappingURL=Slider.css.map */

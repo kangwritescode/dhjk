@@ -5,6 +5,12 @@ import Slider from './Slider/Slider'
 import ProjectButton from './ProjectButton/ProjectButton'
 
 const Project = ({ tags, title, description, link, source, photos }) => {
+  const [sliderFocused, setSliderFocused] = useState(false)
+  // useEffect(() => {
+  //   const sectionEl = document.querySelector('.section')
+  //   sectionEl.addEventListener('click', e => e.stopPropagation())
+  //   return () => {}
+  // }, [])
   const projectButtons = [
     {
       href: link,
@@ -20,9 +26,19 @@ const Project = ({ tags, title, description, link, source, photos }) => {
     }
   ]
   return (
-    <section className='section'>
-      <Slider photos={photos} />
-      <div className={`section__info`}>
+    <section
+      className='section'
+      onClick={sliderFocused && (() => setSliderFocused(false))}
+    >
+      <Slider
+        photos={photos}
+        sliderFocused={sliderFocused}
+        setSliderFocused={setSliderFocused}
+        title={title}
+      />
+      <div
+        className={`section__info ${sliderFocused && 'section__info--hidden'}`}
+      >
         <h3 className='section__title'>{title}</h3>
         <p className='section__description'>{description}</p>
         <div className={`section__tags`}>
