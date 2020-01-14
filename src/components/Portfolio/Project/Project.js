@@ -6,11 +6,7 @@ import ProjectButton from './ProjectButton/ProjectButton'
 
 const Project = ({ tags, title, description, link, source, photos }) => {
   const [sliderFocused, setSliderFocused] = useState(false)
-  // useEffect(() => {
-  //   const sectionEl = document.querySelector('.section')
-  //   sectionEl.addEventListener('click', e => e.stopPropagation())
-  //   return () => {}
-  // }, [])
+
   const projectButtons = [
     {
       href: link,
@@ -27,7 +23,7 @@ const Project = ({ tags, title, description, link, source, photos }) => {
   ]
   return (
     <section
-      className='section'
+      className={`section ${sliderFocused && 'section--active'}`}
       onClick={sliderFocused && (() => setSliderFocused(false))}
     >
       <Slider

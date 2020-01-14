@@ -13,6 +13,29 @@
   position: relative;
   margin-top: 1.4em;
   padding: 2em 0% 2em 14%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.section--active {
+  padding: 3em 0% 2em 14%;
+}
+
+.section__vertical-title {
+  display: none;
+  position: relative;
+  margin-left: 5em;
+}
+
+.section__vertical-title--active {
+  display: inline-block;
+}
+
+.section__vertical-letter {
+  font-family: "Permanent Marker", cursive;
+  font-size: 8em;
+  line-height: .8em;
+  color: rgba(255, 255, 255, 0.762);
 }
 
 .section .section__info {

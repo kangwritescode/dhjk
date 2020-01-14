@@ -103,12 +103,14 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
         className={`slider__photos-indicator ${sliderFocused &&
           'slider__photos-indicator--active'}`}
       >
-        {photosToMap.map((_, index) => (
-          <div
-            className={`slider__dot ${focusIndex === index &&
-              'slider__dot--focused'}`}
-          ></div>
-        ))}
+        {photosToMap.map((_, index) => {
+          return (
+            <div
+              className={`slider__dot ${focusIndex === index &&
+                'slider__dot--focused'}`}
+            ></div>
+          )
+        })}
       </div>
     </div>
   )
