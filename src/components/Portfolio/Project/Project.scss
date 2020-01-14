@@ -1,31 +1,28 @@
 @import "../../../shared/colors/colors.scss";
 @import "../../../shared/fonts/fonts.scss";
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import "../../../shared/mixins/mixins.scss";
 
 .section {
+    background: rgba(0, 0, 0, 0.233);
     display: flex;
     align-items: center;
     position: relative;
     margin-top: 1.4em;
+    padding: 2em 0% 2em 14%;
+    
     
 
-    &__banner {
-        position: absolute;
-        background: rgb(24, 24, 24);
-        padding: 2.2em 15%;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-    }
-
     .section__info {
-        // border: 1px solid white;
         position: relative;
         width: 22em;
+        min-width: 22em;
+
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 7vw;
 
         .section__title {
             font-family: "Permanent Marker", cursive;

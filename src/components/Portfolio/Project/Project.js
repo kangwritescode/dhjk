@@ -21,31 +21,29 @@ const Project = ({ tags, title, description, link, source, photos }) => {
   ]
   return (
     <section className='section'>
-      <div className={`section__banner`}>
-        <div className={`section__info`}>
-          <h3 className='section__title'>{title}</h3>
-          <p className='section__description'>{description}</p>
-          <div className={`section__tags`}>
-            {tags.map(tag => (
-              <span key={tag} className='section__tag'>
-                {tag}
-              </span>
-            ))}
-          </div>
-          <div className={`section__buttons`}>
-            {projectButtons.map(({ href, className, text, fontAwesome }) => (
-              <ProjectButton
-                key={href}
-                href={href}
-                className={className}
-                text={text}
-                fontAwesome={fontAwesome}
-              />
-            ))}
-          </div>
+      <Slider photos={photos} />
+      <div className={`section__info`}>
+        <h3 className='section__title'>{title}</h3>
+        <p className='section__description'>{description}</p>
+        <div className={`section__tags`}>
+          {tags.map(tag => (
+            <span key={tag} className='section__tag'>
+              {tag}
+            </span>
+          ))}
+        </div>
+        <div className={`section__buttons`}>
+          {projectButtons.map(({ href, className, text, fontAwesome }) => (
+            <ProjectButton
+              key={href}
+              href={href}
+              className={className}
+              text={text}
+              fontAwesome={fontAwesome}
+            />
+          ))}
         </div>
       </div>
-      <Slider photos={photos} />
     </section>
   )
 }

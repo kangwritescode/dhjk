@@ -12,7 +12,7 @@
     overflow-y: auto;
 
     header {
-        padding: 1.3em 13% 1.3em 14%;
+        padding: 1.3em 14% 1.3em 14%;
         font-size: 4.5em;
         line-height: 0.65em;
 
@@ -21,54 +21,5 @@
             font-family: $secondaryFont;
             color: rgb(165, 165, 165);
         }
-    }
-
-    &__backdrop {
-        position: absolute;
-        height: 100vh;
-        width: 100vw;
-        z-index: 20;
-        background: rgba(0, 0, 0, 0.598);
-        pointer-events: none;
-        opacity: 0;
-
-        &--active {
-            pointer-events: painted;
-            opacity: 1;
-        }
-    }
-
-    &__status-dots {
-        position: absolute;
-        width: 100vw;
-        bottom: 10%;
-        @include flex-centered(row);
-        transition: all .3s ease;
-        &--hidden {
-            opacity: 0;
-        }
-    }
-    &__status-dot {
-        &:first-child {
-            background: rgba(255, 255, 255, 0.527);
-            height: 1.7em;
-            width: 1.7em;
-        }
-        height: 1em;
-        width: 1em;
-        margin: 0.4em;
-        border-radius: 5em;
-        background: rgba(255, 255, 255, 0.18);
-    }
-    @media screen and (max-height: 880px) {
-        .portfolio__status-dots {
-            opacity: 0;
-        }
-    }
-
-    &__buttons-wrapper {
-        position: relative;
-        top: 8em;
-        @include flex-centered(row);
     }
 }

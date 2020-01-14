@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 .section {
+  background: rgba(0, 0, 0, 0.233);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,24 +12,13 @@
           align-items: center;
   position: relative;
   margin-top: 1.4em;
-}
-
-.section__banner {
-  position: absolute;
-  background: #181818;
-  padding: 2.2em 15%;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 2em 0% 2em 14%;
 }
 
 .section .section__info {
   position: relative;
   width: 22em;
+  min-width: 22em;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +30,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 7vw;
 }
 
 .section .section__info .section__title {

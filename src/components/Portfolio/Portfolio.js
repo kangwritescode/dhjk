@@ -28,11 +28,6 @@ const Portfolio = props => {
         <span className='sub-header'>a collection of my internet things.</span>
       </header>
       {focusedProject}
-      <div className={`portfolio__status-dots`}>
-        <div className={`portfolio__status-dot`}></div>
-        <div className={`portfolio__status-dot`}></div>
-      <div className={`portfolio__status-dot`}></div>
-      </div>
     </div>
   )
 }

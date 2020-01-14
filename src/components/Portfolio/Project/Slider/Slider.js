@@ -6,7 +6,6 @@ const Slider = ({ photos }) => {
   const [photosToMap, setPhotosToMap] = useState([])
   const [photosCount, setPhotosCount] = useState(0)
 
-  const [focused, setFocused] = useState(false)
 
   const PHOTO_WIDTH = 100
   useEffect(() => {
@@ -35,68 +34,30 @@ const Slider = ({ photos }) => {
     setSliderXPos(newPos)
   }
 
-  function focusSlider (bool) {
-    // selectors
-    const arrows = [...document.getElementsByClassName('navButton')]
-    const dots = document.querySelector('.portfolio__status-dots')
-    const navIcon = document.querySelector('.nav-icon')
-    console.log(navIcon)
-
-    if (bool) {
-      arrows.forEach(arrow => {
-        arrow.classList.add('navButton--invisible')
-      })
-      dots.classList.add('portfolio__status-dots--hidden')
-      navIcon.classList.add('nav-icon--hidden')
-      return setFocused(true)
-    }
-    arrows.forEach(arrow => {
-      arrow.classList.remove('navButton--invisible')
-    })
-    dots.classList.remove('portfolio__status-dots--hidden')
-    navIcon.classList.remove('nav-icon--hidden')
-    return setFocused(false)
-  }
   return (
-    <React.Fragment>
-      <div
-        className={`slider ${focused && 'slider--active'}`}
-        onClick={() => (focused ? null : focusSlider(true))}
-      >
-        <div className={`slider__macTabs`}>
-          <div className={`slider__button close`}></div>
-          <div className={`slider__button minimize`}></div>
-          <div className={`slider__button maximize`}></div>
-        </div>
-        {focused && (
-          <React.Fragment>
-            <div
-              className={`slider__left-panel`}
-              onClick={() => slide('left')}
-            ></div>
-            <div
-              className={`slider__right-panel`}
-              onClick={() => slide('right')}
-            ></div>
-          </React.Fragment>
-        )}
-        <div
-          className={`slider__photos`}
-          style={{
-            transition: 'none',
-            transform: `translateX(${sliderXPos}%)`
-          }}
-        >
-          {photosToMap.map(photo => (
-            <img key={photo} className={'slider__img'} alt='' src={photo}></img>
-          ))}
-        </div>
+    <div className={`slider`}>
+      <div className={`slider__macTabs`}>
+        <div className={`slider__button close`}></div>
+        <div className={`slider__button minimize`}></div>
+        <div className={`slider__button maximize`}></div>
       </div>
+      <div className={`slider__left-panel`} onClick={() => slide('left')}></div>
       <div
-        className={`slider-backdrop ${focused && 'slider-backdrop--active'}`}
-        onClick={() => focusSlider(false)}
+        className={`slider__right-panel`}
+        onClick={() => slide('right')}
       ></div>
-    </React.Fragment>
+      <div
+        className={`slider__photos`}
+        style={{
+          transition: 'none',
+          transform: `translateX(${sliderXPos}%)`
+        }}
+      >
+        {photosToMap.map(photo => (
+          <img key={photo} className={'slider__img'} alt='' src={photo}></img>
+        ))}
+      </div>
+    </div>
   )
 }
 
