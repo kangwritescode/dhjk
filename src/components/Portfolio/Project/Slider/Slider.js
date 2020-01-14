@@ -41,7 +41,9 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
   }
 
   return (
-    <div className={`slider-wrapper`}>
+    <div
+      className={`slider-wrapper ${sliderFocused && 'slider-wrapper--active'}`}
+    >
       <div
         className={`slider ${sliderFocused && 'slider--active'}`}
         onClick={() => setSliderFocused(true)}
@@ -77,14 +79,18 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
                 e.stopPropagation()
                 slide('left')
               }}
-            ></div>
+            >
+              <i class='fas fa-angle-left'></i>
+            </div>
             <div
               className={`slider__right-panel`}
               onClick={e => {
                 e.stopPropagation()
                 slide('right')
               }}
-            ></div>
+            >
+              <i class='fas fa-angle-right'></i>
+            </div>
           </React.Fragment>
         )}
         <div

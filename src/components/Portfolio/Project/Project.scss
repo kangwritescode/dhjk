@@ -12,8 +12,9 @@
     padding: 2em 0% 2em 14%;
     transition: all .3s ease;
     &--active {
-        padding: 3em 0% 2em 14%;
+        padding: 3em 0% 2em 50%;
     }
+
 
     &__vertical-title {
         display: none;
