@@ -9,14 +9,12 @@
     align-items: center;
     position: relative;
     margin-top: 4em;
-    padding: 2em 0% 2em 14%;
-    transition: all .3s ease;
-    
+    padding: 2em 14% 2em 14%;
+    transition: all 0.3s ease;
 
     &--active {
-        padding: 3em 0% 2em 50%;
+        padding: 3em 0% 3.4em 14%;
     }
-
 
     &__vertical-title {
         display: none;
@@ -29,21 +27,19 @@
     &__vertical-letter {
         font-family: $tertiaryFont;
         font-size: 8em;
-        line-height: .8em;
+        line-height: 0.8em;
         color: rgba(255, 255, 255, 0.762);
     }
-
 
     .section__info {
         position: relative;
         width: 22em;
         min-width: 22em;
-
+        margin-left: 7vw;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 7vw;
         transition: opacity 0.1s ease;
 
         &--hidden {
@@ -102,5 +98,21 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section {
+        margin-top: 2em;
+        padding: 3em 14% 3em 14%;
+        .section__info {
+            margin-left: 0vw;
+            width: 100%;
+            min-width: 0em;
+        }
+    }
+
+    .slider {
+        display: none;
     }
 }

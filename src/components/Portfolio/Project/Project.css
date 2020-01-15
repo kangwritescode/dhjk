@@ -13,13 +13,13 @@
           align-items: center;
   position: relative;
   margin-top: 4em;
-  padding: 2em 0% 2em 14%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  padding: 2em 14% 2em 14%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .section--active {
-  padding: 3em 0% 2em 50%;
+  padding: 3em 0% 3.4em 14%;
 }
 
 .section__vertical-title {
@@ -35,7 +35,7 @@
 .section__vertical-letter {
   font-family: "Permanent Marker", cursive;
   font-size: 8em;
-  line-height: .8em;
+  line-height: 0.8em;
   color: rgba(255, 255, 255, 0.762);
 }
 
@@ -43,6 +43,7 @@
   position: relative;
   width: 22em;
   min-width: 22em;
+  margin-left: 7vw;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,7 +55,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 7vw;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
@@ -120,5 +120,20 @@
   color: #EDB82F;
   font-size: 0.9em;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .section {
+    margin-top: 2em;
+    padding: 3em 14% 3em 14%;
+  }
+  .section .section__info {
+    margin-left: 0vw;
+    width: 100%;
+    min-width: 0em;
+  }
+  .slider {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Project.css.map */
