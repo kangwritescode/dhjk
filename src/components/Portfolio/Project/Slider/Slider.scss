@@ -9,11 +9,13 @@
     min-width: 430px;
     overflow: hidden;
     transition: all 0.3s ease;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.173);
 
     &--active {
         height: 500px;
         width: 800px;
         min-width: 800px;
+        box-shadow: 7px 7px 1px rgba(0, 0, 0, 0.173);
     }
 
     &:hover {
@@ -146,8 +148,11 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    // justify-content: space-evenly;
+   
     top: 1.6em;
     display: none;
+    height: 1.3em;
 
     &--active {
         transition: all 0.3s ease;
@@ -165,6 +170,7 @@
     &--focused {
         height: 1.2em;
         width: 1.2em;
+        transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         background: rgba(255, 255, 255, 0.418);
     }
 }

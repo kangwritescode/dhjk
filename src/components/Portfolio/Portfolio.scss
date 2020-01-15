@@ -11,30 +11,67 @@
     overflow-y: auto;
     padding-bottom: 10em;
 
-    header {
-        padding: 1.5em 14% 0.2em 14%;
+    h1 {
+        padding: 1.2em 14% 0em 14%;
         font-size: 4.5em;
-        line-height: 0.65em;
+        margin: 0px;
+        animation: pop-in-left 0.6s ease;
+        line-height: 1.2em;
+    }
 
-        span {
-            font-size: 0.4em;
-            font-family: $secondaryFont;
-            color: rgb(165, 165, 165);
-        }
+    h6 {
+        font-size: 1.8em;
+        padding: 0 14% .8em 14%;
+        font-weight: normal;
+        font-family: $secondaryFont;
+        color: rgb(165, 165, 165);
+        opacity: 0;
+        margin: 0px;
+        animation: fadeInDown 0.3s linear 0.3s forwards;
+    }
+}
+
+@keyframes pop-in-left {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 0;
+    }
+    60% {
+        transform: translate3d(1%, 0, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    95% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
 
 @media screen and (max-width: 700px) {
-    .portfolio {
-        header {
-            font-size: 3.5em;
-            line-height: 0.8em;
-            span {
-                font-size: 0.4em;
-                font-family: $secondaryFont;
-                color: rgb(165, 165, 165);
-                line-height: 0px;
-            }
-        }
-    }
+    // .portfolio {
+    //     header {
+    //         line-height: 4em;
+    //         h1 {
+    //             line-height: 4em;
+    //         }
+    //         span {
+    //             line-height: 1em;
+    //         }
+    //     }
+    // }
 }

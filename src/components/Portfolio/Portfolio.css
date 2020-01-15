@@ -12,28 +12,96 @@
   padding-bottom: 10em;
 }
 
-.portfolio header {
-  padding: 1.5em 14% 0.2em 14%;
+.portfolio h1 {
+  padding: 1.2em 14% 0em 14%;
   font-size: 4.5em;
-  line-height: 0.65em;
+  margin: 0px;
+  -webkit-animation: pop-in-left 0.6s ease;
+          animation: pop-in-left 0.6s ease;
+  line-height: 1.2em;
 }
 
-.portfolio header span {
-  font-size: 0.4em;
+.portfolio h6 {
+  font-size: 1.8em;
+  padding: 0 14% .8em 14%;
+  font-weight: normal;
   font-family: "Roboto Slab", serif;
   color: #a5a5a5;
+  opacity: 0;
+  margin: 0px;
+  -webkit-animation: fadeInDown 0.3s linear 0.3s forwards;
+          animation: fadeInDown 0.3s linear 0.3s forwards;
 }
 
-@media screen and (max-width: 700px) {
-  .portfolio header {
-    font-size: 3.5em;
-    line-height: 0.8em;
+@-webkit-keyframes pop-in-left {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
   }
-  .portfolio header span {
-    font-size: 0.4em;
-    font-family: "Roboto Slab", serif;
-    color: #a5a5a5;
-    line-height: 0px;
+  60% {
+    -webkit-transform: translate3d(1%, 0, 0);
+            transform: translate3d(1%, 0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes pop-in-left {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translate3d(1%, 0, 0);
+            transform: translate3d(1%, 0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 /*# sourceMappingURL=Portfolio.css.map */

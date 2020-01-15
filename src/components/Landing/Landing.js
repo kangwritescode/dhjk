@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react'
 import './Landing.css'
 import Logos from '../Logos/Logos'
-import Thoughts from '../Thoughts/Thoughts'
 import NavBar from '../NavBar/Navbar/NavBar'
 import Arrow from '../Arrow/Arrow'
 
@@ -36,13 +35,13 @@ const Landing = props => {
       content: (
         <React.Fragment>
           Articles, labs, and more can be found in the{' '}
-          <a
-            href='/'
+          <span
+            onClick={() => alert('coming soon!')}
             className={`underline--magical underline--magical--compressed`}
             id='underline-two'
           >
             code laboratory.
-          </a>
+          </span>
         </React.Fragment>
       )
     },

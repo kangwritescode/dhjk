@@ -199,7 +199,7 @@ a {
           animation: rightNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
-.leftnavPopIn {
+.leftNavPopIn {
   -webkit-animation: leftNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
           animation: leftNavPopIn 1.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }

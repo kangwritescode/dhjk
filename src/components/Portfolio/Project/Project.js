@@ -15,6 +15,7 @@ const Project = ({
 }) => {
   const [sliderFocused, setSliderFocused] = useState(false)
 
+
   useEffect(() => {
     function checkSliderClasses (e) {
       if (sliderFocused) {
@@ -43,7 +44,10 @@ const Project = ({
     }
   ]
   return (
-    <section className={`section ${sliderFocused && 'section--active'}`}>
+    <section
+      className={`section ${sliderFocused && 'section--active'}`}
+      id={`section-${title}`}
+    >
       <Slider
         photos={photos}
         sliderFocused={sliderFocused}

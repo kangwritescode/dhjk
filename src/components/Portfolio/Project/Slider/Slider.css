@@ -8,12 +8,16 @@
   overflow: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.173);
+          box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.173);
 }
 
 .slider--active {
   height: 500px;
   width: 800px;
   min-width: 800px;
+  -webkit-box-shadow: 7px 7px 1px rgba(0, 0, 0, 0.173);
+          box-shadow: 7px 7px 1px rgba(0, 0, 0, 0.173);
 }
 
 .slider:hover {
@@ -214,6 +218,7 @@
           flex-direction: row;
   top: 1.6em;
   display: none;
+  height: 1.3em;
 }
 
 .slider__photos-indicator--active {
@@ -237,6 +242,8 @@
 .slider__dot--focused {
   height: 1.2em;
   width: 1.2em;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background: rgba(255, 255, 255, 0.418);
 }
 
