@@ -2,6 +2,7 @@
   position: relative;
   height: 26vw;
   width: 38vw;
+  background: rgba(0, 0, 0, 0.214);
   min-height: 300px;
   min-width: 430px;
   overflow: hidden;

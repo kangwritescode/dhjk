@@ -22,7 +22,6 @@ function App () {
             <Landing />
           </Route>
         </Switch>
-        <NavBar />
       </div>
     </Router>
   )

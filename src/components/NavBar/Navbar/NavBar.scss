@@ -10,7 +10,7 @@
     z-index: 300;
     background: $colorOne;
     color: rgba(255, 255, 255, 0.493);
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
     transform: translateY(-100%);
     @include flex-centered(column);
 
@@ -18,23 +18,33 @@
         height: 80%;
         width: 80%;
         max-width: 700px;
+    }
+    .navBar__section {
+        height: 25%;
+        @include flex-centered(column);
+        background: rgba(37, 37, 37, 0.317);
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .navBar__section:hover {
+        background: rgba(35, 35, 35, 0.425);
+        color: rgb(182, 182, 182);
+    }
 
-        .navBar__section {
-            height: 25%;
-            @include flex-centered(column);
-            background: rgb(37, 37, 37);
-            font-size: 2em;
-            cursor: pointer;
-        }
-        .navBar__section:hover {
-            background: rgb(35, 35, 35);
-            color: rgb(182, 182, 182);
-        
-        }
+    a {
+        color: rgba(255, 255, 255, 0.493);
     }
 }
 
 .navBar-focused {
     opacity: 1;
     transform: translateY(0%);
+}
+
+@media screen and (max-width: 500px) {
+    .navBar__section-container {
+        .navBar__section {
+            font-size: 1.45em;
+        }
+    }
 }

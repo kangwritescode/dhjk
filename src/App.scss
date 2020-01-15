@@ -8,6 +8,7 @@
     color: $colorTwo;
     font-family: $primaryFont;
     font-style: 'black';
+    background: $colorOne;
     @include flex-centered(column);
 }
 

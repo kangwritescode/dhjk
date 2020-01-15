@@ -10,10 +10,10 @@
   z-index: 300;
   background: #272727;
   color: rgba(255, 255, 255, 0.493);
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   display: -webkit-box;
@@ -37,7 +37,7 @@
   max-width: 700px;
 }
 
-.navBar .navBar__section-container .navBar__section {
+.navBar .navBar__section {
   height: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,19 +52,29 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #252525;
+  background: rgba(37, 37, 37, 0.317);
   font-size: 2em;
   cursor: pointer;
 }
 
-.navBar .navBar__section-container .navBar__section:hover {
-  background: #232323;
+.navBar .navBar__section:hover {
+  background: rgba(35, 35, 35, 0.425);
   color: #b6b6b6;
+}
+
+.navBar a {
+  color: rgba(255, 255, 255, 0.493);
 }
 
 .navBar-focused {
   opacity: 1;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+}
+
+@media screen and (max-width: 500px) {
+  .navBar__section-container .navBar__section {
+    font-size: 1.45em;
+  }
 }
 /*# sourceMappingURL=NavBar.css.map */

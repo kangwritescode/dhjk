@@ -24,24 +24,6 @@
           flex-direction: column;
 }
 
-.landing__head {
-  height: 100%;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 5;
-}
-
-.landing__head-wrapper {
-  position: absolute;
-  bottom: 0px;
-  height: 70%;
-  opacity: .4;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-}
-
 #landing-header {
   position: relative;
   z-index: 1;
@@ -51,8 +33,12 @@
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
   line-height: 1.7em;
-  -webkit-animation: zoomInDown 1.5s ease-in-out;
-          animation: zoomInDown 1.5s ease-in-out;
+  opacity: 0;
+}
+
+.zoomInDown {
+  -webkit-animation: zoomInDown 1.5s ease-in-out forwards;
+          animation: zoomInDown 1.5s ease-in-out forwards;
 }
 
 #landing-subtext {
@@ -81,27 +67,6 @@
 
 #landing-subtext a:hover {
   color: black;
-}
-
-.thoughts-container {
-  position: absolute;
-  z-index: 1;
-  width: 100vw;
-  top: 0px;
-  height: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .underline--magical {
@@ -189,21 +154,26 @@
   color: rgba(0, 0, 0, 0.084);
 }
 
-@-webkit-keyframes typed {
-  0% {
-    opacity: 0;
-  }
-  100% {
+.test {
+  -webkit-animation: test 1s ease forwards;
+          animation: test 1s ease forwards;
+}
+
+@-webkit-keyframes test {
+  from {
     opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
-@keyframes typed {
-  0% {
-    opacity: 0;
-  }
-  100% {
+@keyframes test {
+  from {
     opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -222,6 +192,9 @@
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes zoomInDown {
@@ -238,6 +211,9 @@
     transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+  100% {
+    opacity: 1;
   }
 }
 

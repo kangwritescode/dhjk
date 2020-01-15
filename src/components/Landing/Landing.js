@@ -1,8 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState, useEffect } from 'react'
 import './Landing.css'
-import head from '../../assets/head.png'
-import headTwo from '../../assets/headTwo.png'
 import Logos from '../Logos/Logos'
 import Thoughts from '../Thoughts/Thoughts'
 import NavBar from '../NavBar/Navbar/NavBar'
@@ -87,10 +85,15 @@ const Landing = props => {
   ]
 
   useEffect(() => {
+    setHeaderAnimation()
     setMagicalUnderlineTimeouts()
     setHTMLCodeTimeout()
     return () => {}
   }, [])
+
+  function setHeaderAnimation () {
+    document.getElementById('landing-header').classList.add('zoomInDown')
+  }
   function setHTMLCodeTimeout () {
     const htmEl = document.querySelector('.landing__html')
     setTimeout(() => {
@@ -102,36 +105,38 @@ const Landing = props => {
   }
   function setMagicalUnderlineTimeouts () {
     setTimeout(() => {
-      document
-        .querySelector('#underline-one')
-        .classList.add('underline--magical--expanded')
+      let text = document.querySelector('#underline-one')
+      if (text) {
+        text.classList.add('underline--magical--expanded')
+      }
     }, 2150)
     setTimeout(() => {
-      document
-        .querySelector('#underline-two')
-        .classList.add('underline--magical--expanded')
+      let text = document.querySelector('#underline-two')
+      if (text) {
+        text.classList.add('underline--magical--expanded')
+      }
     }, 2450)
     setTimeout(() => {
-      document
-        .querySelector('#underline-three')
-        .classList.add('underline--magical--expanded')
+      let text = document.querySelector('#underline-three')
+      if (text) {
+        text.classList.add('underline--magical--expanded')
+      }
     }, 2750)
     setTimeout(() => {
-      document
-        .querySelector('#underline-four')
-        .classList.add('underline--magical--expanded')
+      let text = document.querySelector('#underline-four')
+      if (text) {
+        text.classList.add('underline--magical--expanded')
+      }
     }, 3050)
   }
 
   return (
     <React.Fragment>
+      <NavBar />
       <Arrow url='portfolio' text='portfolio' direction='right' />
       <div className='landing'>
         <div className={`landing__html`}>
           <i className='fa fa-code'></i>
-        </div>
-        <div className={`thoughts-container`}>
-          <Thoughts />
         </div>
         <h1 id='landing-header'>Hi there, I'm David Kang</h1>
         <div id='landing-subtext'>

@@ -9,17 +9,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(87, 87, 87, 0.247);
+  background-color: rgba(87, 87, 87, 0);
   border-radius: 50em;
   height: 4.5em;
   width: 4.5em;
   bottom: 2.5%;
   right: 5%;
   overflow: hidden;
-  opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
   z-index: 300;
+}
+
+.nav-icon__wrapper--visible {
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  background-color: rgba(87, 87, 87, 0.247);
 }
 
 .nav-icon {

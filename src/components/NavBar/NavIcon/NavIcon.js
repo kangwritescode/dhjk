@@ -5,6 +5,7 @@ const NavIcon = ({ focused, setFocused }) => {
   const [inLineOne, setInLineOne] = useState('')
   const [inLineTwo, setInLineTwo] = useState('')
   const [inLineThree, setInLineThree] = useState('')
+  const [wrapperClass, setWrapperClass] = useState('')
 
   useEffect(() => {
     setInClasses()
@@ -20,10 +21,13 @@ const NavIcon = ({ focused, setFocused }) => {
     setTimeout(() => {
       setInLineThree('post')
     }, 1800)
+    setTimeout(() => {
+      setWrapperClass('nav-icon__wrapper--visible')
+    }, 1850)
   }
 
   return (
-    <div className={`nav-icon__wrapper`}>
+    <div className={`nav-icon__wrapper ${wrapperClass}`}>
       <div className='nav-icon' onClick={() => setFocused(!focused)}>
         <div
           className={`nav-icon__line-1 ${
