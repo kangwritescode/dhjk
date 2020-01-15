@@ -96,12 +96,18 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
           className={`slider__photos`}
           style={{
             transition: 'none',
-            transform: `translateX(${sliderXPos}%)`
+            // transform: `translateX(${sliderXPos}%)`
           }}
         >
-          {photosToMap.map(photo => (
+          {/* {photosToMap.map(photo => (
             <img key={photo} className={'slider__img'} alt='' src={photo}></img>
-          ))}
+          ))} */}
+          <img
+            key={photosToMap[focusIndex]}
+            className={'slider__img'}
+            alt=''
+            src={photosToMap[focusIndex]}
+          ></img>
         </div>
       </div>
       <div
