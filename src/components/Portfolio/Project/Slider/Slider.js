@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react'
 import './Slider.css'
 
 const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
-  const [sliderXPos, setSliderXPos] = useState(0)
   const [focusIndex, setFocusIndex] = useState(0)
   const [photosToMap, setPhotosToMap] = useState([])
   const [photosCount, setPhotosCount] = useState(0)
 
-  const PHOTO_WIDTH = 100
   useEffect(() => {
     setPhotosToMap(photos)
     setPhotosCount(photos.length)
@@ -15,28 +13,22 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
   }, [photos])
 
   function slide (direction) {
-    let newPos
     let newFocusIndex = focusIndex
     if (direction === 'left') {
-      if (sliderXPos === 0) {
-        newPos = (photosCount - 1) * PHOTO_WIDTH * -1
+      if (focusIndex === 0) {
         newFocusIndex = photosCount - 1
       } else {
-        newPos = sliderXPos + 100
         newFocusIndex -= 1
       }
     }
     if (direction === 'right') {
-      if (sliderXPos === (photosCount - 1) * PHOTO_WIDTH * -1) {
-        newPos = 0
+      if (focusIndex === photosCount - 1) {
         newFocusIndex = 0
       } else {
-        newPos = sliderXPos - 100
         newFocusIndex += 1
       }
     }
     setFocusIndex(newFocusIndex)
-    setSliderXPos(newPos)
   }
 
   return (
@@ -95,13 +87,9 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
         <div
           className={`slider__photos`}
           style={{
-            transition: 'none',
-            // transform: `translateX(${sliderXPos}%)`
+            transition: 'none'
           }}
         >
-          {/* {photosToMap.map(photo => (
-            <img key={photo} className={'slider__img'} alt='' src={photo}></img>
-          ))} */}
           <img
             key={photosToMap[focusIndex]}
             className={'slider__img'}
