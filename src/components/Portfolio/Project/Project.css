@@ -19,8 +19,8 @@
   -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
   opacity: 0;
-  -webkit-animation: pop-in-left .8s ease .6s forwards;
-          animation: pop-in-left .8s ease .6s forwards;
+  -webkit-animation: pop-in-left .8s ease .7s forwards;
+          animation: pop-in-left .8s ease .7s forwards;
 }
 
 .section__vertical-title {

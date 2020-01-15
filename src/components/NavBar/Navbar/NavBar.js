@@ -13,7 +13,7 @@ const NavBar = props => {
         <div className={`navBar__section-container`}>
           {items.map(section => (
             <Link to={section}>
-              <div key={section} className={`navBar__section`} id={section}>
+              <div key={section} className={`navBar__section`} id={section} onClick={() => setFocused(false)}>
                 {section}
               </div>
             </Link>
