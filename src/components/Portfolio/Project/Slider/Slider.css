@@ -216,7 +216,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  top: 1.6em;
   display: none;
   height: 1.3em;
 }
@@ -225,6 +224,8 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
+  top: .6em;
+  margin-top: 1em;
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
