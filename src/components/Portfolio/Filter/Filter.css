@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+.Filter {
+  margin-top: 2em;
+  padding: 0em 14%;
+  font-weight: lighter;
+  color: #b3b3b3;
+}
+
+.Filter ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.Filter ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: .8em;
+  border-style: solid;
+  border-color: #131313;
+  border-width: 1px;
+  border-bottom-width: 2px;
+  -webkit-box-shadow: 1px 1px 1px #131313;
+          box-shadow: 1px 1px 1px #131313;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: .85em;
+  padding: .3em 1em;
+  border-radius: .15em;
+}
+/*# sourceMappingURL=Filter.css.map */

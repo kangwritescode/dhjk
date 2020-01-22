@@ -1,0 +1,27 @@
+@import "../../../shared/fonts/fonts.scss";
+
+.Filter {
+    margin-top: 2em;
+    padding: 0em 14%;
+    font-weight: lighter;
+    color: rgb(179, 179, 179);
+    // background: rgba(0, 0, 0, 0.233);
+    ul {
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: .8em;
+            border-style: solid;
+            border-color: rgb(19, 19, 19);
+            border-width: 1px;
+            border-bottom-width: 2px;
+            box-shadow: 1px 1px 1px rgb(19, 19, 19);
+            font-family: $secondaryFont;
+            font-weight: bold;
+            font-size: .85em;
+            padding: .3em 1em;
+            border-radius: .15em;
+        }
+        padding-inline-start: 0px;
+    }
+}
