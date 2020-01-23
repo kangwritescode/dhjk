@@ -7,6 +7,13 @@ import NavBar from '../NavBar/Navbar/NavBar'
 import Filter from './Filter/Filter'
 
 const Portfolio = props => {
+  const [selectedFilter, setSelectedFilter] = useState('SHOW ALL')
+  const options = [
+    'SHOW ALL',
+    'SELECTED WORKS',
+    'FULL-PROJECTS',
+    'MINI-PROJECTS'
+  ]
   return (
     <React.Fragment>
       <NavBar />
@@ -15,7 +22,7 @@ const Portfolio = props => {
         <Arrow url='/laboratory' direction='right' text='lab ' />
         <h1>web dev portfolio</h1>
         <h6 className='sub-header'>a collection of my internet things.</h6>
-        <Filter></Filter>
+        <Filter options={options}></Filter>
         {projects.map(projectData => (
           <Project key={projectData.title} {...projectData} />
         ))}

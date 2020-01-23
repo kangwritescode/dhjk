@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Filter.css'
 
-const Filter = props => {
-  const options = [
-    'SHOW ALL',
-    'SELECTED WORKS',
-    'FULL-PROJECTS',
-    'MINI-PROJECTS'
-  ]
+const Filter = ({ options }) => {
   return (
     <div className='Filter'>
       <ul>
