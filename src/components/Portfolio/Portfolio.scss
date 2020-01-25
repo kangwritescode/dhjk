@@ -15,19 +15,39 @@
         padding: 1.2em 14% 0em 14%;
         font-size: 4.5em;
         margin: 0px;
-        animation: pop-in-left .6s ease;
+        animation: pop-in-left 0.6s ease;
         line-height: 1.2em;
     }
 
     h6 {
         font-size: 1.8em;
-        padding: 0 14% .8em 14%;
+        padding: 0 14% 0.8em 14%;
         font-weight: normal;
         font-family: $secondaryFont;
         color: rgb(165, 165, 165);
         opacity: 0;
         margin: 0px;
-        animation: fadeInDown 0.3s linear .5s forwards;
+        animation: fadeInDown 0.32s ease 0.5s forwards;
+    }
+    &__project-count-label {
+        display: inline-block;
+        padding: 0 14% 0.8em 14%;
+        margin-top: 1em;
+        font-weight: normal;
+        font-family: $secondaryFont;
+        font-size: 0.9em;
+        color: rgb(135, 135, 135);
+        opacity: 0;
+        animation: fade-in 0.8s ease 1.5s forwards;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
@@ -47,14 +67,9 @@
         opacity: 0;
         transform: translateY(-50px);
     }
-
-    90% {
-        opacity: 1;
-        transform: translateY(5px);
-    }
     100% {
         opacity: 1;
-        transform: translateY(0%);
+        transform: translateY(0px);
     }
 }
 

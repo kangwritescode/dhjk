@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+.Filter {
+  margin-top: 0em;
+  padding: 0em 14%;
+  font-weight: lighter;
+  color: #b3b3b3;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  -webkit-animation: pop-in-left .8s ease .7s forwards;
+          animation: pop-in-left .8s ease .7s forwards;
+}
+
+.Filter ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.Filter ul li {
+  padding: 0.4em 1.1em;
+  border-radius: 0.15em;
+  margin-right: 0.8em;
+  margin-bottom: 0.8em;
+  border-style: solid;
+  border-color: #131313;
+  border-width: 1px;
+  border-bottom-width: 2px;
+  -webkit-box-shadow: 1px 1px 1px #131313;
+          box-shadow: 1px 1px 1px #131313;
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  list-style: none;
+}
+
+.Filter ul li.selected {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+.Filter ul li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+/*# sourceMappingURL=Filter.css.map */

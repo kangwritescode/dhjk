@@ -23,4 +23,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=App.css.map */

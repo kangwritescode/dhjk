@@ -12,6 +12,10 @@
     @include flex-centered(column);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 // @keyframes move-left {
 //     0% {
 //         transform: translateX(100%);
