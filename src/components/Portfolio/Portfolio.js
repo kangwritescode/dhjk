@@ -36,7 +36,7 @@ const Portfolio = props => {
           options={options}
           setFilter={setFilter}
         ></Filter>
-        <label>
+        <label className='portfolio__project-count-label'>
           Showing {filteredProjects.length} project
           {filteredProjects.length === 1 ? '' : 's'} filtered by the '
           {selectedFilter}' tag.
