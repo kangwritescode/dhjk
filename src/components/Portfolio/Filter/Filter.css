@@ -15,20 +15,29 @@
 }
 
 .Filter ul li {
-  list-style: none;
-  display: inline-block;
-  margin-right: .8em;
-  margin-bottom: .8em;
+  padding: 0.4em 1.1em;
+  border-radius: 0.15em;
+  margin-right: 0.8em;
+  margin-bottom: 0.8em;
   border-style: solid;
   border-color: #131313;
   border-width: 1px;
   border-bottom-width: 2px;
   -webkit-box-shadow: 1px 1px 1px #131313;
           box-shadow: 1px 1px 1px #131313;
+  display: inline-block;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
-  font-size: .8em;
-  padding: .4em 1.1em;
-  border-radius: .15em;
+  font-size: 0.8em;
+  list-style: none;
+}
+
+.Filter ul li.selected {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+.Filter ul li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.075);
 }
 /*# sourceMappingURL=Filter.css.map */

@@ -14,6 +14,11 @@ const Portfolio = props => {
     'FULL-PROJECTS',
     'MINI-PROJECTS'
   ]
+
+  const setFilter = option => {
+    setSelectedFilter(option)
+  }
+
   return (
     <React.Fragment>
       <NavBar />
@@ -22,10 +27,16 @@ const Portfolio = props => {
         <Arrow url='/laboratory' direction='right' text='lab ' />
         <h1>web dev portfolio</h1>
         <h6 className='sub-header'>a collection of my internet things.</h6>
-        <Filter options={options}></Filter>
-        {projects.map(projectData => (
-          <Project key={projectData.title} {...projectData} />
-        ))}
+        <Filter
+          selectedFilter={selectedFilter}
+          options={options}
+          setFilter={setFilter}
+        ></Filter>
+        {projects
+          .filter(({ filterOptions }) => filterOptions.includes(selectedFilter))
+          .map(projectData => (
+            <Project key={projectData.title} {...projectData} />
+          ))}
       </div>
     </React.Fragment>
   )
