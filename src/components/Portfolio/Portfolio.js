@@ -19,6 +19,10 @@ const Portfolio = props => {
     setSelectedFilter(option)
   }
 
+  const filteredProjects = projects.filter(({ filterOptions }) =>
+    filterOptions.includes(selectedFilter)
+  )
+
   return (
     <React.Fragment>
       <NavBar />
@@ -32,11 +36,14 @@ const Portfolio = props => {
           options={options}
           setFilter={setFilter}
         ></Filter>
-        {projects
-          .filter(({ filterOptions }) => filterOptions.includes(selectedFilter))
-          .map(projectData => (
-            <Project key={projectData.title} {...projectData} />
-          ))}
+        <label>
+          Showing {filteredProjects.length} project
+          {filteredProjects.length === 1 ? '' : 's'} filtered by the '
+          {selectedFilter}' tag.
+        </label>
+        {filteredProjects.map(projectData => (
+          <Project key={projectData.title} {...projectData} />
+        ))}
       </div>
     </React.Fragment>
   )

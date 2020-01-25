@@ -16,21 +16,31 @@
   padding: 1.2em 14% 0em 14%;
   font-size: 4.5em;
   margin: 0px;
-  -webkit-animation: pop-in-left .6s ease;
-          animation: pop-in-left .6s ease;
+  -webkit-animation: pop-in-left 0.6s ease;
+          animation: pop-in-left 0.6s ease;
   line-height: 1.2em;
 }
 
 .portfolio h6 {
   font-size: 1.8em;
-  padding: 0 14% .8em 14%;
+  padding: 0 14% 0.8em 14%;
   font-weight: normal;
   font-family: "Roboto Slab", serif;
   color: #a5a5a5;
   opacity: 0;
   margin: 0px;
-  -webkit-animation: fadeInDown 0.3s linear .5s forwards;
-          animation: fadeInDown 0.3s linear .5s forwards;
+  -webkit-animation: fadeInDown 0.3s linear 0.5s forwards;
+          animation: fadeInDown 0.3s linear 0.5s forwards;
+}
+
+.portfolio label {
+  display: inline-block;
+  padding: 0 14% 0.8em 14%;
+  margin-top: 1em;
+  font-weight: normal;
+  font-family: "Roboto Slab", serif;
+  font-size: .9em;
+  color: #878787;
 }
 
 @-webkit-keyframes pop-in-left {
