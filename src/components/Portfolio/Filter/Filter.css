@@ -7,6 +7,10 @@
   padding: 0em 14%;
   font-weight: lighter;
   color: #b3b3b3;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  -webkit-animation: pop-in-left .8s ease .7s forwards;
+          animation: pop-in-left .8s ease .7s forwards;
 }
 
 .Filter ul {
