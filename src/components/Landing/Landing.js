@@ -34,7 +34,7 @@ const Landing = props => {
       style: { animation: 'fadeInDown .2s  ease-in 1.4s forwards' },
       content: (
         <React.Fragment>
-          Articles, labs, and more can be found in the{' '}
+          Articles, labs, and blog posts are found in the{' '}
           <span
             onClick={() => alert('coming soon!')}
             className={`underline--magical underline--magical--compressed`}
