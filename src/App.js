@@ -5,6 +5,7 @@ import './components/Landing/Landing'
 import Portfolio from './components/Portfolio/Portfolio'
 import NavBar from './components/NavBar/Navbar/NavBar'
 import Landing from './components/Landing/Landing'
+import Studio from './components/Studio/Studio'
 
 function App () {
   useEffect(() => {
@@ -17,6 +18,9 @@ function App () {
         <Switch>
           <Route path='/portfolio'>
             <Portfolio />
+          </Route>
+          <Route path='/studio'>
+            <Studio />
           </Route>
           <Route path='/'>
             <Landing />

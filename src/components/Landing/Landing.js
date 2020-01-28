@@ -34,13 +34,13 @@ const Landing = props => {
       style: { animation: 'fadeInDown .2s  ease-in 1.4s forwards' },
       content: (
         <React.Fragment>
-          Articles, labs, and more can be found in the{' '}
+           Various web dev topics are covered by me in the{' '}
           <span
             onClick={() => alert('coming soon!')}
             className={`underline--magical underline--magical--compressed`}
             id='underline-two'
           >
-            code laboratory.
+            web studio.
           </span>
         </React.Fragment>
       )
