@@ -38,6 +38,11 @@
   font-size: 2em;
 }
 
+.compressed:hover {
+  cursor: pointer;
+  color: #dedede;
+}
+
 .orange {
   color: orange;
 }

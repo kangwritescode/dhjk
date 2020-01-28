@@ -30,8 +30,10 @@ const Studio = props => {
         <label className='studio__concept-count-label'>
           Showing 3 concepts filtered by the 'SHOW ALL' tag.
         </label>
-        {STUDIO_DATA.map(({ header, icon, color }) => {
-          return <Concept header={header} icon={icon} color={color} />
+        {STUDIO_DATA.map(({ header, icon, color, body }) => {
+          return (
+            <Concept header={header} icon={icon} color={color} body={body} />
+          )
         })}
       </div>
     </React.Fragment>
