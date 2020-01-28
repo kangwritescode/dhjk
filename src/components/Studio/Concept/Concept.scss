@@ -19,6 +19,10 @@
     font-size: 1.1em;
     color: rgba(255, 255, 255, 0.79);
 
+    p {
+        line-height: 1.7em;
+    }
+
     &:nth-of-type(2) {
         margin-top: 0.2em;
     }

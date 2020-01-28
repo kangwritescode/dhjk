@@ -1,4 +1,5 @@
 import React from 'react'
+import * as markups from '../ConceptMarkups/index'
 
 export const STUDIO_DATA = [
   {
@@ -10,6 +11,6 @@ export const STUDIO_DATA = [
     header: 'What is a closure?',
     icon: 'fab fa-js',
     color: 'yellow',
-    body: <h1>hi</h1>
+    body: markups.closure
   }
 ]

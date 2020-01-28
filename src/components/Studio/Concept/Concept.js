@@ -15,7 +15,7 @@ const Concept = ({ header, icon, color, body }) => {
       onClick={toggleExpanded}
     >
       <h3 className={`concept__header`}>{header}</h3>
-      <i className={`concept__icon ${icon} ${color}`}></i>
+      {isExpanded ? null : <i className={`concept__icon ${icon} ${color}`}></i>}
       {isExpanded ? body : null}
     </div>
   )
@@ -24,6 +24,5 @@ const Concept = ({ header, icon, color, body }) => {
 export default Concept
 
 Concept.propTypes = {
-  header: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired
 }

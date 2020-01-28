@@ -31,9 +31,7 @@ const Studio = props => {
           Showing 3 concepts filtered by the 'SHOW ALL' tag.
         </label>
         {STUDIO_DATA.map(({ header, icon, color, body }) => {
-          return (
-            <Concept header={header} icon={icon} color={color} body={body} />
-          )
+          return <Concept header={header} icon={icon} color={color} body={body}/>
         })}
       </div>
     </React.Fragment>
