@@ -3,6 +3,8 @@ import './Studio.css'
 import NavBar from '../NavBar/Navbar/NavBar'
 import Arrow from '../Arrow/Arrow'
 import Filter from '../Filter/Filter'
+import { STUDIO_DATA } from './StudioData/StudioData'
+import Concept from './Concept/Concept'
 
 const Studio = props => {
   const [selectedFilter, setSelectedFilter] = useState('SHOW ALL')
@@ -25,7 +27,12 @@ const Studio = props => {
           options={options}
           setFilter={setFilter}
         ></Filter>
-        <label className='studio__concept-count-label'></label>
+        <label className='studio__concept-count-label'>
+          Showing 3 concepts filtered by the 'SHOW ALL' tag.
+        </label>
+        {STUDIO_DATA.map(({ header, icon, color }) => {
+          return <Concept header={header} icon={icon} color={color} />
+        })}
       </div>
     </React.Fragment>
   )

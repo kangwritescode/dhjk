@@ -9,7 +9,7 @@
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-bottom: 16em;
+  height: 100vh;
 }
 
 .studio h1 {
@@ -33,7 +33,7 @@
           animation: fadeInDown 0.32s ease 0.5s forwards;
 }
 
-.studio__project-count-label {
+.studio__concept-count-label {
   display: inline-block;
   padding: 0 14% 0.8em 14%;
   margin-top: 1em;

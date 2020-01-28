@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+.concept {
+  position: relative;
+  width: 70%;
+  max-width: 45em;
+  margin: 1em 14%;
+  border-radius: 0.4em;
+  background: #181818;
+  padding: 1em 2em;
+  padding-right: 5em;
+  -webkit-box-shadow: 3px 4px 0px #1f1f1f;
+          box-shadow: 3px 4px 0px #1f1f1f;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2em;
+}
+
+.concept:nth-of-type(2) {
+  margin-top: .2em;
+}
+
+.concept__header {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.concept__icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1.2em;
+  font-size: 2em;
+}
+
+.orange {
+  color: orange;
+}
+
+.yellow {
+  color: yellow;
+}
+/*# sourceMappingURL=Concept.css.map */

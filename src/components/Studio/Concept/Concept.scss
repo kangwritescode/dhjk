@@ -1,0 +1,44 @@
+@import "../../../shared/fonts/fonts.scss";
+
+.concept {
+    position: relative;
+    width: 70%;
+    max-width: 45em;
+
+    // box
+    margin: 1em 14%;
+    border-radius: 0.4em;
+    background: rgb(24, 24, 24);
+    padding: 1em 2em;
+    padding-right: 5em;
+    box-shadow: 3px 4px 0px rgb(31, 31, 31);
+
+    // text
+    font-family: $secondaryFont;
+    font-size: 1.2em;
+
+    &:nth-of-type(2) {
+        margin-top: .2em;
+    }
+
+    &__header {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.2em;
+        font-size: 2em;
+    }
+}
+
+.orange {
+    color: orange;
+}
+
+.yellow {
+    color: yellow;
+}

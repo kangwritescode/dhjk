@@ -9,7 +9,7 @@
     width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
-    padding-bottom: 16em;
+    height: 100vh;
 
     h1 {
         padding: 1.2em 14% 0em 14%;
@@ -29,7 +29,7 @@
         margin: 0px;
         animation: fadeInDown 0.32s ease 0.5s forwards;
     }
-    &__project-count-label {
+    &__concept-count-label {
         display: inline-block;
         padding: 0 14% 0.8em 14%;
         margin-top: 1em;
