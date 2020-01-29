@@ -8,7 +8,7 @@ import Concept from './Concept/Concept'
 
 const Studio = props => {
   const [selectedFilter, setSelectedFilter] = useState('SHOW ALL')
-  const options = ['SHOW ALL', 'HTML', 'CSS', 'Javascript', 'ReactJS']
+  const options = ['SHOW ALL', 'HTML', 'CSS', 'Javascript', 'ReactJS', 'Interview']
 
   const setFilter = option => {
     setSelectedFilter(option)
@@ -33,6 +33,7 @@ const Studio = props => {
         {STUDIO_DATA.map(({ header, icon, color, body }) => {
           return <Concept header={header} icon={icon} color={color} body={body}/>
         })}
+        <script src="https://gist.github.com/kangwritescode/38eea6b5c8fc2b9de10792ab346d6c1a.js"></script>
       </div>
     </React.Fragment>
   )

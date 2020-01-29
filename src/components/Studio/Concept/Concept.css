@@ -10,7 +10,7 @@
   border-radius: 0.4em;
   background: #181818;
   padding: 1.5em 2em;
-  padding-right: 5.5em;
+  padding-right: 5em;
   -webkit-box-shadow: 3px 4px 0px #1f1f1f;
           box-shadow: 3px 4px 0px #1f1f1f;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -53,5 +53,9 @@
 
 .yellow {
   color: yellow;
+}
+
+.blue {
+  color: #18a3d2;
 }
 /*# sourceMappingURL=Concept.css.map */

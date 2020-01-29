@@ -3,9 +3,9 @@ import * as markups from '../ConceptMarkups/index'
 
 export const STUDIO_DATA = [
   {
-    header: 'Can a web page contain multiple <header> elements? ',
-    icon: 'fab fa-html5',
-    color: 'orange'
+    header: 'How can you load the CSS before view is shown? ',
+    icon: 'fab fa-css3',
+    color: 'blue'
   },
   {
     header: 'What is a closure?',

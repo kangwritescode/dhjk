@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './Concept.css'
 
 const Concept = ({ header, icon, color, body }) => {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(true)
 
   function toggleExpanded () {
     setIsExpanded(!isExpanded)
