@@ -1,0 +1,88 @@
+@import "../../shared/colors/colors.scss";
+@import "../../shared/fonts/fonts.scss";
+@import "../../shared/mixins/mixins.scss";
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+
+.studio {
+    position: relative;
+    background: $colorOne;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+
+    h1 {
+        padding: 1.2em 14% 0em 14%;
+        font-size: 4.5em;
+        margin: 0px;
+        animation: pop-in-left 0.6s ease;
+        line-height: 1.2em;
+    }
+
+    h6 {
+        font-size: 1.8em;
+        padding: 0 14% 0.8em 14%;
+        font-weight: normal;
+        font-family: $secondaryFont;
+        color: rgb(165, 165, 165);
+        opacity: 0;
+        margin: 0px;
+        animation: fadeInDown 0.32s ease 0.5s forwards;
+    }
+    &__concept-count-label {
+        display: inline-block;
+        padding: 0 14% 0.8em 14%;
+        margin-top: 1em;
+        font-weight: normal;
+        font-family: $secondaryFont;
+        font-size: 0.9em;
+        color: rgb(135, 135, 135);
+        opacity: 0;
+        animation: fade-in 0.8s ease 1.5s forwards;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pop-in-left {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    // .portfolio {
+    //     header {
+    //         line-height: 4em;
+    //         h1 {
+    //             line-height: 4em;
+    //         }
+    //         span {
+    //             line-height: 1em;
+    //         }
+    //     }
+    // }
+}

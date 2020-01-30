@@ -4,7 +4,7 @@ import Project from './Project/Project'
 import Arrow from '../Arrow/Arrow'
 import { projects } from './PortfolioData/PortfolioData'
 import NavBar from '../NavBar/Navbar/NavBar'
-import Filter from './Filter/Filter'
+import Filter from '../Filter/Filter'
 
 const Portfolio = props => {
   const [selectedFilter, setSelectedFilter] = useState('SHOW ALL')
@@ -28,8 +28,10 @@ const Portfolio = props => {
       <NavBar />
       <div className={`portfolio`}>
         <Arrow url='/' direction='left' text=' home' />
-        <Arrow url='/laboratory' direction='right' text='lab ' />
-        <h1>web dev portfolio</h1>
+        <Arrow url='/studio' direction='right' text='studio ' />
+        <h1>
+          web dev portfolio
+        </h1>
         <h6 className='sub-header'>a collection of my internet things.</h6>
         <Filter
           selectedFilter={selectedFilter}
