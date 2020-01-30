@@ -28,7 +28,7 @@ const Studio = props => {
           setFilter={setFilter}
         ></Filter>
         <label className='studio__concept-count-label'>
-          Showing 3 concepts filtered by the 'SHOW ALL' tag.
+          Showing 2 concepts filtered by the 'SHOW ALL' tag.
         </label>
         {STUDIO_DATA.map(({ header, icon, color, body }) => {
           return <Concept header={header} icon={icon} color={color} body={body}/>

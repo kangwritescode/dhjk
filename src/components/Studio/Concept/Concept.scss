@@ -18,7 +18,9 @@
         "Helvetica Neue", sans-serif;
     font-size: 1.1em;
     color: rgba(255, 255, 255, 0.79);
-
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
+    animation: pop-in-left 0.8s ease 0.7s forwards;
     p {
         line-height: 1.7em;
     }
