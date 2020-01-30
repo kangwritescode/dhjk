@@ -4,6 +4,7 @@ import './Landing.css'
 import Logos from '../Logos/Logos'
 import NavBar from '../NavBar/Navbar/NavBar'
 import Arrow from '../Arrow/Arrow'
+import { Link } from 'react-router-dom'
 
 const Landing = props => {
   const LINES_DATA = [
@@ -34,14 +35,17 @@ const Landing = props => {
       style: { animation: 'fadeInDown .2s  ease-in 1.4s forwards' },
       content: (
         <React.Fragment>
-           Various web dev topics are covered by me in the{' '}
-          <span
-            onClick={() => alert('coming soon!')}
-            className={`underline--magical underline--magical--compressed`}
-            id='underline-two'
-          >
-            web studio.
-          </span>
+          Various web dev topics are covered by me in the{' '}
+          <Link to={'/studio'}>
+            <span
+              className={`underline--magical underline--magical--compressed`}
+              id='underline-two'
+              target='_blank'
+              href='https://drive.google.com/open?id=1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl'
+            >
+              web studio.
+            </span>
+          </Link>
         </React.Fragment>
       )
     },
@@ -53,13 +57,14 @@ const Landing = props => {
         <React.Fragment>
           {' '}
           You can find internet things I've made on the{' '}
-          <a
-            className={`underline--magical underline--magical--compressed`}
-            id='underline-three'
-            href='portfolio'
-          >
-            portfolio page.
-          </a>
+          <Link to={`portfolio`}>
+            <span
+              className={`underline--magical underline--magical--compressed`}
+              id='underline-three'
+            >
+              portfolio page.
+            </span>
+          </Link>
         </React.Fragment>
       )
     },

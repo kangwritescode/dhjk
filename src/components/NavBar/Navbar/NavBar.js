@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const NavBar = props => {
   const [focused, setFocused] = useState(false)
-  const items = ['home', 'portfolio', 'laboratory', 'contact']
+  const items = ['home', 'portfolio', 'studio', 'contact']
 
   return (
     <React.Fragment>
