@@ -22,6 +22,10 @@
           animation: pop-in-left 0.8s ease 0.7s forwards;
 }
 
+.concept:hover > .chevron-down {
+  opacity: 0.3;
+}
+
 .concept p {
   line-height: 1.7em;
 }
@@ -44,11 +48,44 @@
           transform: translateY(-50%);
   right: 1.2em;
   font-size: 2em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.concept__icon--hidden {
+  opacity: 0;
+}
+
+.concept__hide-button {
+  position: absolute;
+  left: 50%;
+  bottom: 2.1em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: transparent;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.concept__hide-button:hover {
+  cursor: pointer;
+  color: black;
+  background: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.expanded {
+  padding: 1.5em 2em;
+  padding-bottom: 4.5em;
 }
 
 .compressed:hover {
   cursor: pointer;
-  color: #dedede;
 }
 
 .orange {
@@ -61,5 +98,20 @@
 
 .blue {
   color: #18a3d2;
+}
+
+.chevron-down {
+  position: relative;
+  margin-left: 0.3em;
+}
+
+.chevron-down {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(0.1em);
+          transform: translateX(-50%) translateY(0.1em);
+  -webkit-transition: opacity .1s ease;
+  transition: opacity .1s ease;
 }
 /*# sourceMappingURL=Concept.css.map */

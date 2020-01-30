@@ -20,7 +20,7 @@ const Landing = props => {
             className={`underline--magical underline--magical--bears underline--magical--compressed`}
             id='underline-one'
             target='_blank'
-            href='https://drive.google.com/open?id=1MZdkFUsgY4K_yXKXVn8DwAStC1bo6PAl'
+            href='https://drive.google.com/file/d/1hVIE4lS_jDwUQte8q8UPqyYrBaTSa6dw/view?usp=sharing'
           >
             UC Berkeley graduate
           </a>{' '}

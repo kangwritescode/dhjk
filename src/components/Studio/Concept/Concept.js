@@ -12,11 +12,17 @@ const Concept = ({ header, icon, color, body }) => {
   return (
     <div
       className={`concept ${isExpanded ? 'expanded' : 'compressed'}`}
-      onClick={toggleExpanded}
+      onClick={!isExpanded && toggleExpanded}
     >
       <h3 className={`concept__header`}>{header}</h3>
-      {isExpanded ? null : <i className={`concept__icon ${icon} ${color}`}></i>}
-      {isExpanded ? body : null}
+      {!isExpanded && <i className={`concept__icon ${icon} ${color}`}></i>}
+      {isExpanded && body}
+      {isExpanded && (
+        <button className='concept__hide-button' onClick={toggleExpanded}>
+          Hide Answer <i class='fas fa-chevron-up chevron-down'></i>
+        </button>
+      )}
+      {!isExpanded && <i class='fas fa-chevron-down chevron-down'></i>}
     </div>
   )
 }
