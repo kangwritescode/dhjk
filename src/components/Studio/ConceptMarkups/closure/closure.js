@@ -1,5 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
-import Gist from 'super-react-gist'
 import './closure.css'
 
 export const closure = (
@@ -39,6 +39,30 @@ export const closure = (
       <li>
         Asynchronous Javascript: Callbacks and Promises rely on closure to
         persist state in an asynchronous environment
+      </li>
+    </ul>
+    <p>Sources and Additional Sources:</p>
+    <ul className='closure-list list-type-line'>
+      <li>
+        <a
+          href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures'
+          target='_blank'
+        >
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+        </a>
+      </li>
+      <li>
+        <a href='https://frontendmasters.com/' target='_blank'>
+          https://frontendmasters.com/
+        </a>
+      </li>
+      <li>
+        <a
+          href='https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36'
+          target='_blank'
+        >
+          https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36
+        </a>
       </li>
     </ul>
   </React.Fragment>
