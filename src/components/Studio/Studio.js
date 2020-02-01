@@ -14,6 +14,7 @@ const Studio = props => {
     'CSS',
     'Javascript',
     'ReactJS',
+    'Web',
     'Interview'
   ]
 

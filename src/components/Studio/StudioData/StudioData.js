@@ -15,5 +15,12 @@ export const STUDIO_DATA = [
     color: 'yellow',
     tags: ['SHOW ALL', 'Javascript', 'Interview'],
     body: markups.closure
+  },
+  {
+    header: "What is CORS?",
+    icon: 'fas fa-globe',
+    color: 'grey',
+    tags: ['SHOW ALL', 'Web', 'Interview'],
+    body: markups.cors
   }
 ]
