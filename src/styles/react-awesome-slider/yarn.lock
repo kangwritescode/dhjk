@@ -4196,9 +4196,9 @@ homedir-polyfill@^1.0.1:
     parse-passwd "^1.0.0"
 
 hosted-git-info@^2.1.4:
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.4.tgz#44119abaf4bc64692a16ace34700fed9c03e2546"
-  integrity sha512-pzXIvANXEFrc5oFFXRMkbLPQ2rXRoDERwDLyrcUxGhaZhgP54BBSl9Oheh7Vv0T090cszWBxPjkQQ5Sq1PbBRQ==
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 hpack.js@^2.1.6:
   version "2.1.6"
@@ -9254,10 +9254,10 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-web-animation-club@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/web-animation-club/-/web-animation-club-0.5.0.tgz#43f9e762249e8b84e0375bb366b614a988623349"
-  integrity sha512-xByTD+0iL/W+PvDckW8ZPijQb8DRoueebt1ohcatcjHR/agUmf0EQ70q8+DAPeibzSvZAP5plig5TJyRvwgLJw==
+web-animation-club@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/web-animation-club/-/web-animation-club-0.6.0.tgz#c1dd79646b21e4265b5f95ae9cb8b93b73e05e47"
+  integrity sha512-9W+EQu1HiaPLe/7WZlhJ2ULqQ4VL80RPDYW+ZcjfTKp6ayOuT1k3SVO6+tu0VBRmOqueJ/mrG+rjjInIv8Aglg==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
