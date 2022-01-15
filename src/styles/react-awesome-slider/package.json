@@ -68,7 +68,7 @@
     "react-router-dom": "^4.1.1",
     "react-test-renderer": "^16.10.2",
     "sass-loader": "^6.0.3",
-    "shelljs": "^0.7.8",
+    "shelljs": "^0.8.5",
     "style-loader": "^0.19.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
