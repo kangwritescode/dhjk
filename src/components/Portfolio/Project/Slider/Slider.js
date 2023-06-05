@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Slider.css'
 
-const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
+const Slider = ({ photos, sliderFocused, setSliderFocused, title, projectClass }) => {
   const [focusIndex, setFocusIndex] = useState(0)
   const [photosToMap, setPhotosToMap] = useState([])
   const [photosCount, setPhotosCount] = useState(0)
@@ -30,6 +30,8 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
     }
     setFocusIndex(newFocusIndex)
   }
+
+  console.log(projectClass)
 
   return (
     <div
@@ -65,22 +67,22 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title }) => {
         {sliderFocused && (
           <React.Fragment>
             <div
-              className={`slider__left-panel ${title}`}
+              className={`slider__left-panel ${projectClass}`}
               onClick={e => {
                 e.stopPropagation()
                 slide('left')
               }}
             >
-              <i className={`fas fa-angle-left ${title}`}></i>
+              <i className={`fas fa-angle-left ${projectClass}`}></i>
             </div>
             <div
-              className={`slider__right-panel ${title}`}
+              className={`slider__right-panel ${projectClass}`}
               onClick={e => {
                 e.stopPropagation()
                 slide('right')
               }}
             >
-              <i className={`fas fa-angle-right ${title}`}></i>
+              <i className={`fas fa-angle-right ${projectClass}`}></i>
             </div>
           </React.Fragment>
         )}

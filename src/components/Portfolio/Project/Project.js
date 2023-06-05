@@ -11,7 +11,8 @@ const Project = ({
   link,
   source,
   photos,
-  titleFont
+  titleFont,
+  projectClass
 }) => {
   const [sliderFocused, setSliderFocused] = useState(false)
 
@@ -19,7 +20,7 @@ const Project = ({
   useEffect(() => {
     function checkSliderClasses (e) {
       if (sliderFocused) {
-        let found = [...e.target.classList].includes(title) ? true : false
+        let found = [...e.target.classList].includes(projectClass) ? true : false
         return found ? null : setSliderFocused(false)
       }
     }
@@ -27,7 +28,7 @@ const Project = ({
     return () => {
       document.removeEventListener('click', checkSliderClasses)
     }
-  }, [sliderFocused, title])
+  }, [sliderFocused, projectClass])
 
   const projectButtons = [
     {
@@ -46,13 +47,14 @@ const Project = ({
   return (
     <section
       className={`section ${sliderFocused && 'section--active'}`}
-      id={`section-${title}`}
+      id={`section-${projectClass}`}
     >
       <Slider
         photos={photos}
         sliderFocused={sliderFocused}
         setSliderFocused={setSliderFocused}
         title={title}
+        projectClass={projectClass}
       />
       <div
         className={`section__info ${sliderFocused && 'section__info--hidden'}`}
