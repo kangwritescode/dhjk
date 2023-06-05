@@ -1,4 +1,26 @@
 export const projects = [
+    {
+        tags: [
+          'ReactJS',
+          'Typescript',
+          'Vite',
+          'Zustand',
+          'Mantine',
+        ],
+        filterOptions: ['SHOW ALL', 'SELECTED WORKS', 'MINI-PROJECTS'],
+        description: `BreedSearch is a simplified, user-friendly, and intuitive interface for building a boolean search expression. The app uses Zustand for state management and Mantine for UI components.`,
+        title: 'BreedSearch',
+        titleFont: 'Space Mono, monospace',
+        link: 'https://breed-search.vercel.app/',
+        source: 'https://github.com/kangwritescode/BreedSearch',
+        photos: [
+            'https://i.imgur.com/7rgxa2u.png',
+            'https://i.imgur.com/S1tE8oz.png',
+            'https://i.imgur.com/VSNR1gn.png',
+            'https://i.imgur.com/1iCGdNX.png'
+        ],
+        projectClass: 'project--breed-search'
+      },
   {
     tags: [
       'ReactJS',
@@ -21,6 +43,30 @@ export const projects = [
       'https://i.imgur.com/fQphnGH.png'
     ],
     projectClass: 'project--solana-wallet'
+  },
+  {
+    tags: [
+      'ReactJS',
+      'Typescript',
+      'NextJS',
+      'PostgreSQL',
+      'Material UI',
+      'TRPC',
+      'Prisma',
+      'NextAuth',
+    ],
+    filterOptions: ['SHOW ALL', 'SELECTED WORKS', 'MINI-PROJECTS'],
+    description: `BARZ 2.0! RapKing is in early development. It is a gamified social media platform where users can write, post, and vote on rap lyrics.`,
+    title: 'RapKing',
+    titleFont: 'Permanent Marker, cursive',
+    link: 'https://github.com/kangwritescode/rapking/',
+    source: 'https://github.com/kangwritescode/rapking/',
+    photos: [
+      'https://i.imgur.com/wP2rgL4.png',
+      'https://i.imgur.com/rQL7oJu.png',
+      'https://i.imgur.com/a5uODbJ.png',
+    ],
+    projectClass: 'project--rapking'
   },
   {
     tags: ['HTML5', 'CSS3', 'Javascript', 'Es6', 'ReactJS', 'Sass'],
