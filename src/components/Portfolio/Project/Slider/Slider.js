@@ -31,8 +31,6 @@ const Slider = ({ photos, sliderFocused, setSliderFocused, title, projectClass }
     setFocusIndex(newFocusIndex)
   }
 
-  console.log(projectClass)
-
   return (
     <div
       className={`slider-wrapper ${sliderFocused && 'slider-wrapper--active'}`}
